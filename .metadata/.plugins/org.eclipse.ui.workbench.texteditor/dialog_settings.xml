@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item value="729" key="DIALOG_X_ORIGIN"/>
+		<item value="390" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="afterReturningAdvice6" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="afterReturningAdvice6"/>
+			<item value="afterReturningAdvice2"/>
+			<item value="beforeAdvice2"/>
+			<item value="ValidationMode"/>
+			<item value="getBean"/>
+			<item value="bean"/>
+			<item value="findAllClassPathResources"/>
+			<item value="getRes"/>
+			<item value="getIn"/>
+			<item value="clazz"/>
+			<item value="8080"/>
+			<item value="privatePointcut1"/>
+			<item value="afterReturningAdvice"/>
+			<item value="doBusiness"/>
+			<item value="basic.basic_06_2_aop_advice.service"/>
+		</list>
+		<list key="replacehistory">
+			<item value=""/>
+			<item value="[2"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="262" key="DIALOG_WIDTH"/>
+		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
+		<item value="408" key="DIALOG_HEIGHT"/>
+		<item value="1641" key="DIALOG_X_ORIGIN"/>
+		<item value="657" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

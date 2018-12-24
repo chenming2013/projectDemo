@@ -1,0 +1,10 @@
+package basic.basic_06_2_aop_adviceBaseSchema.aop;
+
+/**
+ * 后置最终通知 实现方法定义的类
+ * @author 陈明
+ * @date 2018年12月18日
+ */
+public class HelloWorldAfterFinallyAspect {
+
+}

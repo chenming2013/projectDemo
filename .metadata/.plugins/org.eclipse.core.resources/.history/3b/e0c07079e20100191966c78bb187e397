@@ -1,0 +1,26 @@
+package basic.basic_06_2_aop_adviceBaseSchema.test;
+
+import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import basic.basic_06_2_aop_adviceBaseSchema.aop.HelloWorldBeforeAspect;
+import basic.basic_06_2_aop_adviceBaseSchema.service.HelloWorldService;
+
+public class BeforeAdviceTest {
+
+	@Test
+	public void testMethod1() {
+		
+		ApplicationContext context = new ClassPathXmlApplicationContext("basic/basic_06_2_aop_adviceBaseSchema/beforeAdvice.xml");
+		
+		HelloWorldService bean = context.getBean(HelloWorldService.class);
+		bean.sayHello();
+		
+		/*HelloWorldBeforeAspect bean2 = context.getBean(HelloWorldBeforeAspect.class);
+		bean2.beforeAdvice1();*/
+		
+		
+	}
+	
+}

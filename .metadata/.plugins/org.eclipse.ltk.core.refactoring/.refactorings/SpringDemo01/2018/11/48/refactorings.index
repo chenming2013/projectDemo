@@ -1,0 +1,21 @@
+1543377718782	Copy package
+1543377736975	Rename type 'SpelTest'
+1543385703129	Copy folder
+1543385717178	Rename resource 'injectResource.xml'
+1543387011922	Move compilation unit
+1543387636886	Delete element
+1543387650332	Rename source folder 'basic'
+1543389679945	Delete elements
+1543454325930	Copy package
+1543454348253	Copy package
+1543454372851	Delete element
+1543455035588	Copy package
+1543455047745	Rename resource 'helloworld.xml'
+1543458036044	Rename type 'BusinessIServiceImpl'
+1543472650677	Extract local variable 'bean2'
+1543474222839	Copy package
+1543474249655	Copy compilation units
+1543474256124	Copy compilation unit
+1543474279848	Copy compilation unit
+1543474300985	Copy package
+1543474318616	Rename package 'basic.basic_06_2_aop_advice2'

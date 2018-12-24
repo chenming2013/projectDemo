@@ -1,0 +1,12 @@
+package basic.basic_07_1_jdbc_template.test;
+
+/**
+ * 测试一下 Spring的JDBC模板类: JdbcTemplate、NamesParameterJdbcTemplate、SimpleJdbcTemplate
+ * @author 陈明
+ * @date 2018年12月24日
+ */
+public class TemplateTest {
+
+	
+	
+}

@@ -1,0 +1,24 @@
+package com.chenming.algorithm;
+
+import java.io.UnsupportedEncodingException;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.util.Arrays;
+
+import javax.xml.bind.annotation.adapters.HexBinaryAdapter;
+
+import org.junit.Test;
+
+/**
+ * 测试Java自带的加密算法
+ * @author 陈明
+ * @date 2018年12月24日
+ */
+public class AlgorithmTest {
+
+	
+	@Test
+	public void test() {
+		System.out.println("BA7816BF8F01CFEA414140DE5DAE2223B00361A396177A9CB410FF61F20015AD".length());
+	}
+}

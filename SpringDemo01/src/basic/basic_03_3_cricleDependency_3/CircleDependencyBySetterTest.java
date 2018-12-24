@@ -1,0 +1,27 @@
+package basic.basic_03_3_cricleDependency_3;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import basic.basic_03_3_cricleDependency_3.bean.CircleA;
+
+/**
+ * 测试Setter循环依赖(设置scope="prototype")
+ * 	报异常
+ * @author 陈明
+ * @date   2018年8月20日
+ */
+public class CircleDependencyBySetterTest
+{
+	
+	public static void main(String[] args) {
+		try {
+			ApplicationContext context = new ClassPathXmlApplicationContext("basic/basic_03_3_cricleDependency_3/circleDependencyBySetter.xml");
+			CircleA beanA = context.getBean("circleA", CircleA.class);
+			beanA.a();   
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+}

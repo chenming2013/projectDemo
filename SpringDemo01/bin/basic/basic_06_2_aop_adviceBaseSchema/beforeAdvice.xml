@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context-3.0.xsd
+		http://www.springframework.org/schema/aop 
+		http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+           
+    <!-- Bean自动扫描并创建装配 -->
+	<context:component-scan base-package="basic.basic_06_2_aop_adviceBaseSchema" />
+	
+	<context:annotation-config />
+	
+	<!-- 配置切面 -->
+	<aop:config>
+		<aop:aspect ref="helloWorldBeforeAspect">
+			<!-- 目标对象无参方法 -->
+			<aop:before method="beforeAdvice1" pointcut="execution(* basic.basic_06_2_aop_adviceBaseSchema.service..*.*(..))"/>
+			
+			<!-- 目标对象一个参数方法 -->
+			<aop:before method="beforeAdvice2" pointcut="execution(* basic.basic_06_2_aop_adviceBaseSchema.service..*.*(..)) and args(num)"/>
+			
+			<!-- 目标对象两个参数方法 -->
+			<aop:before method="beforeAdvice3" pointcut="execution(* basic.basic_06_2_aop_adviceBaseSchema.service..*.*(..)) and args(num,str)"/>
+			
+			<!-- 目标对象不定参数 -->
+			<aop:before method="beforeAdvice4" pointcut="execution(* basic.basic_06_2_aop_adviceBaseSchema.service..*.*(..)) and args(num)"/>
+			
+			
+			<!-- 目标对象不定参数 -->
+			<aop:before method="beforeAdvice6" pointcut="execution(* basic.basic_06_2_aop_adviceBaseSchema.service..*.*(..)) and args(num)"/>
+			
+		</aop:aspect>
+	</aop:config>
+	
+</beans>

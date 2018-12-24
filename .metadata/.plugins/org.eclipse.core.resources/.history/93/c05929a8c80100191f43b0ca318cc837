@@ -1,0 +1,5 @@
+package basic.basic_06_2_aop_adviceBaseSchema.test;
+
+public class BeforeAdviceTest {
+
+}

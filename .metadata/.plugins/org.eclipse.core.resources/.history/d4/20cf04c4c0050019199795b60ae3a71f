@@ -1,0 +1,54 @@
+package com.chenming.encode;
+
+import java.util.Base64;
+import java.util.Base64.Encoder;
+
+import org.junit.Test;
+
+/**
+ * 测试Base64编码
+ * @author 陈明
+ * @date 2018年12月22日
+ */
+public class TestBase64Encode {
+
+	@Test
+	public void test1() {
+		Encoder encoder = Base64.getEncoder();
+		
+		encoder.encodeToString("一".getBytes());		
+		//5LiA(Base64编码之后)	=> 	57-11-34-0(Base64编码之前)
+									
+		/**
+		* 原理解释:
+		* 	1. 	a:a 的ASCII码	97-58-97
+		* 	2.	a:a 的二进制表示	01100001-00111010-01100001
+		* 	3.	8位分割成6位		011000 - 010011 - 101001 - 100001
+		* 	4.	十进制			    24		   19		   41	      33	
+		* 	5. 	对照Base64编号	 Y		   T		   p		   h	
+		* 
+		*/
+	}
+	
+	@Test
+	public void test2() {
+		int codePoint = '一';
+		System.out.println(codePoint);	//19968
+		
+		String binaryString = Integer.toBinaryString(codePoint);
+		System.out.println(binaryString);	//01001110-00000000(4E00)
+		
+		byte[] bytes = "一".getBytes();	//[-28, -72, -128]
+		 
+		//0100 1110-00 000000(4E00的二进制)
+		//1110xxxx	10xxxxxx	10xxxxxx
+		//11100100	10111000	10000000	=> (UTF-8编码之后的二进制)
+		
+		//111001 	001011	100010	000000	=> (按照Base64编码规则)
+		//57		11		34		0
+		//5			L		i		A
+		
+		
+	}
+	
+}

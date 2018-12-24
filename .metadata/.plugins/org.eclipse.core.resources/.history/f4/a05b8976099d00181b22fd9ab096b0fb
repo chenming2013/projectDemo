@@ -1,0 +1,5 @@
+package com.chenming.test;
+
+public class ExceptionTest extends TestCase{
+
+}

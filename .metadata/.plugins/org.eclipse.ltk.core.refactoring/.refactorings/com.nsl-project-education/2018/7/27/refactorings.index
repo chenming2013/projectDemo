@@ -1,0 +1,14 @@
+1530859690321	Delete element
+1530874266892	Delete element
+1530934412063	Delete element
+1530934696220	Rename type 'EmailSentRecord'
+1530934730060	Rename type 'SendEmailController'
+1530934827078	Rename type 'EmailSentRecordService'
+1530934853126	Rename type 'EmailSentRecordServiceImpl'
+1530934885431	Rename type 'EmailSentRecordDao'
+1530944382775	Rename resource 'send-email-list.jsp'
+1530945521660	Rename type 'EduSendEmailController'
+1530946001397	Rename resource 'sent-email-list.jsp'
+1530947536295	Rename type 'EmailSentRecordController'
+1530948271207	Rename resource 'email-sent-record-list.jsp'
+1530951872633	Delete element

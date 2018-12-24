@@ -1,0 +1,19 @@
+package basic.test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Test {
+
+	@org.junit.Test
+	public void method() {
+		
+		ApplicationContext A a1 = context = new ClassPathXmlApplicationContext("basic/test/beans.xml");
+		
+		A a1 = context.getBean("a1",A.class);
+		
+		
+		
+	}
+	
+}

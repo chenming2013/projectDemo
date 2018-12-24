@@ -1,0 +1,21 @@
+package basic.basic_06_2_aop_adviceBaseSchema.aop;
+
+/**
+ * 前置通知 切面
+ * @author 陈明
+ * @date 2018年12月17日
+ */
+public class HelloWorldBeforeAspect {
+
+	/**
+	 * 前置通知一,无参数
+	 */
+	public void beforeAdvice1() {
+		System.out.println("HelloWorldBeforeAspect...beforeAdvice1()...,no params...");
+	}
+	
+	public void beforeAdvice2(Integer num) {
+		System.out.println("HelloWorldBeforeAspect...beforeAdvice2(Integer num),num:"+num);
+	}
+	
+}

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>testWeb</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+	<!--  
+	<servlet>
+		<servlet-name>servletTest1</servlet-name>
+		<servlet-class>com.chenming.web.servlet.TestServlet1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>servletTest1</servlet-name>
+		<url-pattern>/servletTest1</url-pattern>
+	</servlet-mapping>
+	-->
+	
+	<!-- 测试Response -->
+	<!-- 
+	<servlet>
+		<servlet-name>TestResponse</servlet-name>
+		<servlet-class>com.chenming.web.servlet.TestResponse</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TestResponse</servlet-name>
+		<url-pattern>/TestResponse</url-pattern>
+	</servlet-mapping>
+	-->
+	
+	<!-- 测试获取表单提交的参数 -->
+	<!--
+	<servlet>
+		<servlet-name>FormServlet</servlet-name>
+		<servlet-class>com.chenming.web.servlet.FormServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FormServlet</servlet-name>
+		<url-pattern>/FormServlet</url-pattern>
+	</servlet-mapping>
+	-->
+	
+	<!-- 测试编码 -->
+	<!-- 
+	<servlet>
+		<servlet-name>EncodeServlet1</servlet-name>
+		<servlet-class>com.chenming.web.servlet.EncodeServlet1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EncodeServlet1</servlet-name>
+		<url-pattern>/EncodeServlet1</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>EncodeServlet2</servlet-name>
+		<servlet-class>com.chenming.web.servlet.EncodeServlet2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EncodeServlet2</servlet-name>
+		<url-pattern>/EncodeServlet2</url-pattern>
+	</servlet-mapping>
+	-->
+	
+	
+	<servlet>
+		<servlet-name>TestPart</servlet-name>
+		<servlet-class>com.chenming.web.servlet.TestPartServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TestPart</servlet-name>
+		<url-pattern>/demo/part/*</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>TestAll</servlet-name>
+		<servlet-class>com.chenming.web.servlet.TestAllServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TestAll</servlet-name>
+		<url-pattern>/demo/*</url-pattern>
+	</servlet-mapping>
+	<!-- 
+		只要uri最前面带有  "/demo/" 的url都能匹配(注意:是能匹配,但不一定会匹配到这个Servlet )
+		可以匹配url的例子如下：
+		0. localhost:8080/testWeb/demo
+		1. localhost:8080/testWeb/demo/
+		2. localhost:8080/testWeb/demo/a
+		3. localhost:8080/testWeb/demo/a.html
+		4. localhost:8080/testWeb/demo/a.do
+		5. localhost:8080/testWeb/demo/test/
+		6. localhost:8080/testWeb/demo/test/a
+		
+		注意:下面这一些是不能匹配的
+		1. localhost:8080/testWeb/
+		2. localhost:8080/testWeb/hello/demo/
+	-->
+	
+	<!-- <servlet>
+		<servlet-name>Test</servlet-name>
+		<servlet-class>com.chenming.web.servlet.TestServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Test</servlet-name>
+		<url-pattern>/*</url-pattern>
+	</servlet-mapping> -->
+	
+	
+	<servlet>
+		<servlet-name>TestGetMethod</servlet-name>
+		<servlet-class>com.chenming.web.servlet.TestGetMethod</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TestGetMethod</servlet-name>
+		<url-pattern>/TestGetMethod</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>TestAjaxServlet</servlet-name>
+		<servlet-class>com.chenming.web.servlet.TestAjaxServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TestAjaxServlet</servlet-name>
+		<url-pattern>/TestAjaxServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>TestFormServlet</servlet-name>
+		<servlet-class>com.chenming.web.servlet.TestFormServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TestFormServlet</servlet-name>
+		<url-pattern>/TestFormServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	
+</web-app>

@@ -1,0 +1,22 @@
+package basic.basic_06_2_aop_adviceBaseSchema.aop;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.springframework.stereotype.Component;
+
+/**
+ * 后置最终通知 实现方法定义的类
+ * @author 陈明
+ * @date 2018年12月18日
+ */
+@Component
+public class HelloWorldAfterFinallyAspect {
+
+	public void afterFinallyAdvice1(ProceedingJoinPoint jp,Integer num) throws Throwable {
+		System.out.println("1.HelloWorldAfterFinallyAspect...afterFinallyAdvice1(ProceedingJoinPoint jp,Integer num)...,num:"+num+",>>>>前置");
+		if(num>0) {
+			jp.proceed();
+		}
+		System.out.println("1.HelloWorldAfterFinallyAspect...afterFinallyAdvice1(ProceedingJoinPoint jp,Integer num)...,num:"+num+",>>>>后置");
+	}
+	
+}

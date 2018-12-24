@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- 该文件用来配置entity对象和数据库表的映射关系 -->
+<!-- package指明要映射到数据库中的类在哪个包下 -->
+<hibernate-mapping package="com.chenming.hibernate.domain">
+	<class name="Teacher" table="teacher" lazy="false">
+		<id name="id" column="id" type="int">
+			<generator class="increment"></generator>
+		</id>
+		
+		<set name="stuSet">
+			<key column="teacher_id"></key>
+			<one-to-many class="com.chenming.hibernate.domain.Student"  />
+		</set>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=testWeb/F:\/chenming\/APP\/WorkSpace\/testWeb\/WebContent\/WEB-INF\/lib\/standard.jar&lt;org.apache.taglibs.standard.tag.common.core(ChooseTag.class[ChooseTag" modifiers="33" timestamp="1520577034458"/>
+<typeInfo handle="=testWeb/F:\/chenming\/APP\/WorkSpace\/testWeb\/WebContent\/WEB-INF\/lib\/standard.jar&lt;org.apache.taglibs.standard.tag.el.core(ForEachTag.class[ForEachTag" modifiers="33" timestamp="1520577034458"/>
+<typeInfo handle="=testWeb/F:\/chenming\/APP\/WorkSpace\/testWeb\/WebContent\/WEB-INF\/lib\/standard.jar&lt;org.apache.taglibs.standard.tei(ForEachTEI.class[ForEachTEI" modifiers="33" timestamp="1520577034458"/>
+<typeInfo handle="=testWeb/F:\/chenming\/APP\/WorkSpace\/testWeb\/WebContent\/WEB-INF\/lib\/standard.jar&lt;org.apache.taglibs.standard.tag.rt.core(ForEachTag.class[ForEachTag" modifiers="33" timestamp="1520577034458"/>
+<typeInfo handle="=testWeb/F:\/chenming\/APP\/WorkSpace\/testWeb\/WebContent\/WEB-INF\/lib\/standard.jar&lt;org.apache.taglibs.standard.tag.rt.core(IfTag.class[IfTag" modifiers="33" timestamp="1520577034458"/>
+<typeInfo handle="=testPOI/F:\/chenming\/APP\/WorkSpace\/testPOI\/WebContent\/WEB-INF\/lib\/poi-3.17.jar&lt;org.apache.poi.ss.usermodel(Cell.class[Cell" modifiers="1537" timestamp="1524125455126"/>
+<typeInfo handle="=testPOI/F:\/chenming\/APP\/WorkSpace\/testPOI\/WebContent\/WEB-INF\/lib\/poi-3.17.jar&lt;org.apache.poi.ss.usermodel(CellType.class[CellType" modifiers="16433" timestamp="1524125455126"/>
+<typeInfo handle="=testStruts2/F:\/chenming\/APP\/WorkSpace\/testStruts2\/WebContent\/WEB-INF\/lib\/struts2-core-2.3.34.jar&lt;org.apache.struts2.dispatcher.ng.filter(StrutsPrepareAndExecuteFilter.class[StrutsPrepareAndExecuteFilter" modifiers="33" timestamp="1524199313943"/>
+<typeInfo handle="=sturts2Demo_01/F:\/chenming\/APP\/WorkSpace\/sturts2Demo_01\/WebContent\/WEB-INF\/lib\/struts2-core-2.3.34.jar&lt;org.apache.struts2.dispatcher.ng.filter(StrutsPrepareAndExecuteFilter.class[StrutsPrepareAndExecuteFilter" modifiers="33" timestamp="1524199313943"/>
+<typeInfo handle="=testPOI/F:\/chenming\/APP\/WorkSpace\/testPOI\/WebContent\/WEB-INF\/lib\/poi-ooxml-3.17.jar&lt;org.apache.poi.xssf.usermodel(XSSFDataFormat.class[XSSFDataFormat" modifiers="33" timestamp="1524125455131"/>
+<typeInfo handle="=testPOI/F:\/chenming\/APP\/WorkSpace\/testPOI\/WebContent\/WEB-INF\/lib\/poi-3.17.jar&lt;org.apache.poi.ss.usermodel(Workbook.class[Workbook" modifiers="1537" timestamp="1524125455126"/>
+<typeInfo handle="=testPOI/F:\/chenming\/APP\/WorkSpace\/testPOI\/WebContent\/WEB-INF\/lib\/xmlbeans-2.6.0.jar&lt;org.apache.xmlbeans.impl.jam.mutable(MMember.class[MMember" modifiers="1537" timestamp="1524125466905"/>
+<typeInfo handle="=JULDemo01/C:\/Program Files\/Java\/jdk1.8.0_144\/jre\/lib\/endorsed\/rt-debug.jar&lt;java.util.logging(Level.class[Level" modifiers="33" timestamp="1516438224833"/>
+<typeInfo handle="=JULDemo01/C:\/Program Files\/Java\/jdk1.8.0_144\/jre\/lib\/endorsed\/rt-debug.jar&lt;java.util.logging(LogManager.class[LogManager" modifiers="33" timestamp="1516438224833"/>
+<typeInfo handle="=JULDemo01/C:\/Program Files\/Java\/jdk1.8.0_144\/jre\/lib\/endorsed\/rt-debug.jar&lt;java.util.logging(FileHandler.class[FileHandler" modifiers="33" timestamp="1516438224833"/>
+<typeInfo handle="=JULDemo01/C:\/Program Files\/Java\/jdk1.8.0_144\/jre\/lib\/endorsed\/rt-debug.jar&lt;java.util.logging(Handler.class[Handler" modifiers="1057" timestamp="1516438224833"/>
+<typeInfo handle="=POIDemo01/C:\/Program Files\/Java\/jdk1.8.0_144\/jre\/lib\/endorsed\/rt-debug.jar&lt;java.util.logging(LogRecord.class[LogRecord" modifiers="33" timestamp="1516438224833"/>
+<typeInfo handle="=log4j2Demo01/lib\/log4j-core-2.11.0.jar&lt;org.apache.logging.log4j.core.config(ConfigurationFactory.class[ConfigurationFactory" modifiers="1057" timestamp="1538295053068"/>
+<typeInfo handle="=sturts2Demo_01/F:\/chenming\/APP\/WorkSpace\/sturts2Demo_01\/WebContent\/WEB-INF\/lib\/log4j-api-2.3.jar&lt;org.apache.logging.log4j(Logger.class[Logger" modifiers="1537" timestamp="1524199313935"/>
+<typeInfo handle="=log4j2Demo01/lib\/log4j-core-2.11.0.jar&lt;org.apache.logging.log4j.core.util.datetime(FastDatePrinter$Rule.class[Rule" modifiers="1546" timestamp="1538295053068"/>
+<typeInfo handle="=FreemarkerDemo01/C:\/Program Files\/Java\/jdk1.8.0_144\/jre\/lib\/rt.jar&lt;com.sun.xml.internal.ws.api(ResourceLoader.class[ResourceLoader" modifiers="1057" timestamp="1504946529939"/>
+<typeInfo handle="=FreemarkerDemo01/C:\/Program Files\/Java\/jdk1.8.0_144\/jre\/lib\/endorsed\/rt-debug.jar&lt;com.sun.org.apache.xerces.internal.jaxp(DefaultValidationErrorHandler.class[DefaultValidationErrorHandler" modifiers="32" timestamp="1516438224833"/>
+<typeInfo handle="=FreemarkerDemo01/C:\/Program Files\/Java\/jdk1.8.0_144\/jre\/lib\/endorsed\/rt-debug.jar&lt;java.lang(RuntimeException.class[RuntimeException" modifiers="33" timestamp="1516438224833"/>
+<typeInfo handle="=FreemarkerDemo01/C:\/Program Files\/Java\/jdk1.8.0_144\/jre\/lib\/endorsed\/rt-debug.jar&lt;java.lang(ArithmeticException.class[ArithmeticException" modifiers="33" timestamp="1516438224833"/>
+<typeInfo handle="=SiteMesh2Demo01/F:\/chenming\/APP\/Tomcat\/apache-tomcat-8.5.20\/lib\/catalina.jar&lt;org.apache.naming.factory(BeanFactory.class[BeanFactory" modifiers="33" timestamp="1501684578000"/>
+</typeInfoHistroy>

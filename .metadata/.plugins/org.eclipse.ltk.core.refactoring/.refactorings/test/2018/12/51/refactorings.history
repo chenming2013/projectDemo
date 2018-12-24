@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;TestBase64Encode.java&apos; to &apos;EncodeDemo01/src/com.chenming.base64&apos;&#x0D;&#x0A;- Original project: &apos;test&apos;&#x0D;&#x0A;- Destination element: &apos;EncodeDemo01/src/com.chenming.base64&apos;&#x0D;&#x0A;- Original element: &apos;com.chenming.encode.TestBase64Encode.java&apos;" description="Copy compilation unit" destination="=EncodeDemo01/src&lt;com.chenming.base64" element1="/src&lt;com.chenming.encode{TestBase64Encode.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1545470537533" units="1" version="1.0"/>
+</session>

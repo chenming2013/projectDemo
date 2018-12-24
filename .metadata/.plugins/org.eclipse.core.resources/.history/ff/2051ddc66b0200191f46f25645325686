@@ -1,0 +1,9 @@
+package basic.basic_06_2_aop_adviceBaseSchema.aop;
+
+import org.springframework.stereotype.Component;
+
+
+@Component
+public class HelloWorldAfterReturningAspect {
+
+}

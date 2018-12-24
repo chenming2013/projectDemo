@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>其他页面</title>
+</head>
+<body>
+	
+<!-- 其他页面 -->
+<div id="result"></div>
+<script>
+window.onstorage = function(e){
+    e = e || event;
+    result.innerHTML = 'key: ' + e.key + '<br>oldValue: ' + e.oldValue + '<br>newValue: ' + e.newValue + '<br>url: ' + e.url + '<br>storageArea: ' + e.storageArea;  
+}
+</script>
+
+</body>
+</html>

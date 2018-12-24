@@ -1,0 +1,11 @@
+package basic.basic_06_2_aop_adviceBaseSchema.service;
+
+public interface HelloWorldService {
+
+	public void sayHello();
+	
+	public void sayHello2(Integer num);
+	
+	public void sayHello3(Integer num,String str);
+	
+}

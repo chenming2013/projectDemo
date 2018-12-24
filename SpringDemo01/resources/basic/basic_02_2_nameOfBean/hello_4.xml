@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"     
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"           
+    xmlns:context="http://www.springframework.org/schema/context"   
+    xmlns:aop="http://www.springframework.org/schema/aop"       
+    xmlns:tx="http://www.springframework.org/schema/tx"         
+    xmlns:util="http://www.springframework.org/schema/util"         
+    xmlns:p="http://www.springframework.org/schema/p"               
+    xsi:schemaLocation="http://www.springframework.org/schema/beans                             
+                        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd        
+                        http://www.springframework.org/schema/context                           
+                        http://www.springframework.org/schema/context/spring-context-4.0.xsd    
+                        http://www.springframework.org/schema/aop                               
+                        http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+                        http://www.springframework.org/schema/tx                            
+                        http://www.springframework.org/schema/tx/spring-tx-4.0.xsd                      
+                        http://www.springframework.org/schema/util                          
+                        http://www.springframework.org/schema/util/spring-util-4.0.xsd">
+   
+
+	<!-- 设置Id和name,Id就是标识符,而name就是别名,id和name都必须在IOC容器中唯一 -->
+	<bean id="hello4_1" name="alias1" class="basic.basic_02_2_nameOfBean.bean.HelloImpl"></bean>
+
+	
+	<!-- 如果Id和name一样,IOC容器能检测到,并消除冲突 -->
+	<bean id="hello4_2" name="hello4_2" class="basic.basic_02_2_nameOfBean.bean.HelloImpl"></bean>
+
+
+</beans>

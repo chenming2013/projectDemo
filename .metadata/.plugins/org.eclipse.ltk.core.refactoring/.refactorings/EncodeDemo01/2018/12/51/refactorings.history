@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.chenming.base64.TestBase64Encode&apos; to &apos;Base64EncodeTest&apos;&#x0D;&#x0A;- Original project: &apos;EncodeDemo01&apos;&#x0D;&#x0A;- Original element: &apos;com.chenming.base64.TestBase64Encode&apos;&#x0D;&#x0A;- Renamed element: &apos;com.chenming.base64.Base64EncodeTest&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;TestBase64Encode&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.chenming.base64{TestBase64Encode.java[TestBase64Encode" matchStrategy="1" name="Base64EncodeTest" qualified="false" references="true" similarDeclarations="false" stamp="1545470602097" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,273 @@
+<%@ page contentType="text/html;charset=UTF-8"%>
+<%@ include file="/WEB-INF/views/include/taglib.jsp"%>
+<c:set var="basepath" value="yyzj/community/price-land"></c:set>
+<html>
+
+<head>
+<title></title>
+	<!-- 引入公共方法 -->
+	<script type="text/javascript" src="/resources/static/js/commons.js"></script>
+	<!-- <script type="text/javascript" src="/resources/static/lib/jquery/jquery-1.12.4.min.js"></script> -->
+	<script type="text/javascript" src="/resources/static/lib/jquery-validation-1.17.0/dist/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="/resources/static/lib/jquery-validation-1.17.0/dist/localization/messages_zh.js"></script>
+	<script type="text/javascript" src="/resources/static/lib/layer/layer.js"></script>
+	
+	<meta name="decorator" content="default" />
+	<style type="text/css"> 
+		.table {
+			border: 1px solid #e2e2e2;
+			width: 95%;
+		}
+		
+		.table input {
+			width: 130px;
+		}
+		
+		.table tr, .table th, .table td {
+			border: 1px solid #e2e2e2;
+		}
+		
+		.table .item {
+			padding-bottom: 3px;
+		}
+	</style>
+	
+	<script type="text/javascript">
+		var id = '${bean.id}';
+		$(document).ready(function() {
+			$("#name").focus();
+			$("#inputForm").validate({
+				submitHandler : function(form) {
+					loading('正在提交，请稍等...');
+					form.submit();
+				}
+			});
+			
+			//点击省份的时候查询该省份下所有查询地市
+			$('#searchProvinceId').change(function(){
+				var queryUrl = '/front/yyzj/pc/region/front-region/findChildren.do';
+				queryChildRegion('searchProvinceId', 'regionId', 2, queryUrl);
+			});
+			
+		});
+		
+		//启用/禁用用户
+		function changeEnableFlag(flag){
+			//如果传过来的flag为true就表示要要启用,如果传过来的flag为flase就表示要禁用
+			console.log("flag: "+flag);
+			var msg = '启用';
+			if(flag == false){
+				msg = '禁用';
+			}
+			layer.confirm('您确定要'+msg+'该用户?', {
+				btn: ['确定','再考虑'] //按钮
+			}, function(){
+				var url = '${ctxRear}/${basepath}/changeEnableFlag${suffix}';
+				$.post(url,{
+					flag: flag,
+					id: id
+				},function(result){
+					if(result && result.success){
+						console.log("result: "+result);
+						layer.msg(msg+'成功!', {
+							icon: 1,
+							time: 1500
+						},function(){
+							//刷新页面
+							window.location.href = '${ctxRear}/${basepath}/edit${suffix}?id='+id;
+						});
+					}else{
+						layer.msg(msg+'失败!',{
+							icon: 2,
+							time: 1500
+						});
+					}
+				},'json');
+				
+			}, function(){
+				layer.closeAll();
+			});
+		}
+	</script>
+</head>
+
+<body>
+	<ul class="nav nav-tabs">
+		<li><a href="${ctxRear}/${basepath}/list${suffix}">土地价格列表</a></li>
+		<li class="active"><a>修改</a></li>
+		<li><a href="${ctxRear}/${basepath}/importPage${suffix}">数据导入</a></li>
+	</ul>
+
+	<form:form id="inputForm" modelAttribute="bean" action="${ctxRear}/${basepath}/save${suffix}" method="post" class="form-horizontal">
+		<tags:message content="${message}" />
+		<input type="hidden" id="id" name="id" value="${bean.id}" />
+		
+		<!-- 所在地区 -->
+		<div class="control-group">
+			<label class="control-label" for="searchProvinceId"><font color="red">*</font>所在地区：</label>
+			<div class="controls">
+				<!-- 省份 -->
+				<select id="searchProvinceId" name="searchProvinceId" >
+					<option value="">--全部--</option>
+					<c:forEach items="${provinceList }" var="item">
+						<c:choose>
+							<c:when test="${item.id eq bean.region.provinceId }">
+								<option value="${item.id }" selected="selected">${item.name }</option>
+							</c:when>
+							<c:otherwise>
+								<option value="${item.id }">${item.name }</option>
+							</c:otherwise>
+						</c:choose>
+					</c:forEach>
+				</select>
+				<!-- 地市 -->
+				<select id="regionId" name="region.id" required="required">
+					<c:choose>
+						<c:when test="${empty cityList }">
+							<option value="">--请先选择省份--</option>
+						</c:when>
+						<c:otherwise>
+							<option value="">--全部地市--</option>
+							<c:forEach items="${cityList }" var="item">
+								<c:choose>
+									<c:when test="${item.id eq bean.region.id }">
+										<option value="${item.id }" selected="selected">${item.name }</option>
+									</c:when>
+									<c:otherwise>
+										<option value="${item.id }">${item.name }</option>
+									</c:otherwise>
+								</c:choose>
+							</c:forEach>
+						</c:otherwise>
+					</c:choose>
+				</select>
+			</div>
+		</div>
+		
+		<!-- 编号 -->
+		<div class="control-group">
+			<label class="control-label" for="number"><font color="red">*</font>编号：</label>
+			<div class="controls">
+				<!-- number取出来的值是带有小数位的,这里截取掉小数位 -->
+				<c:set value="${fn:indexOf(bean.number,'.') }" var="index"></c:set>
+				<input type="text" id="number" name="number" value="${fn:substring(bean.number,0,index)}" readonly="readonly" class="input-xxlarge required"/>
+			</div>
+		</div>
+		
+		<!-- 用途 -->
+		<div class="control-group">
+			<label class="control-label" for="buildingTypeId"><font color="red">*</font>用途：</label>
+			<div class="controls">
+				<select id="buildingTypeId" name="buildingType.id" class="input-xxlarge required">
+					<option value="">--用途--</option>
+					<c:forEach items="${buildingTypeList }" var="item">
+						<c:choose>
+							<c:when test="${bean.buildingType.id eq item.id }"><option value="${item.id }" selected="selected">${item.name }</option></c:when>
+							<c:otherwise><option value="${item.id }">${item.name }</option></c:otherwise>
+						</c:choose>
+					</c:forEach>
+				</select>
+			</div>
+		</div>
+		
+		<!-- 面积 -->
+		<div class="control-group">
+			<label class="control-label" for="square"><font color="red">*</font>面积：</label>
+			<div class="controls">
+				<input type="text" id="square" name="square"　number="true" class="input-xxlarge required" value="${bean.square }"/>
+			</div>
+		</div>
+		
+		<!-- 土地权证 -->
+		<div class="control-group">
+			<label class="control-label" for="warrants"><font color="red">*</font>土地权证：</label>
+			<div class="controls">
+				<input type="text" id="warrants" name="warrants" value="${bean.warrants}" class="input-xxlarge required"/>
+			</div>
+		</div>
+		
+		<!-- 剩余年限 -->
+		<div class="control-group">
+			<label class="control-label" for="leftYears"><font color="red">*</font>剩余年限：</label>
+			<div class="controls">
+				<input type="text" id="leftYears" name="leftYears" value="${bean.leftYears}" number="true" required="required" digits="true" placeholder="剩余年限" class="input-xxlarge"/> 年
+			</div>
+		</div>
+		
+		<!-- 可流转年限 -->
+		<div class="control-group">
+			<label class="control-label" for="availableYears"><font color="red">*</font>可流转年限：</label>
+			<div class="controls">
+				<input type="text" id="availableYears" name="availableYears" value="${bean.availableYears}" digits="true" required="required" placeholder="可流转年限" class="input-xxlarge"/> 年
+			</div>
+		</div>
+		
+		<!-- 流转方式 -->
+		<div class="control-group">
+			<label class="control-label" for="landTransferwayId"><font color="red">*</font>流转方式：</label>
+			<div class="controls">
+				<select id="landTransferwayId" name="landTransferway.id" class="input-xxlarge required">
+					<option value="">--请选择流转方式--</option>
+					<c:forEach items="${landTransferwayList }" var="item">
+						<c:choose>
+							<c:when test="${bean.landTransferway.id eq item.id }"><option value="${item.id }" selected="selected">${item.name }</option></c:when>
+							<c:otherwise><option value="${item.id }">${item.name }</option></c:otherwise>
+						</c:choose>
+					</c:forEach>
+				</select>
+			</div>
+		</div>
+		
+		<!-- 价格 -->
+		<div class="control-group">
+			<label class="control-label" for="price"><font color="red">*</font>价格：</label>
+			<div class="controls">
+				<input type="text" id="price" name="price" value="${bean.price}" number="true" required="required" placeholder="价格" class="input-xxlarge"/>
+			</div>
+		</div>
+		
+		<!-- 报价者姓名 -->
+		<div class="control-group">
+			<label class="control-label" for="ownerName"><font color="red">*</font>报价者姓名：</label>
+			<div class="controls">
+				<input type="text" id="ownerName" name="ownerName" value="${bean.ownerName}" rangelength="[2,10]" required="required" placeholder="报价者姓名" class="input-xxlarge"/>
+			</div>
+		</div>
+		
+		<!-- 报价者手机号 -->
+		<div class="control-group">
+			<label class="control-label" for="ownerMobile"><font color="red">*</font>报价者手机号：</label>
+			<div class="controls">
+				<input type="text" id="ownerMobile" name="ownerMobile" value="${bean.ownerMobile}" rangelength="[11,50]" required="required" placeholder="可流转年限" class="input-xxlarge"/>
+			</div>
+		</div>
+		
+		<!-- 启用状态 -->
+		<div class="control-group">
+			<label class="control-label" for="enableFlag"><font color="red">*</font>启用状态：</label>
+			<div class="controls">
+				<input type="radio" id="enableFlag0" name="enableFlag" value="true" required="required" <c:if test="${bean.enableFlag !=null && bean.enableFlag }">checked="checked"</c:if>/> 启用
+				<input type="radio" id="enableFlag1" name="enableFlag" value="false" required="required" <c:if test="${bean.enableFlag !=null && !bean.enableFlag }">checked="checked"</c:if>/> 禁用
+				<span class="help-inline"></span>
+			</div>
+		</div>
+		
+		<div class="form-actions">
+			<shiro:hasPermission name="yyzj:price-land:edit">
+				<input id="btnSubmit" class="btn btn-primary" type="submit" value="保 存" />&nbsp;
+				<c:choose>
+					<c:when test="${bean.enableFlag==false }">
+						<a class="btn enable_flag" onclick="changeEnableFlag(true)">启用</a>
+					</c:when>
+					<c:otherwise>
+						<a class="btn enable_flag" onclick="changeEnableFlag(false)">禁用</a>
+					</c:otherwise>
+				</c:choose>
+				<a href="${ctxRear}/${basepath}/remove${suffix}?id=${bean.id}" class="btn" onclick="return confirmx('删除后无法恢复,您确定要删除?', this.href)"><span style="color:red">删除</span></a>
+			</shiro:hasPermission>
+			<a class="btn" href="${ctxRear}/${basepath}/list${suffix}">返回</a>
+		</div>
+	</form:form>
+</body>
+
+</html>

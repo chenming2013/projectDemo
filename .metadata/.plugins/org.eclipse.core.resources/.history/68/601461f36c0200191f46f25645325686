@@ -1,0 +1,12 @@
+package basic.basic_06_2_aop_adviceBaseSchema.test;
+
+import org.junit.BeforeClass;
+
+public class AfterReturningTest {
+
+	@BeforeClass
+	public void static beforeClass() {
+		
+	}
+	
+}

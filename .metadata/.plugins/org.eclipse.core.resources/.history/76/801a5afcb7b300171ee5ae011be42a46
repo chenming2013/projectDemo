@@ -1,0 +1,15 @@
+package com.chenming.test;
+
+public class ToUpperCase
+{
+	public static void main(String[] args)
+	{
+		String str = "http://localhost/search/search_cost_consultant.jsp";
+		
+		int index = str.lastIndexOf(".");
+		String newStr = str.substring(17, index).replaceAll("/", "_").toUpperCase();
+		System.out.println("PAGE_"+newStr);
+		
+		
+	}
+}

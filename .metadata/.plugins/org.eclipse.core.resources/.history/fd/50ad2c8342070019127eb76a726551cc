@@ -1,0 +1,35 @@
+package basic.basic_07_1_jdbc_template.test;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+/**
+ * 测试一下 Spring的JDBC模板类: JdbcTemplate
+ * @author 陈明
+ * @date 2018年12月24日
+ */
+public class JdbcTemplateTest {
+
+	
+	/**
+	 * 实例化JdbcTemplate类
+	 */
+	@SuppressWarnings("resource")
+	@BeforeClass
+	public static void getJdbcTemplate() {
+		
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath*:basic/basic_07_1_jdbc_template/jdbcTemplate.xml");
+		
+		String user = "${jdbc.user}";
+		System.out.println(user);
+		
+		context.getBean("");
+	}
+	
+	@Test
+	public void testInsert() {
+		
+	}
+	
+}

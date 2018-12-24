@@ -1,0 +1,15 @@
+package basic.basic_06_0_aop_proxy;
+
+import org.junit.Test;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class AOPProxyTest {
+
+	@Test
+	public void testProxy() {
+		
+		ApplicationContext context = new ClassPathXmlApplicationContext("basic/basic_06_0_aop_proxy/hello.xml");
+		
+	}
+	
+}

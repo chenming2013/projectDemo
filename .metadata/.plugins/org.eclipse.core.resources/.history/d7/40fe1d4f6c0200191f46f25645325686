@@ -1,0 +1,21 @@
+package basic.basic_06_2_aop_adviceBaseSchema.aop;
+
+import org.springframework.stereotype.Component;
+
+
+@Component
+public class HelloWorldAfterReturningAspect {
+
+	public void afterReturningAdvice1() {
+		System.out.println("1. HelloWorldAfterReturningAspect...afterReturningAdvice1()...");
+	}
+	
+	public void afterReturningAdvice2(Integer num) {
+		System.out.println("2. HelloWorldAfterReturningAspect...afterReturningAdvice2(Integer num)...,num:"+num);
+	}
+	
+	public void afterReturningAdvice3(Integer num,String str) {
+		System.out.println("3. HelloWorldAfterReturningAspect...afterReturningAdvice3(Integer num,String str)...,num:"+num+",str:"+str);
+	}
+	
+}

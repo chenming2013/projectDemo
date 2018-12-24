@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+           
+    <!-- Bean自动扫描并创建装配 -->
+	<context:component-scan base-package="/basic/basic_06_2_aop_adviceBaseSchema" />
+	
+	<!-- <aop:config>
+		<aop:aspect ref="helloWorldBeforeAspect">
+			配置无参切入点
+			<aop:pointcut expression="execution(** basic.basic_06_2_aop_adviceBaseSchema.*(..))" id="priv_1_beforeAdvice"/>
+			
+			
+			<aop:before method="beforeAdvice1" pointcut-ref="priv_1_beforeAdvice"/>
+		</aop:aspect>
+	</aop:config> -->
+	
+</beans>

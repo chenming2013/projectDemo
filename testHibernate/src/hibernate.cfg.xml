@@ -1,0 +1,38 @@
+<!--
+  ~ Hibernate, Relational Persistence for Idiomatic Java
+  ~
+  ~ License: GNU Lesser General Public License (LGPL), version 2.1 or later.
+  ~ See the lgpl.txt file in the root directory or <http://www.gnu.org/licenses/lgpl-2.1.html>.
+  -->
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<!-- SessionFactory配置 -->
+	<session-factory>
+		<!-- 数据库URL -->
+		<property name="hibernate.connection.url">jdbc:mysql://localhost/hibernateDemo01</property>
+		<!-- 数据库JDBC驱动 -->
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<!-- 数据库用户名 -->
+		<property name="hibernate.connection.username">root</property>
+		<!-- 数据库用户密码 -->
+		<property name="hibernate.connection.password">123456</property>
+		
+		
+		<!-- dialect,每个数据库都有其对应的Dialect以匹配其平台特性 -->
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		
+		
+		<!-- 是否在控制台输出SQL语句 -->
+		<property name="show_sql">true</property>
+		<!-- 是否对输出的SQL语句格式化 -->
+		<property name="format_sql">true</property>
+		
+		
+		<!-- 配置对象映射文件 -->
+		<mapping resource="com/chenming/hibernate/domain/Teacher.hbm.xml" />
+		<mapping resource="com/chenming/hibernate/domain/Student.hbm.xml" />
+	</session-factory>
+</hibernate-configuration>

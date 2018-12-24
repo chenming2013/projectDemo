@@ -1,0 +1,27 @@
+1542782897408	Copy compilation unit
+1542784469684	Delete element
+1542786613596	Rename resource 'test.ftl'
+1542792329626	Rename package 'com.chenming.special_variable'
+1542792349536	Copy package
+1542792458219	Rename package 'com.chenming.null_value'
+1542792705757	Copy file
+1542792796578	Copy file
+1542792843949	Rename type 'SpecialVariableTest'
+1542792849832	Delete element
+1542792853171	Delete element
+1542792857040	Delete element
+1542792961257	Rename package 'com.chenming'
+1542792996723	Rename resource 'special_variable.ftl'
+1542793004486	Rename resource 'helloworld.ftl'
+1542793013028	Rename resource 'null_value.ftl'
+1542794787880	Rename package 'basic.instruction'
+1542794793474	Delete element
+1542795131689	Copy file
+1542877298853	Move file
+1542877528072	Move file
+1542877750590	Move folder
+1542877835713	Rename resource 'mylib.ftl'
+1542877842389	Copy file
+1542964376122	Delete element
+1542964807359	Rename type 'BuiltinFunctionOfDate'
+1542964860126	Copy file
