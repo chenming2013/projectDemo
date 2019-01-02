@@ -5,7 +5,103 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2018-12-24T07:15:57Z</updated>
+  <updated>2019-01-02T00:00:00Z</updated>
+  <entry>
+    <title>Spring Tips: RSocket</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/01/02/spring-tips-rsocket" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2018-12-25:3513</id>
+    <updated>2019-01-02T00:00:00Z</updated>
+    <content type="html">&lt;p&gt;speaker: &lt;a href="http://twitter.com/Starbuxman"&gt;Josh Long&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hi Spring fans! In this installment of &lt;em&gt;Spring Tips&lt;/em&gt; we look at the promising, reactive, elastic and fantastic protocol and Reactor-powered project RSocket from Facebook. &lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/GDIDSzZLjjg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</content>
+  </entry>
+  <entry>
+    <title>This Week in Spring - 1 January 2019</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/01/01/this-week-in-spring-1-january-2019" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2019-01-01:3515</id>
+    <updated>2019-01-01T08:49:42Z</updated>
+    <content type="html">&lt;p&gt;Hi Spring fans! Happy New Years to you! Here&amp;rsquo;s hoping that your new year is healthier and happier than the last. Did you notice that spiffy new numeral in the date? &lt;code&gt;2019&lt;/code&gt;? Isn&amp;rsquo;t that &amp;rsquo;perty?? We made it! (We&amp;rsquo;re now a year away from &lt;code&gt;2020&lt;/code&gt;! I don&amp;rsquo;t know why that year holds so much sway for me&amp;hellip;)&lt;/p&gt;
+&lt;p&gt;Also, this is the eighth anniversary of &lt;em&gt;This Week in Spring&lt;/em&gt;! I started this series in the first week of January 2011. We&amp;rsquo;ve come a long way since then! This is as good a time as any to remind you that I love this community and I love reading what you&amp;rsquo;re up to. It&amp;rsquo;s a pleasure to learn with you. As always, I&amp;rsquo;m grateful for any contributions in this humble roundup; &lt;a href="http://twitter.com/Starbuxman"&gt;just hit me up on Twitter&lt;/a&gt;. My Direct Messages are wide-open. Thank you for everything you&amp;rsquo;ve done to drive this and for everything I know you will do, dear reader.&lt;/p&gt;
+&lt;p&gt;Now then, I&amp;rsquo;m &lt;em&gt;technically&lt;/em&gt; on vacation so I&amp;rsquo;m going to make this a short-and-sweet installment. So, without further ado, let&amp;rsquo;s get to it. &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;In last week&amp;rsquo;s Spring Tips I looked the Spring Boot-based stack powering one of the world&amp;rsquo;s largest ecommerce engines, &lt;a href="https://spring.io/blog/2018/12/26/spring-tips-bootiful-alibaba"&gt;Alibaba&lt;/a&gt;. This video&amp;rsquo;s piqued a lot of people&amp;rsquo;s curiosity, so check it out!&lt;/li&gt;
+  &lt;li&gt;Last week&amp;rsquo;s installment of &amp;ldquo;This Week in Spring&amp;rdquo; was our annual roundup, &lt;a href="https://spring.io/blog/2018/12/25/this-year-in-spring-december-25th-2018"&gt;&lt;em&gt;This Year in Spring&lt;/em&gt;&lt;/a&gt;, which I invite you to review.&lt;/li&gt;
+  &lt;li&gt;Check out this podcast in which Pivotal SVP &lt;a href="http://twitter.com/WattersJames"&gt;James Watters&lt;/a&gt; talks about &lt;a href="https://twitter.com/tfir_io/status/1076936336064548864?s=12"&gt;his thesis for enterprise Kubernetes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/pczarkowski/status/1078039174345838593?s=12"&gt;The future of Kubernetes is Virtual Machines (not Containers)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;May I humbly recommend this &lt;a href="https://twitter.com/springcentral/status/1078256029727625216"&gt;Oracle Magazine piece on writing reactive Spring applications&lt;/a&gt; that I wrote a while back? It&amp;rsquo;s an oldie-but-a-goodie.&lt;/li&gt;
+  &lt;li&gt;This is an interesting StackOverflow thread on what the differences between Spring Data JPA and Hibernate are. If I&amp;rsquo;m honest, I didn&amp;rsquo;t realize anyone was confused about this. &lt;a href="https://twitter.com/SpringData/status/1077655969411280896"&gt;Read this for insight on that point and more&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;This is an interesting piece on &lt;a href="https://rieckpil.de/howto-dynamic-sql-querying-pagination-with-querydsl-and-spring-data-jpa/"&gt;dynamic pagination with QueryDSL and Spring Data &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Doing things with large heaps? &lt;a href="https://www.opsian.com/blog/javas-new-zgc-is-very-exciting/"&gt;You might want to investigate the ZGC&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I liked this Reddit thread wherein people talk &lt;a href="https://www.reddit.com/r/java/comments/a4c363/how_do_you_use_spring_at_your_workplace/"&gt;about their usecases for Spring in their organizations&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Nice post on the Ippon Tech blog on improving &lt;a href="https://blog.ippon.tech/boost-the-performance-of-your-spring-data-jpa-application/"&gt;the performance of your Spring Data JPA application&lt;/a&gt; - another oldie-but-a-goodie.&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Tips: Bootiful Alibaba</title>
+    <link rel="alternate" href="https://spring.io/blog/2018/12/26/spring-tips-bootiful-alibaba" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2018-12-25:3511</id>
+    <updated>2018-12-26T00:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi Spring fans! In this installment of Spring Tips we look at the Spring Cloud integrations for some of Alibaba&amp;rsquo;s open source infrastructure, namely Nacos and Sentinel, and then we look at the Spring Cloud Alibaba Alibaba Cloud integrations for the Alibaba public cloud.&lt;/p&gt;
+&lt;p&gt;speaker: &lt;a href="http://twitter.com/Starbuxman"&gt;Josh Long&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/B60y65wexgI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</content>
+  </entry>
+  <entry>
+    <title>This Year in Spring - December 25th, 2018</title>
+    <link rel="alternate" href="https://spring.io/blog/2018/12/25/this-year-in-spring-december-25th-2018" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2018-12-25:3512</id>
+    <updated>2018-12-25T05:32:09Z</updated>
+    <content type="html">&lt;p&gt;Hi Spring fans! And welcome to another, very special installment of &lt;em&gt;This Week in Spring&lt;/em&gt; where we look not only at the last week&amp;rsquo;s news but also the highlights of the year behind us. 2018 was one of incredible turmult on the technology landscape, one that the Spring community has been able to deftly navigate. In this special year-end wrapup we&amp;rsquo;ll do what we always do - look at the latest and greatest in the ecosystem, but we&amp;rsquo;ll &lt;em&gt;also&lt;/em&gt; revisit the things that I, your friendly neighborhood @starbuxman, feel most positively impacted the Spring developer in 2018. &lt;/p&gt;
+&lt;p&gt;First, of course, let me get the obvious out of the way. As this is published it is Christmas day, the 25th of December. So, if you celebrate: Merry Christmas! &lt;/p&gt;
+&lt;p&gt;Now, let&amp;rsquo;s get through our usual weekly roundup - and there&amp;rsquo;s tons to look at! - then we&amp;rsquo;ll review the year in Spring.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;I&amp;rsquo;ve got a new &lt;a href="https://twitter.com/BootifulPodcast"&gt;&lt;em&gt;Bootiful Podcast&lt;/em&gt;&lt;/a&gt;! Subscribe on &lt;a href="https://soundcloud.com/a-bootiful-podcast"&gt;SoundCloud&lt;/a&gt; or on &lt;a href="https://itunes.apple.com/us/podcast/a-bootiful-podcast/id1438691771?mt=2"&gt;iTunes&lt;/a&gt;. The podcast is a discussion of all the latest and greatest in the Spring ecosystem and beyond through the lens of those who make it wonderful. If you want to join in the discussion, then please follow us on &lt;a href="http://twitter.com/BootifulPodcast"&gt;Twitter (@BootifulPodcast)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/12/24/spring-session-for-apache-geode-pivotal-gemfire-2-1-2-release"&gt;Spring Session for Apache Geode/Pivotal GemFire 2.1.2.RELEASE&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/12/21/spring-cloud-open-service-broker-3-0-0-m3-released"&gt;Spring Cloud Open Service Broker 3.0.0.M3 Released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/12/21/spring-cloud-open-service-broker-2-1-0-released"&gt;Spring Cloud Open Service Broker 2.1.0 Released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/12/21/spring-cloud-data-flow-and-skipper-2-0-m1-released"&gt;Spring Cloud Data Flow and Skipper 2.0 M1 Released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/12/21/spring-cloud-for-alibaba-0-2-1-released"&gt;Spring Cloud for Alibaba 0.2.1 released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/12/21/spring-cloud-greenwich-rc2-is-now-available"&gt;Spring Cloud Greenwich.RC2 is now available&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/12/21/spring-tools-4-1-0-released"&gt;Spring Tools 4.1.0 released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/12/21/spring-tool-suite-3-9-7-released"&gt;Spring Tool Suite 3.9.7 released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/12/20/spring-cloud-task-2-1-0-m2-is-now-available"&gt;Spring Cloud Task 2.1.0.M2 is now available&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Check out the &lt;a href="https://content.pivotal.io/blog/software-trends-for-2019"&gt;2019 Software Trends&lt;/a&gt; review from the Pivotal blog&lt;/li&gt;
+  &lt;li&gt;Hi Spring fans! In last week&amp;rsquo;s installment of &lt;a href="http://Twitter.com/SpringTipsLive"&gt;&lt;em&gt;Spring Tips&lt;/em&gt;&lt;/a&gt; we looked at &lt;a href="https://spring.io/blog/2018/12/19/spring-tips-reactive-sql-data-access-with-spring-data-r2dbc"&gt;Reactive SQL Data Access with Spring Data R2DBC&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;JUnit 5.4 M1 is almost &lt;a href="https://github.com/junit-team/junit5/milestone/29"&gt;here&lt;/a&gt;. Check out all the new features.&lt;/li&gt;
+  &lt;li&gt;Check out these very promising first &lt;a href="https://twitter.com/springcloud/status/1075542311055097856"&gt;few steps at an OAuth 2 token relay using Spring Cloud Gateway&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Want a very full example of how to describe and deploy a multi-module Kubernetes and Helm-packaged Spring Boot microservices system? Check out &lt;a href="https://github.com/kbastani/event-sourcing-microservices-example/blob/master/README.md#hyperscale-evaluation"&gt;Kenny Bastani&amp;rsquo;s distributed systm which deploys an HA cluster of Apache Kafka and Prometheus IO&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.infoq.com/articles/infoq-2018-retrospective"&gt;InfoQ¡¯s 2018, and What We Expect to See in 2019&lt;/a&gt; is a very good read indeed&lt;/li&gt;
+  &lt;li&gt;Want a digest, more or less, of what happened in the Spring ecosystem in November? Check out the December installment of &lt;a href="https://twitter.com/springcentral/status/1076192502116478976"&gt;&lt;em&gt;This Month in Spring&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Great discussion on the latest Screaming in the Cloud podcast &lt;a href="https://www.screaminginthecloud.com/episodes/2018/12/19/episode-41-open-source-is-not-a-business-model"&gt;with Andrew Clay Shafer, whose insight I always find valuable. The points made on what is driving bad decisions in enterprise IT are right on the mark. &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;A nice video on &lt;a href="https://www.youtube.com/watch?v=5rqlqon8xko&amp;feature=youtu.be"&gt;Many-to-Many Relationships with Spring Data JDBC&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.eclipse.org/eclipseide/2018-12/"&gt;Eclipse IDE 2018-12 has been released&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This year was an interesting year, one that saw existing practices refined in remarkable new ways. Here are the things I&amp;rsquo;ll remember from the year that was 2018.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Reactive Programming&lt;/strong&gt; We touch on specific aspects of this in other items on this list, but 2018 was if nothing else the year of reactive. In 2018 we delivered the GA versions of all of our reactive integrations, where it makes sense. 2018 saw us release, among other things, Spring Boot 2 and Spring Cloud Finchley which aggregate other projects like Spring Data Kay, Spring Security 5 and of course Spring Framework 5. These releases brought parity, where appropriate, to existing usecases in the blocking and synchronous world. It was also the year that saw us begin the work of providing options that are reactive-only; things that go beyond what was possible ad that are better for their basis on reactive programming, like R2DBC and RSocket.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;RSocket&lt;/strong&gt; Systems integration is hard. Integration is hard. HTTP is a strong protocol for document retreival, but it lacks application-level semantics that each developer must re-imagine on top of the HTTP verbs (REST). It is geared towards request-response architectures but lacks the ability to handle other message-exchange patterns like request-response, fire-and-forget, and streams (in either the request, the response or both). We know that the reactive streams specification provides a nice mental model for dealing with integration. In it, boundaries are assumed asynchronous and decoupled. Components support flow-control through the notion of &lt;em&gt;backpressure&lt;/em&gt;. Additionally, HTTP is text-encoded. Sure, you can conduct binary data, but you need to encode it as such. RSocket is a new, binary protocol with built-in support for the reactive streams specification from the minds of folks from Netflix and Facebook. It supports all the above message-exchanged patterns. As it&amp;rsquo;s a protocol, there are different client libraries supporting different platforms and languages including JavaScript, C++, and Java. The Java implementation is based, naturally, &lt;a href="http://Twitter.com/ProjectReactor"&gt;on Project Reactor&lt;/a&gt;. We announced formal support for RSocket in the upcoming Spring Framework 5.2 release train at our tentpole SpringOne Platform 2018 conference.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;R2DBC&lt;/strong&gt; A question we &lt;em&gt;always&lt;/em&gt; get when people look at reactive programming is &amp;ldquo;should I use JDBC?&amp;rdquo; or &amp;ldquo;Can I use JDBC?&amp;rdquo; Or, more bluntly, if there is no reactive JDBC option, &amp;ldquo;should I even bother with reactive programming?&amp;rdquo; And the answer was always, distressingly, fairly pessimistic: you&amp;rsquo;re not going to get the vaunted scale benefits of reactive programming if at any point in the stream you need to block to handle the scale. If you end up spinning up new threads to scale out the interaction with JDBC, then you&amp;rsquo;ve limited your systems scale potential. But this isn&amp;rsquo;t to say that there&amp;rsquo;s no way to achieve reactive SQL. It&amp;rsquo;s just not JDBC. There are options on the horizon that might make for a very interesting alternatives to JDBC for those database vendors whose drivers natively support asynchronous IO and reactive programming. One option is &lt;a href="http://github.com/R2DBC"&gt;R2DBC&lt;/a&gt; which we announced at our tentpole conference SpringOne Platform 2018. The integration is three tiered: first there&amp;rsquo;s the lower-level R2DBC SPI, on top of which are built database bindings. At this point there are bindings for H2, Microsoft SQL Server, and PostgreSQL. At this level you&amp;rsquo;ll find a &lt;code&gt;DatabaseClient&lt;/code&gt;, more or less equivalent to &lt;code&gt;JdbcTemplate&lt;/code&gt;, which makes using low-level R2DBC as convenient as it gets. Then, finally, at the top of the proverbial stack is Spring Data R2DBC. I look at all of this and more in &lt;a href="https://spring.io/blog/2018/12/19/spring-tips-reactive-sql-data-access-with-spring-data-r2dbc"&gt;last week&amp;rsquo;s &lt;em&gt;Spring Tips&lt;/em&gt; installment, too&lt;/a&gt;!&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;KNative&lt;/strong&gt; Serverless, a term that is in of itself almost meaningless these days, is all the rage. It describes this idea that we should let the platform handle increasingly more of the work of moving software into production. In a function-as-a-service platform the unit of currency is a function. It&amp;rsquo;s something that the platform invokes on a request. Everything else -routing, dispatch, scale up and out - is handled by the platform. The output of one function can be the input to another function. This composition means that interesting things can happen. Functions can be connected ad-hoc one to another to yeild results. In addition, functions can be attached to event sources, responding to events in the ecosystem of functions on whatever platform the functions happen to be running. Here, their prowess as integration code becomes evident. We at Pivotal announced &lt;a href="http://twitter.com/projectRiff"&gt;Project Riff&lt;/a&gt; in 2017. It was, as we originally envisaged it, a function-as-a-service platform built on Kubernetes. But this was only the first step. A few months after we introduced it at SpringOne Platform 2017 event, the Riff team started work with Google in &lt;a href="https://pivotal.io/knative"&gt;developing KNative&lt;/a&gt;. KNative is a further abstractification of Kubernetes. It provides built-in primitives that something like a Project Riff could conceivably be built on. Which is exactly what we did. In 2018, Google and Pivotal announced KNative at Google NEXT, and I became the first non-Google employee to do a KNative demo in my joint-presentation with Ray Tsang at Google Next. KNative is a big deal not just for Project Riff, but for the Kubernetes ecosystem in general and I&amp;rsquo;m excited to see where it goes.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Spring Cloud Supremacy&lt;/strong&gt; This year cemented Spring Cloud&amp;rsquo;s role in the distributed systems toolkit for developers. Spring Cloud core itself became reactive. It introduced new oft-asked for features like Spring Cloud Gateway. It also saw the release of GA versions of &lt;a href="https://www.youtube.com/watch?v=j-QYp8eYRe8"&gt;Spring Cloud for Google Cloud&lt;/a&gt;, and &lt;a href="https://www.youtube.com/watch?v=jRgZe7kWDnU"&gt;Spring Cloud for Microsoft Azure&lt;/a&gt;. It also saw the debut of Spring Cloud for Alibaba (that&amp;rsquo;s &lt;a href="https://www.youtube.com/watch?v=B60y65wexgI"&gt;tomorrow&amp;rsquo;s Spring Tips installment&lt;/a&gt;!) This year more than ever we saw large organizations make the move to microservices and even vanguard technology companies like Netflix, which were already integrating Spring Cloud, &lt;a href="https://medium.com/netflix-techblog/netflix-oss-and-spring-boot-coming-full-circle-4855947713a0"&gt;doubled-down on Spring Cloud this year&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;What a year indeed! And next year is &lt;em&gt;already&lt;/em&gt; looking to be bigger and better! That&amp;rsquo;s a wrap for 2019. We&amp;rsquo;ll see you next year, 1 January 2019. &lt;/p&gt;
+&lt;p&gt;Happy New Year from all of us to all of you!&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Spring Session for Apache Geode/Pivotal GemFire 2.1.2.RELEASE</title>
     <link rel="alternate" href="https://spring.io/blog/2018/12/24/spring-session-for-apache-geode-pivotal-gemfire-2-1-2-release" />
@@ -1721,126 +1817,5 @@ The other, non-functional types of &lt;code&gt;BeanDefinition&lt;/code&gt; will 
     <content type="html">&lt;p&gt;Hi Spring fans! In this installment of Spring Tips we look at how to use Spring to work with infrastructure on the Google Cloud Platform (GCP)&lt;/p&gt;
 &lt;p&gt;speaker: &lt;a href="http://twitter.com/starbuxman"&gt;Josh Long &lt;/a&gt;&lt;/p&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/j-QYp8eYRe8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring - December 11, 2018</title>
-    <link rel="alternate" href="https://spring.io/blog/2018/12/11/this-week-in-spring-december-11-2018" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2018-12-11:3495</id>
-    <updated>2018-12-11T23:18:39Z</updated>
-    <content type="html">&lt;p&gt;Hi Spring fans and welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! This week I&amp;rsquo;ve been in Seattle, WA and now I&amp;rsquo;m off to Toronto, Canada for the epic SpringOne Tour Toronto edition, the last SpringOne Tour for the year, too! (Can you believe we&amp;rsquo;re now less than 22 days from 2019? Time sure flies when you&amp;rsquo;re having fun!)&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;em&gt;Spring Tips&lt;/em&gt; is back! And what a season have we planned for you! Last week we introduced the first new video, this one looking &lt;a href="https://spring.io/blog/2018/12/05/spring-tips-bootiful-microsoft-azure"&gt;at the Spring support for Microsoft Azure&lt;/a&gt;. As always, you can see the whole playlist at &lt;a href="http://bit.ly/spring-tips-playlist"&gt;the Spring Tips YouTube Playlist&lt;/a&gt; and you should check back on this very blog every Wednesday for the next few months for new installments.&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/12/11/spring-data-moore-m1-released"&gt;Spring Data Moore M1 released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/12/10/spring-rest-docs-2-0-3-release"&gt;Spring REST Docs 2.0.3.RELEASE&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/12/10/spring-rest-docs-1-2-6-release"&gt;Spring REST Docs 1.2.6.RELEASE&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://content.pivotal.io/rabbitmq-best-practices"&gt;RabbitMQ Best Practices&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/12/07/reactive-programming-and-relational-databases"&gt;Reactive Programming and Relational Databases&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/12/06/spring-io-platform-cairo-sr6"&gt;Spring IO Platform Cairo-SR6&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/12/05/spring-tools-4-0-2-released"&gt;Spring Tools 4.0.2 released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;I liked this StackOverflow question and the subsequent answer from JUnit 5 and Spring Test Framework lead Sam Brannen on &lt;a href="https://stackoverflow.com/questions/53718071/ifprofilevalue-not-working-with-junit-5-springextension"&gt;how to get the effect of &lt;code&gt;@IfProfileValue&lt;/code&gt; in a JUnit 5-based Spring application test&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;This new change to &lt;a href="https://github.com/openzipkin/brave/pull/843"&gt;OpenZipkin supporting correlation of events in the Java Flight Recorder&lt;/a&gt; looks very interesting, wouldn&amp;rsquo;t you say? Any &amp;ldquo;thumbs up&amp;rdquo; are appreciated!&lt;/li&gt;
-  &lt;li&gt;Speaking of Zipkin, &lt;a href="https://twitter.com/zipkinproject/status/1072321353762521088?s=12"&gt;it just passed a big milestone: the 10,000th person to star Zipkin on Github!&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Check out this cool feature that makes your &lt;a href="https://github.com/spring-cloud/spring-cloud-gateway/issues/704"&gt;Spring Cloud Gateway filters aware of things like path variables&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;This looks like it could be an interesting video on &lt;a href="https://www.reddit.com/r/java/comments/a4avyk/spring_transaction_management_finally/?st=JPHUGL83&amp;sh=50cd6f91"&gt;Spring transaction management&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Baeldung has a nice post on &lt;a href="https://www.baeldung.com/spring-debugging-reactive-streams"&gt;debugging Reactive Streams in Spring 5 &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://opensource.googleblog.com/2018/12/knative-momentum-continues.html?m=1"&gt;Knative momentum continues, hits another adoption milestone&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Want to learn more about &lt;a href="https://twitter.com/springcentral/status/1072202987446067200"&gt;testing Spring applications? Check out my vJUG talk from a few months ago&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;The first commerically supported tracing tool to support Zipkin-formatted data with zero changes, natively, has just been announced: &lt;a href="https://www.instana.com/blog/integrating-jaeger-and-zipkin-tracers-into-instana/"&gt;Codecentric&amp;rsquo;s Instana&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Pivotal have a nice whitepaper on supersonic application development and &lt;a href="https://t.co/Gt5lamG6aH?ssr=true"&gt;delivery with Spring Boot and Pivotal Cloud Foundry&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Want to use RabbitMQ in a reactive context - and why wouldn&amp;rsquo;t you? Now you can! &lt;a href="https://groups.google.com/forum/m/#!msg/rabbitmq-users/FJ4UgMrr3-Q/xQDEGxlrCAAJ"&gt;Reactor RabbitMQ 1.0.0 GA is released!&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Not stricly related to Spring, but interesting nonetheless: &lt;a href="https://vladmihalcea.com/jdbc-driver-connection-url-strings/"&gt;a non-exhaustive but interesting list of JDBC Driver Connection URL strings&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Auth0 have a nice &lt;a href="https://auth0.com/blog/introduction-getting-started-with-spring-webflux-api/"&gt; Spring WebFlux tutorial&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Check out, and feedback, on the &lt;a href="https://twitter.com/sdeleuze/status/1071068575245438976?s=12"&gt;new Spring Data Kotlin extension&lt;/a&gt;!&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://techcrunch.com/2018/12/07/pivotal-announces-new-serverless-framework/amp/"&gt;Pivotal announces new serverless framework - Pivotal Function Service&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://dzone.com/articles/demystifying-tracking-event-processors-in-axon-fra"&gt;Demystifying Tracking Event Processors in Axon Framework&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Speaking of Axon, here&amp;rsquo;s a nice (albeit slightly older) Italian-language post on CQRS with Spring and Axon, or &lt;a href="http://www.mokabyte.it/2018/10/cqrsspringaxon-1/"&gt;CQRS con Spring e Axon&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;The design process is an iterative one. &amp;ldquo;The most deadly thing in software is the concept.. that you are going to specify what you are going to do, and then do it.&amp;rdquo; - that &lt;a href="https://twitter.com/archithinkery/status/1048295623055872002?s=12"&gt;from a &lt;em&gt;1968 NATO Software Engineering Conference&lt;/em&gt;!&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;This Stackoverflow question, &amp;ldquo;Why Java takes much more RAM than &lt;code&gt;-Xmx&lt;/code&gt;?&amp;rdquo;, &lt;a href="https://stackoverflow.com/questions/53451103/java-using-much-more-memory-than-heap-size-or-size-correctly-docker-memory-limi/53624438#53624438"&gt;is well worth a read&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://t.co/a8QKbLPwcN"&gt;Spring Tools 4.0.2 released, grab the latest&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;This project, demonstrating Spring Boot 2, GraphQL, Angular and more, &lt;a href="https://github.com/iguissouma/spring-graphql-apollo-angular"&gt;might be helpful if that&amp;rsquo;s a usecase you have&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Again, not strictly speaking related to Spring, but this is interesting. It&amp;rsquo;s a look &lt;a href="https://cl4es.github.io/2018/11/29/OpenJDK-Startup-From-8-Through-11.html"&gt;at Java startup time from Java 8 through Java 11&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://javers.org/features"&gt;JaVers 5.0.0 has been released. This major release makes JaVers fully compatible with Spring Boot 2.1 and Spring Framework 5.1&lt;/a&gt;. JaVers is a framework to support auditing objects.&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://github.com/grails/grails-core/releases/tag/v3.3.9"&gt;Grails 3.3.9 released with GORM 6.1.11, Spring Boot 1.5.18, Spring 4.3.21.RELEASE&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Data Moore M1 released</title>
-    <link rel="alternate" href="https://spring.io/blog/2018/12/11/spring-data-moore-m1-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Christoph Strobl</name>
-    </author>
-    <id>tag:spring.io,2018-12-11:3493</id>
-    <updated>2018-12-11T12:46:21Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the Spring Data team, I¡¯m pleased to announce the availability of the first milestone of the &lt;a href="https://github.com/spring-projects/spring-data-commons/wiki/Release-Train-Moore"&gt;Moore&lt;/a&gt; release train.&lt;/p&gt;
-&lt;p&gt;Notable changes include:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Support for &lt;a href="https://docs.spring.io/spring-data/commons/docs/2.2.0.M1/reference/html/#repositories.collections-and-iterables.streamable"&gt;Streamable&lt;/a&gt; wrappers as query method return types.&lt;/li&gt;
-  &lt;li&gt;Additional Kotlin extensions like &lt;code&gt;CrudRepository.findByIdOrNull(¡­)&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;A &lt;a href="https://docs.spring.io/spring-data/mongodb/docs/2.2.0.M1/reference/html/#mongo.query.kotlin-support"&gt;Kotlin query DSL&lt;/a&gt; for MongoDB (special thanks to &lt;a href="https://github.com/TjeuKayim"&gt;Tjeu Kayim&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;Gemfire &amp;amp; Apache Geode upgrades.&lt;/li&gt;
-  &lt;li&gt;Spatial type support for Neo4j.&lt;/li&gt;
-  &lt;li&gt;Elasticsearch &lt;a href="https://docs.spring.io/spring-data/elasticsearch/docs/3.2.0.M1/reference/html/#elasticsearch.clients"&gt;REST and (initial) reactive client&lt;/a&gt; support.&lt;/li&gt;
-  &lt;li&gt;Support for &lt;a href="https://docs.spring.io/spring-data/redis/docs/2.2.0.M1/reference/html/#redis.streams"&gt;Redis Streams&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;&amp;hellip;and tons of new stuff for Spring Data JDBC.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Please find a high-level overview of what has been added in our &lt;a href="https://github.com/spring-projects/spring-data-commons/wiki/Release-Train-Moore"&gt;release wiki&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;If you¡¯re using Spring Boot and want to give the milestone a try, upgrading to the release train is as easy as setting the Maven property &lt;code&gt;spring-data-releasetrain.version&lt;/code&gt; to &lt;code&gt;Moore-M1&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Just make sure to add the milestone repository to your Maven configuration:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint xml"&gt;&amp;lt;repository&amp;gt;&#xD;
-    &amp;lt;id&amp;gt;spring-libs-milestone&amp;lt;/id&amp;gt;&#xD;
-    &amp;lt;url&amp;gt;https://repo.spring.io/libs-milestone&amp;lt;/url&amp;gt;&#xD;
-&amp;lt;/repository&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;As always, we&amp;rsquo;re looking forward to your feedback!&lt;br/&gt;Don&amp;rsquo;t hesitate and get in touch &lt;a href="https://twitter.com/SpringData"&gt;@SpringData&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Last but not least the laundry list:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Spring Data Commons 2.2 M1 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-commons/2.2.0.M1"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/commons/docs/2.2.0.M1/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/commons/docs/2.2.0.M1/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/commons/docs/2.2.0.M1/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data JPA 2.2 M1 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-jpa/2.2.0.M1"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jpa/docs/2.2.0.M1/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jpa/docs/2.2.0.M1/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jpa/docs/2.2.0.M1/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data Neo4j 5.2 M1 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-neo4j/5.2.0.M1"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/neo4j/docs/5.2.0.M1/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/neo4j/docs/5.2.0.M1/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/neo4j/docs/5.2.0.M1/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data MongoDB 2.2 M1 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-mongodb/2.2.0.M1"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/mongodb/docs/2.2.0.M1/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/mongodb/docs/2.2.0.M1/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/mongodb/docs/2.2.0.M1/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data for Apache Cassandra 2.2 M1 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-cassandra/2.2.0.M1"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/cassandra/docs/2.2.0.M1/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/cassandra/docs/2.2.0.M1/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/cassandra/docs/2.2.0.M1/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data for Apache Solr 4.1 M1 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-solr/4.1.0.M1"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/solr/docs/4.1.0.M1/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/solr/docs/4.1.0.M1/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/solr/docs/4.1.0.M1/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data KeyValue 2.2 M1 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-keyvalue/2.2.0.M1"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/keyvalue/docs/2.2.0.M1/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/keyvalue/docs/2.2.0.M1/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/keyvalue/docs/2.2.0.M1/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data Gemfire 2.2 M1 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-gemfire/2.2.0.M1"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/gemfire/docs/2.2.0.M1/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/gemfire/docs/2.2.0.M1/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/gemfire/docs/2.2.0.M1/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data for Apache Geode 2.2 M1 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-geode/2.2.0.M1"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/geode/docs/2.2.0.M1/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/geode/docs/2.2.0.M1/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/geode/docs/2.2.0.M1/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data LDAP 2.2 M1 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-ldap/2.2.0.M1"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/ldap/docs/2.2.0.M1/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/ldap/docs/2.2.0.M1/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/ldap/docs/2.2.0.M1/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data Envers 2.2 M1 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-envers/2.2.0.M1"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/envers/docs/2.2.0.M1/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/envers/docs/2.2.0.M1/reference/html"&gt;Documentation&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data REST 3.2 M1 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-rest-webmvc/3.2.0.M1"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/rest/docs/3.2.0.M1/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/rest/docs/3.2.0.M1/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/rest/docs/3.2.0.M1/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data Redis 2.2 M1 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-redis/2.2.0.M1"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/redis/docs/2.2.0.M1/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/redis/docs/2.2.0.M1/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/redis/docs/2.2.0.M1/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data Elasticsearch 3.2 M1 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-elasticsearch/3.2.0.M1"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/3.2.0.M1/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/3.2.0.M1/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/3.2.0.M1/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data Couchbase 3.2 M1 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-couchbase/3.2.0.M1"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/3.2.0.M1/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/3.2.0.M1/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/3.2.0.M1/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data JDBC 1.1 M1 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-jdbc/1.1.0.M1"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jdbc/docs/1.1.0.M1/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jdbc/docs/1.1.0.M1/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jdbc/docs/1.1.0.M1/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring REST Docs 2.0.3.RELEASE</title>
-    <link rel="alternate" href="https://spring.io/blog/2018/12/10/spring-rest-docs-2-0-3-release" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Andy Wilkinson</name>
-    </author>
-    <id>tag:spring.io,2018-12-10:3492</id>
-    <updated>2018-12-10T14:24:26Z</updated>
-    <content type="html">&lt;p&gt;It&amp;rsquo;s my pleasure to announce that &lt;a href="https://spring.io/projects/spring-restdocs"&gt;Spring REST Docs&lt;/a&gt; 2.0.3.RELEASE is available from Maven Central, JCenter, and our &lt;a href="https://repo.spring.io/release"&gt;release repository&lt;/a&gt;. My thanks to everyone who contributed to this release by reporting bugs and opening pull requests.&lt;/p&gt;
-&lt;p&gt;This maintenance release includes a &lt;a href="https://github.com/spring-projects/spring-restdocs/milestone/26?closed=1"&gt;small number of fixes and documentation improvements&lt;/a&gt;. It is a recommend upgrade for all Spring REST Docs 2.x users. &lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-restdocs"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-restdocs/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-restdocs/docs/2.0.3.RELEASE"&gt;Documentation&lt;/a&gt; | &lt;a href="https://twitter.com/springrestdocs"&gt;Twitter&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-restdocs"&gt;Gitter&lt;/a&gt; | &lt;a href="https://stackoverflow.com/tags/spring-restdocs"&gt;Stack Overflow&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring REST Docs 1.2.6.RELEASE</title>
-    <link rel="alternate" href="https://spring.io/blog/2018/12/10/spring-rest-docs-1-2-6-release" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Andy Wilkinson</name>
-    </author>
-    <id>tag:spring.io,2018-12-10:3491</id>
-    <updated>2018-12-10T13:17:00Z</updated>
-    <content type="html">&lt;p&gt;It&amp;rsquo;s my pleasure to announce that &lt;a href="https://spring.io/projects/spring-restdocs"&gt;Spring REST Docs&lt;/a&gt; 1.2.6.RELEASE is available from Maven Central, JCenter, and our &lt;a href="https://repo.spring.io/release"&gt;release repository&lt;/a&gt;. My thanks to everyone who contributed to this release by reporting bugs and opening pull requests.&lt;/p&gt;
-&lt;p&gt;This maintenance release includes a &lt;a href="https://github.com/spring-projects/spring-restdocs/milestone/25?closed=1"&gt;handful of bug fixes and documentation improvements&lt;/a&gt;. It is a recommend upgrade for all Spring REST Docs 1.x users. &lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-restdocs"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-restdocs/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-restdocs/docs/1.2.6.RELEASE"&gt;Documentation&lt;/a&gt; | &lt;a href="https://twitter.com/springrestdocs"&gt;Twitter&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-restdocs"&gt;Gitter&lt;/a&gt; | &lt;a href="https://stackoverflow.com/tags/spring-restdocs"&gt;Stack Overflow&lt;/a&gt;&lt;/p&gt;</content>
   </entry>
 </feed>

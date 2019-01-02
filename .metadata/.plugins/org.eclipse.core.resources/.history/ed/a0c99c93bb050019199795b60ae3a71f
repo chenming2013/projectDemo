@@ -1,5 +1,0 @@
-package com.chenming.encode;
-
-public class TestBase64Encode {
-
-}

@@ -1,5 +1,5 @@
 #Tomcat publish data
-#Wed Dec 05 12:07:52 CST 2018
+#Wed Dec 26 09:00:15 CST 2018
 org.eclipse.jst.jee.server\:WXDemo02=F\:\\chenming\\APP\\Tomcat\\apache-tomcat-8.5.20\\webapps\\WXDemo02
 org.eclipse.jst.jee.server\:WXDemo01=F\:\\chenming\\APP\\Tomcat\\apache-tomcat-8.5.20\\webapps\\WXDemo01
 org.eclipse.jst.jee.server\:SiteMesh2Demo01=F\:\\chenming\\APP\\Tomcat\\apache-tomcat-8.5.20\\webapps\\SiteMesh2Demo01

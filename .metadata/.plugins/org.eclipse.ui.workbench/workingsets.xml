@@ -2,9 +2,6 @@
 <workingSetManager>
 <workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1519690119899_3" label="testProject" name="testProject">
 <item elementID="=test" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=testHibernate" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=testStruts2" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=testPOI" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=testWeb" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
 <workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1519690230099_5" label="RealProject" name="RealProject"/>

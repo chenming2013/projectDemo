@@ -17,7 +17,7 @@
 	<classpathentry kind="lib" path="lib/spring-expression-4.3.4.RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/spring-instrument-4.3.4.RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/spring-instrument-tomcat-4.3.4.RELEASE.jar"/>
-	<classpathentry kind="lib" path="lib/spring-jdbc-4.3.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-jdbc-4.3.4.RELEASE.jar" sourcepath="F:/chenming/JAR/Spring_jar/spring-framework-4.3.9.RELEASE/libs/spring-jdbc-4.3.9.RELEASE-sources.jar"/>
 	<classpathentry kind="lib" path="lib/spring-jms-4.3.4.RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/spring-messaging-4.3.4.RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/spring-orm-4.3.4.RELEASE.jar"/>

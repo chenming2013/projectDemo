@@ -54,4 +54,6 @@ public class MD5Test {
 		 * 	byte为-112 转换为 16进制 就是 90
 		 */
 	}
+	
+	
 }

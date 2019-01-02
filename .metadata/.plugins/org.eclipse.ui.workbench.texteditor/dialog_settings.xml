@@ -6,12 +6,14 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="afterReturningAdvice6" key="selection"/>
+		<item value="random" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="random"/>
+			<item value="8080"/>
 			<item value="afterReturningAdvice6"/>
 			<item value="afterReturningAdvice2"/>
 			<item value="beforeAdvice2"/>
@@ -22,11 +24,9 @@
 			<item value="getRes"/>
 			<item value="getIn"/>
 			<item value="clazz"/>
-			<item value="8080"/>
 			<item value="privatePointcut1"/>
 			<item value="afterReturningAdvice"/>
 			<item value="doBusiness"/>
-			<item value="basic.basic_06_2_aop_advice.service"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>

@@ -1,5 +1,0 @@
-package basic.basic_07_1_jdbc_template.entity;
-
-public class User {
-
-}
