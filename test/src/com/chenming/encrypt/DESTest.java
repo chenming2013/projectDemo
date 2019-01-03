@@ -9,10 +9,12 @@ import java.util.Arrays;
 import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
 import javax.crypto.IllegalBlockSizeException;
+import javax.crypto.KeyGenerator;
 import javax.crypto.NoSuchPaddingException;
 import javax.crypto.SecretKey;
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESKeySpec;
+import javax.xml.bind.DatatypeConverter;
 import javax.xml.bind.annotation.adapters.HexBinaryAdapter;
 
 import org.junit.Test;
@@ -97,6 +99,74 @@ public class DESTest {
 		byte[] bytes = cipher.doFinal(new HexBinaryAdapter().unmarshal(data));
 		
 		System.out.println(new String(bytes));	//helloworld
+	}
+	
+	/**
+	 * DES加密的另一种方式
+	 */
+	@Test
+	public void encrpt2() throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, IllegalBlockSizeException, BadPaddingException {
+		//要加密的明文
+		String data = "helloworld";
+		
+		//1.构造密钥生成器
+		KeyGenerator keyGenerator = KeyGenerator.getInstance("DES");
+		
+		//2.初始化密钥生成器,生成56位的随机源
+		//注意: 这里一定要写56
+		keyGenerator.init(56, new SecureRandom(DES_KEY.getBytes()));
+		
+		//3.生成密钥
+		SecretKey secretKey = keyGenerator.generateKey();
+		
+		//4.根据指定DES算法生成密码器
+		Cipher cipher = Cipher.getInstance("DES");
+		
+		//5.初始化密码器
+		cipher.init(Cipher.ENCRYPT_MODE, secretKey,new SecureRandom());
+		
+		//6.加密
+		byte[] bytes = cipher.doFinal(data.getBytes());
+		
+		//7.byte数组转换成十六进制字符串
+		System.out.println(DatatypeConverter.printHexBinary(bytes));
+		//03471FF65FEEF8EDA97B16721D110BBE
+	}
+	
+	/**
+	 * DES加密的另一种方式
+	 * @throws NoSuchAlgorithmException 
+	 * @throws NoSuchPaddingException 
+	 * @throws InvalidKeyException 
+	 * @throws BadPaddingException 
+	 * @throws IllegalBlockSizeException 
+	 */
+	@Test
+	public void decrpt2() throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, IllegalBlockSizeException, BadPaddingException {
+		//要解密的密文
+		String data = "03471FF65FEEF8EDA97B16721D110BBE";
+		
+		//1.构造密钥生成器
+		KeyGenerator keyGenerator = KeyGenerator.getInstance("DES");
+		
+		//2.初始化密钥生成器,生成56位的随机源
+		keyGenerator.init(56, new SecureRandom(DES_KEY.getBytes()));
+		
+		//3.生成密钥
+		SecretKey secretKey = keyGenerator.generateKey();
+		
+		//4.根据指定DES算法生成密码器
+		Cipher cipher = Cipher.getInstance("DES");
+		
+		//5.初始化密码器
+		cipher.init(Cipher.DECRYPT_MODE, secretKey,new SecureRandom());
+		
+		//6.加密
+		byte[] bytes = cipher.doFinal(DatatypeConverter.parseHexBinary(data));
+		
+		//7.byte数组转换成十六进制字符串
+		System.out.println(new String(bytes));
+		//helloworld
 	}
 	
 }
