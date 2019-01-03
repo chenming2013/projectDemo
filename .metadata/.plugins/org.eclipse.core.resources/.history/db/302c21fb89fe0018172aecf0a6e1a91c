@@ -1,0 +1,23 @@
+package basic.basic_06_0_aop_proxyOfSpring.bean;
+
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Method;
+
+
+public class DynamicProxyHello implements InvocationHandler{
+
+	/**
+	 * 要处理的对象,也就是我们要在方法的前后加上业务逻辑的对象,如例子中的HelloImpl
+	 */
+	private Object delegate;
+	
+	
+	
+	
+	@Override
+	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

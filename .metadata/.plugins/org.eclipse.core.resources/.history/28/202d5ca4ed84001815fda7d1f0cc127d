@@ -1,0 +1,93 @@
+<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ include file="/WEB-INF/views/include/taglib.jsp"%>
+<c:set var="basepath" value="/admin/core/modules/edu/train/community/edu-resource-sharing"></c:set>
+<html>
+<head>
+<title></title>
+<meta name="decorator" content="default"/>
+<script type="text/javascript" src="/resources/plugins/spin/2.3.2/spin.min.js"></script>
+<script type="text/javascript" src="/resources/plugins/spin/2.3.2/jquery.spin.js"></script>
+<script type="text/javascript" src="/resources/plugins/seajs/2.2.3/sea.js"></script>
+<script type="text/javascript" src="/resources/project/seajs/config.js"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function() {	
+		$("#inputForm").validate();
+	});
+	
+</script>
+</head>
+<body>
+	<ul class="nav nav-tabs">
+		<li><a href="${basepath}/list.do">资料共享管理</a></li>
+		<li class="active"><a href="${basepath}/edit.do?id=${bean.id}">${empty bean.id ? '添加' : '修改'}</a></li>
+	</ul>
+	
+	<form:form id="inputForm" modelAttribute="bean" action="${basepath}/save${suffix}" method="post" class="form-horizontal">
+		<input type="hidden" name="id" value="${bean.id }" />
+		<tags:message content="${message}"/>
+		
+		<!-- 上传共享资料 -->
+		<div class="control-group">
+			<label class="control-label">上传共享资料: <div>(文件名请不要有空格、?、/等非法字符)</div></label>
+			<div class="controls">
+				<input type="hidden" id="fileUrl" name="fileUrl" value="${bean.fileUrl}" required="required" />
+				<tags:ckfinder input="fileUrl" type="files" uploadPath="/community/resource-sharing" selectMultiple="true" />
+                <span class="help-inline"></span>
+			</div>
+		</div>
+		
+		<!-- 共享资料类型(公共资料、班级资料) -->
+		<div class="control-group">
+			<label class="control-label">共享资料类型:</label>
+			<div class="controls">
+				<select name="materialShareType" id="materialShareTypes" class="required" required="required">
+					<!-- 从后台只传递 公共资料过来 -->
+					<c:if test="${empty bean.id }">
+						<option ${bean.materialShareType==item?"selected":"" } value="${materialShareType }" >${materialShareType.name}</option>
+					</c:if>
+					<c:if test="${!empty bean.id }">123
+						<c:forEach items="${materialShareTypes }" var="item">
+							<option ${bean.materialShareType==item?"selected":""}>${item.name}</option>
+						</c:forEach>
+					</c:if>
+				</select>
+			</div>
+		</div>
+		
+		<!-- 资料所属学校 -->
+		<c:if test="${empty bean.eduTeacher }">
+		<div class="control-group">
+			<label class="control-label"><font color="red">*</font>资料提交学校：</label>
+			<div class="controls">
+				<select name="eduSchool.id" id="schoolId" class="required">
+						<option value="">-- 请选择学校 --</option>
+						<c:forEach items="${eduSchoolList}" var="item">
+							<option ${item.id == bean.eduSchool.id? "selected":"" } value="${item.id}">${item.name}</option>
+						</c:forEach>
+				</select>
+			</div>
+		</div>
+		</c:if>
+		
+		<!-- 启用/禁用 -->
+		<div class="control-group">
+			<label class="control-label"><font color="red">*</font> 是否启用:</label>
+			<div class="controls">
+				<c:if test="${empty bean.id }">
+					<input type="radio" name="enableFlag" value="true" required="required" checked />启用
+					<input type="radio" name="enableFlag" value="false" required="required" />禁用
+				</c:if>
+				<c:if test="${!empty bean.id }">
+					<input type="radio" name="enableFlag" value="true" ${bean.enableFlag?"checked":"" } required="required" />启用
+					<input type="radio" name="enableFlag" value="false" ${!bean.enableFlag?"checked":"" } required="required" />禁用
+				</c:if>
+			</div>
+		</div>
+		<div class="form-actions">
+			<input id="btnSubmit" class="btn btn-primary" type="submit" value="保 存"/>&nbsp;
+			<input id="btnCancel" class="btn" type="button" value="返 回" onclick="history.go(-1)"/>
+		</div>
+	</form:form>
+</body>
+</html>

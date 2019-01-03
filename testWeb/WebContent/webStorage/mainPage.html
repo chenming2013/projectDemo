@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>测试空白文本节点</title>
+<meta charset="utf-8" />
+<style type="text/css">
+	body,ul{
+		padding:0px;
+		margin:0px;
+	}
+	#box{background-color: pink;}
+	.in{height: 30px;}
+</style>
+</head>
+<body>
+
+
+<!-- 原始页面 -->
+<div>改变输入框中的值，再点击按钮，会触发storage事件</div>
+<button id="btn">按钮</button>
+<input type="text"  id="test">
+<div id="result"></div>
+<script>
+btn.onclick = function(){
+    localStorage.setItem("key",test.value);
+}
+window.onstorage = function(e){
+    e = e || event;
+    result.innerHTML = 'key: ' + e.key + '<br>oldValue: ' + e.oldValue + '<br>newValue: ' + e.newValue + '<br>url: ' + e.url + '<br>storageArea: ' + e.storageArea;  
+}
+if(localStorage.getItem("key")){
+	console.log(localStorage.getItem("key"));
+}
+</script> 
+
+
+</body>
+</html>

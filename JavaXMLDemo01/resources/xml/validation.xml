@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE users SYSTEM "../dtd/validation.dtd">
+<users>
+	<user>
+		<name>cm</name>
+		<age>24</age>
+		<sex>male</sex>
+	</user>
+	<hello>123</hello>
+</users>

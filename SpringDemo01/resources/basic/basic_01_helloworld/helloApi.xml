@@ -2,8 +2,26 @@
 
 <beans xmlns="http://www.springframework.org/schema/beans"     
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"           
+<<<<<<< HEAD
     xsi:schemaLocation="http://www.springframework.org/schema/beans                             
                         http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+=======
+    xmlns:context="http://www.springframework.org/schema/context"   
+    xmlns:aop="http://www.springframework.org/schema/aop"       
+    xmlns:tx="http://www.springframework.org/schema/tx"         
+    xmlns:util="http://www.springframework.org/schema/util"         
+    xmlns:p="http://www.springframework.org/schema/p"               
+    xsi:schemaLocation="http://www.springframework.org/schema/beans                             
+                        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd        
+                        http://www.springframework.org/schema/context                           
+                        http://www.springframework.org/schema/context/spring-context-4.0.xsd    
+                        http://www.springframework.org/schema/aop                               
+                        http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+                        http://www.springframework.org/schema/tx                            
+                        http://www.springframework.org/schema/tx/spring-tx-4.0.xsd                      
+                        http://www.springframework.org/schema/util                          
+                        http://www.springframework.org/schema/util/spring-util-4.0.xsd">
+>>>>>>> 9a23723de0eac87773e4ba0adc56ee6ecbc22f3e
    
    <!-- id表示这个组件的名字,class表示组件类 -->
    <bean id="hello" class="basic.basic_01_helloworld.bean.HelloApiImpl"></bean> 		

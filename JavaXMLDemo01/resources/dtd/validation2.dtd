@@ -1,0 +1,6 @@
+<!ELEMENT users (user,hello)>
+<!ELEMENT user (name,age,sex)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT sex (#PCDATA)>
+<!ELEMENT hello (#PCDATA)>

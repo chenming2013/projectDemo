@@ -14,6 +14,10 @@ import basic.basic_02_1_getIOCContainer.bean.Hello;
 
 /**
  * 测试获取BeanFactory和ApplicationContext实例的方法
+<<<<<<< HEAD
+=======
+ * 	BeanFactory和ApplicationContext这两个接口的实例被称为Spring上下文
+>>>>>>> 9a23723de0eac87773e4ba0adc56ee6ecbc22f3e
  * @author 陈明
  * @date   2018年9月11日
  */

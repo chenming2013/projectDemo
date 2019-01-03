@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths>
+  <path value="F:/chenming/APP/Tomcat/apache-tomcat-8.5.20/lib/el-api.jar"/>
+  <path value="F:/chenming/APP/Tomcat/apache-tomcat-8.5.20/lib/jsp-api.jar"/>
+  <path value="F:/chenming/APP/Tomcat/apache-tomcat-8.5.20/lib/websocket-api.jar"/>
+  <path value="F:/chenming/APP/WorkSpace/SiteMesh2Demo01/WebContent/WEB-INF/lib/sitemesh-2.4.2.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-sitemesh-2.4.2.jar/meta-inf/sitemesh-decorator.tld" project="SiteMesh2Demo01"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-sitemesh-2.4.2.jar/meta-inf/sitemesh-page.tld" project="SiteMesh2Demo01"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="F:/chenming/APP/Tomcat/apache-tomcat-8.5.20/lib/catalina-ant.jar"/>
+  <path value="F:/chenming/APP/Tomcat/apache-tomcat-8.5.20/lib/jasper-el.jar"/>
+  <path value="F:/chenming/APP/Tomcat/apache-tomcat-8.5.20/lib/tomcat-api.jar"/>
+  <path value="F:/chenming/APP/Tomcat/apache-tomcat-8.5.20/lib/annotations-api.jar"/>
+  <path value="F:/chenming/APP/Tomcat/apache-tomcat-8.5.20/lib/catalina-storeconfig.jar"/>
+  <path value="F:/chenming/APP/Tomcat/apache-tomcat-8.5.20/lib/tomcat-websocket.jar"/>
+  <path value="F:/chenming/APP/Tomcat/apache-tomcat-8.5.20/lib/tomcat-jdbc.jar"/>
+  <path value="F:/chenming/APP/Tomcat/apache-tomcat-8.5.20/lib/jaspic-api.jar"/>
+  <path value="F:/chenming/APP/Tomcat/apache-tomcat-8.5.20/lib/tomcat-util.jar"/>
+  <path value="F:/chenming/APP/Tomcat/apache-tomcat-8.5.20/lib/tomcat-dbcp.jar"/>
+  <path value="F:/chenming/APP/Tomcat/apache-tomcat-8.5.20/lib/tomcat-jni.jar"/>
+  <path value="F:/chenming/APP/Tomcat/apache-tomcat-8.5.20/lib/ecj-4.6.3.jar"/>
+  <path value="F:/chenming/APP/Tomcat/apache-tomcat-8.5.20/lib/catalina.jar"/>
+  <path value="F:/chenming/APP/Tomcat/apache-tomcat-8.5.20/lib/tomcat-i18n-fr.jar"/>
+  <path value="F:/chenming/APP/Tomcat/apache-tomcat-8.5.20/lib/catalina-tribes.jar"/>
+  <path value="F:/chenming/APP/Tomcat/apache-tomcat-8.5.20/lib/catalina-ha.jar"/>
+  <path value="F:/chenming/APP/Tomcat/apache-tomcat-8.5.20/lib/jasper.jar"/>
+  <path value="F:/chenming/APP/Tomcat/apache-tomcat-8.5.20/lib/tomcat-coyote.jar"/>
+  <path value="F:/chenming/APP/Tomcat/apache-tomcat-8.5.20/lib/tomcat-i18n-ja.jar"/>
+  <path value="F:/chenming/APP/Tomcat/apache-tomcat-8.5.20/lib/servlet-api.jar"/>
+  <path value="F:/chenming/APP/Tomcat/apache-tomcat-8.5.20/lib/tomcat-i18n-es.jar"/>
+  <path value="F:/chenming/APP/Tomcat/apache-tomcat-8.5.20/lib/tomcat-util-scan.jar"/>
+ </paths>
+ <validation>
+  <el/>
+ </validation>
+ <aliases/>
+ <includes/>
+ <uris/>
+</kb-project>

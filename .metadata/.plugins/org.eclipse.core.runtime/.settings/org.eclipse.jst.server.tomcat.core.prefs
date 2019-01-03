@@ -1,2 +1,6 @@
 eclipse.preferences.version=1
+<<<<<<< HEAD
 locationorg.eclipse.jst.server.tomcat.runtime.70=F\:/Tomcat/apache-tomcat-7.0.72
+=======
+locationorg.eclipse.jst.server.tomcat.runtime.85=F\:/chenming/APP/Tomcat/apache-tomcat-8.5.20
+>>>>>>> 9a23723de0eac87773e4ba0adc56ee6ecbc22f3e

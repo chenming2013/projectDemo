@@ -80,12 +80,23 @@ public class AutowireBeanTest {
      */
     @Test
     public void testAutowireByConstructor() throws IOException {
+<<<<<<< HEAD
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("basic/basic_03_5_autowireBean/autowire-byConstructor.xml");
+=======
+    	ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("basic/basic_03_5_autowireBean/autowire-byConstructor.xml");
+>>>>>>> 9a23723de0eac87773e4ba0adc56ee6ecbc22f3e
         HelloApi helloApi = context.getBean("bean", HelloApi.class);
         helloApi.sayHello();
     }
 
     
+<<<<<<< HEAD
+=======
+    /**
+     * 自动检测装配
+     * @throws IOException
+     */
+>>>>>>> 9a23723de0eac87773e4ba0adc56ee6ecbc22f3e
     @Test
     public void testAutowireByAutoDetect() throws IOException {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("basic/basic_03_5_autowireBean/autowire-autodetect.xml");

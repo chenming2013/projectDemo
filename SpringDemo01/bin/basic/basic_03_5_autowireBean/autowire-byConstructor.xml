@@ -13,10 +13,20 @@
     	自动装配的时候,如果有多个Bean匹配,并且在匹配的Bean上没有设置发现 primary="true" 或者 autowire-candidate="false",
     	那么就会抛出异常来表明有多个Bean发现,但不知道使用哪个。
     -->       
+<<<<<<< HEAD
     <bean class="basic.basic_03_5_autowireBean.bean.HelloImpl"/>
     <!-- 自动装配候选者中的首选Bean-->
     <bean class="basic.basic_03_5_autowireBean.bean.HelloImpl" primary="true"/>
     <!-- 因为有空构造器将使用byType方式 -->
+=======
+    <bean id="hello1" class="basic.basic_03_5_autowireBean.bean.HelloImpl"/>
+    <!-- 自动装配候选者中的首选Bean-->
+    <bean id="hello2" class="basic.basic_03_5_autowireBean.bean.HelloImpl"/>
+    <!-- 
+    	构造器注入要分几种情况:
+    	1.
+     -->
+>>>>>>> 9a23723de0eac87773e4ba0adc56ee6ecbc22f3e
     <bean id="bean" 
           class="basic.basic_03_5_autowireBean.bean.HelloApiDecorator" 
           autowire="constructor"/>

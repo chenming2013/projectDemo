@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+<<<<<<< HEAD
 	<list key="J2EE_IMPORT_null">
 		<item value="C:\Users\Lenovo\Desktop\temp\sitemesh-example.war"/>
 		<item value="F:\JAR\Struts_JAR\struts-2.5.10\apps\struts2-showcase.war"/>
@@ -7,5 +8,15 @@
 	<list key="MRU_RUNTIME_STORE">
 		<item value="Apache Tomcat v7.0"/>
 		<item value="NULL_RUNTIME"/>
+=======
+	<item value="false" key="J2EE_EXPORT_OVERWRITE"/>
+	<item value="true" key="J2EE_EXPORT_SOURCE"/>
+	<list key="MRU_RUNTIME_STORE">
+		<item value="Apache Tomcat v8.5"/>
+	</list>
+	<list key="J2EE_EXPORT_JST_WEB">
+		<item value="D:\Desktop\testWeb.war"/>
+		<item value="D:\Desktop\springMVCDemo1.war"/>
+>>>>>>> 9a23723de0eac87773e4ba0adc56ee6ecbc22f3e
 	</list>
 </section>

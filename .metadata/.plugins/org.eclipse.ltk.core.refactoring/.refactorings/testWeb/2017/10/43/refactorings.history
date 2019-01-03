@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.chenming&apos; to &apos;com.chenming.web.servlet&apos;&#x0D;&#x0A;- Original project: &apos;testWeb&apos;&#x0D;&#x0A;- Original element: &apos;testWeb/src/com.chenming&apos;&#x0D;&#x0A;- Renamed element: &apos;testWeb/src/com.chenming.web.servlet&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.chenming&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.chenming" name="com.chenming.web.servlet" qualified="false" references="true" stamp="1509010757499" textual="false" version="1.0"/>
+</session>

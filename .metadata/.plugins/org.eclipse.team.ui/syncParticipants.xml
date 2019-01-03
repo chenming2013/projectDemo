@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <syncparticipants>
+<<<<<<< HEAD
 <participant displayName="SVN (/com.newsilkroad.client-yyzj)" id="org.tigris.subversion.subclipse.participant" secondary_id="1512658714441">
 <data root="false">
 <org.eclipse.team.ui.TEAMSUBSRCIBERSETTINGS org.eclipse.team.ui.SCOPE_TYPE="ResourceScope">
 <org.eclipse.team.ui.TEAMSUBSRCIBER_REFRESHSCHEDULE org.eclipse.team.ui.CTX_REFRESHSCHEDULE_ENABLED="false" org.eclipse.team.ui.CTX_REFRESHSCHEDULE_INTERVAL="3600" org.eclipse.team.ui.CTX_REFRESHSCHEDULE_RUNONCE="false"/>
 <resource_scope_roots resource_scope_root_resource="/com.newsilkroad.client-yyzj"/>
+=======
+<participant displayName="SVN ()" id="org.tigris.subversion.subclipse.participant" secondary_id="1532135849998">
+<data root="false">
+<org.eclipse.team.ui.TEAMSUBSRCIBERSETTINGS org.eclipse.team.ui.SCOPE_TYPE="ResourceScope">
+<org.eclipse.team.ui.TEAMSUBSRCIBER_REFRESHSCHEDULE org.eclipse.team.ui.CTX_REFRESHSCHEDULE_ENABLED="false" org.eclipse.team.ui.CTX_REFRESHSCHEDULE_INTERVAL="3600" org.eclipse.team.ui.CTX_REFRESHSCHEDULE_RUNONCE="false"/>
+>>>>>>> 9a23723de0eac87773e4ba0adc56ee6ecbc22f3e
 </org.eclipse.team.ui.TEAMSUBSRCIBERSETTINGS>
 </data>
 </participant>

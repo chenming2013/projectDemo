@@ -1,0 +1,10 @@
+package com.chenming.test;
+
+public class ToUpperCase
+{
+	public static void main(String[] args)
+	{
+		String str = "";
+		String[] strArray = str.split("/");
+	}
+}

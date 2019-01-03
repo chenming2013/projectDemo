@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+<<<<<<< HEAD
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="resources"/>
@@ -12,6 +13,26 @@
 	<classpathentry kind="lib" path="lib/spring-instrument-4.3.4.RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/spring-instrument-tomcat-4.3.4.RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/spring-jdbc-4.3.4.RELEASE.jar"/>
+=======
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/aopalliance-alpha1.jar"/>
+	<classpathentry kind="lib" path="lib/aspectj-1.9.1.jar"/>
+	<classpathentry kind="lib" path="lib/aspectjweaver-1.9.2.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-api-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/junit-4.10.jar"/>
+	<classpathentry kind="lib" path="lib/spring-aop-4.3.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-aspects-4.3.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-beans-4.3.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-context-4.3.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-context-support-4.3.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-core-4.3.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-expression-4.3.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-instrument-4.3.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-instrument-tomcat-4.3.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-jdbc-4.3.4.RELEASE.jar" sourcepath="F:/chenming/JAR/Spring_jar/spring-framework-4.3.9.RELEASE/libs/spring-jdbc-4.3.9.RELEASE-sources.jar"/>
+>>>>>>> 9a23723de0eac87773e4ba0adc56ee6ecbc22f3e
 	<classpathentry kind="lib" path="lib/spring-jms-4.3.4.RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/spring-messaging-4.3.4.RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/spring-orm-4.3.4.RELEASE.jar"/>
@@ -22,8 +43,12 @@
 	<classpathentry kind="lib" path="lib/spring-webmvc-4.3.4.RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/spring-webmvc-portlet-4.3.4.RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/spring-websocket-4.3.4.RELEASE.jar"/>
+<<<<<<< HEAD
 	<classpathentry kind="lib" path="lib/junit-4.10.jar"/>
 	<classpathentry kind="lib" path="lib/commons-logging-api-1.1.jar"/>
 	<classpathentry kind="lib" path="lib/spring-expression-4.3.4.RELEASE.jar"/>
+=======
+	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.38-bin.jar"/>
+>>>>>>> 9a23723de0eac87773e4ba0adc56ee6ecbc22f3e
 	<classpathentry kind="output" path="bin"/>
 </classpath>

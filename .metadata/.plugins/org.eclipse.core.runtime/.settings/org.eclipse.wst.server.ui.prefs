@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 create-server=true
+=======
+>>>>>>> 9a23723de0eac87773e4ba0adc56ee6ecbc22f3e
 do-not-show-remove-module-warning=true
 eclipse.preferences.version=1
 show-on-activity=false

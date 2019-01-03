@@ -50,7 +50,11 @@
 	
 	
 	<!-- 通过Setter注入 -->
+<<<<<<< HEAD
 	<bean id="dependencyInjectBySetter" class="basic.basic_03_1_dependencyInjectTest.bean.HelloImpl">
+=======
+	<bean id="dependencyInjectBySetter" class="basic.basic_03_1_dependencyInjectTest.bean.HelloImpl" lazy-init="true">
+>>>>>>> 9a23723de0eac87773e4ba0adc56ee6ecbc22f3e
 	   <property name="id" value="2013"></property>
 	   <property name="name" value="chenming"></property>
 	   <property name="age" value="23"></property>

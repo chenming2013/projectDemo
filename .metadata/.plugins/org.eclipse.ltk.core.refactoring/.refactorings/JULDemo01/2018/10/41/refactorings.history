@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <session version="1.0">
+<<<<<<< HEAD
 <refactoring accessors="true" comment="Delete element from project &apos;JULDemo01&apos;&#x0D;&#x0A;- Original project: &apos;JULDemo01&apos;&#x0D;&#x0A;- Original element: &apos;JUL.package-info.java&apos;" description="Delete element" element1="/src&lt;JUL{package-info.java" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1539006656735" subPackages="false" version="1.0"/>
+=======
+<refactoring comment="Rename type &apos;JUL.JUL_05_DefineOPropertiesFileTest&apos; to &apos;JUL_05_DefinePropertiesFileTest&apos;&#x0D;&#x0A;- Original project: &apos;JULDemo01&apos;&#x0D;&#x0A;- Original element: &apos;JUL.JUL_05_DefineOPropertiesFileTest&apos;&#x0D;&#x0A;- Renamed element: &apos;JUL.JUL_05_DefinePropertiesFileTest&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;JUL_05_DefineOPropertiesFileTest&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;JUL{JUL_05_DefineOPropertiesFileTest.java[JUL_05_DefineOPropertiesFileTest" matchStrategy="1" name="JUL_05_DefinePropertiesFileTest" qualified="false" references="true" similarDeclarations="false" stamp="1538979403393" textual="false" version="1.0"/>
+>>>>>>> 9a23723de0eac87773e4ba0adc56ee6ecbc22f3e
 </session>

@@ -2,6 +2,7 @@
 
 <beans xmlns="http://www.springframework.org/schema/beans"     
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"           
+<<<<<<< HEAD
     xmlns:context="http://www.springframework.org/schema/context"   
     xmlns:aop="http://www.springframework.org/schema/aop"       
     xmlns:tx="http://www.springframework.org/schema/tx"         
@@ -17,6 +18,10 @@
                         http://www.springframework.org/schema/tx/spring-tx-4.0.xsd                      
                         http://www.springframework.org/schema/util                          
                         http://www.springframework.org/schema/util/spring-util-4.0.xsd">
+=======
+    xsi:schemaLocation="http://www.springframework.org/schema/beans                             
+                        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+>>>>>>> 9a23723de0eac87773e4ba0adc56ee6ecbc22f3e
 	
 	
 	<!-- 测试 byName 方式自动装配 -->
@@ -31,10 +36,17 @@
 			2)对于HelloApiDecorator的message属性,也是执行同样的操作。
 	-->
 	
+<<<<<<< HEAD
 	<bean id="helloApi" class="basic.basic_04_2_autowireBean.bean.HelloImpl"/>
     <!-- 通过构造器注入 -->
     <bean id="bean" 
           class="basic.basic_04_2_autowireBean.bean.HelloApiDecorator" 
+=======
+	<bean id="helloApi" class="basic.basic_03_5_autowireBean.bean.HelloImpl"/>
+    <!-- 通过Setter注入: 首先调用HelloApiDecorator的无参构造函数来实例化HelloApiDecorator对象,然后使用Setter方式进行装配 -->
+    <bean id="bean" 
+          class="basic.basic_03_5_autowireBean.bean.HelloApiDecorator" 
+>>>>>>> 9a23723de0eac87773e4ba0adc56ee6ecbc22f3e
           autowire="byName"/>
 	
 </beans>

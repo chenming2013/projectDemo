@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.chenming.JUL.JUL_02_ExportLogger&apos; to &apos;JUL_02_ExportLoggerTest&apos;&#x0D;&#x0A;- Original project: &apos;JULDemo01&apos;&#x0D;&#x0A;- Original element: &apos;com.chenming.JUL.JUL_02_ExportLogger&apos;&#x0D;&#x0A;- Renamed element: &apos;com.chenming.JUL.JUL_02_ExportLoggerTest&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;JUL_02_ExportLogger&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.chenming.JUL{JUL_02_ExportLogger.java[JUL_02_ExportLogger" matchStrategy="1" name="JUL_02_ExportLoggerTest" qualified="false" references="true" similarDeclarations="false" stamp="1535453019487" textual="false" version="1.0"/>
+</session>

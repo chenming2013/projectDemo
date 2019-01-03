@@ -26,7 +26,11 @@
    		<constructor-arg index="0" value="2013"></constructor-arg>
    	</bean>
 	<!-- 使用三个参数的构造器 -->
+<<<<<<< HEAD
 	<bean id="bean3" class="basic.basic_02_3_instanceBean.bean.HelloImpl">
+=======
+	<bean id="bean3" class="basic.basic_02_3_instanceBean.bean.HelloImpl" lazy-init="true">
+>>>>>>> 9a23723de0eac87773e4ba0adc56ee6ecbc22f3e
 		<constructor-arg index="0" value="2013"></constructor-arg>
 		<constructor-arg index="1" value="chenming"></constructor-arg>
 		<constructor-arg index="2" value="24"></constructor-arg>
@@ -43,7 +47,11 @@
 
 	<!-- 使用实例工厂方法 -->
 	<bean id="instanceFactoryBean" class="basic.basic_02_3_instanceBean.bean.HelloInstanceFactory"></bean>
+<<<<<<< HEAD
 	<bean id="bean5" factory-bean="instanceFactoryBean" factory-method="newInstance">
+=======
+	<bean id="bean5" factory-bean="instanceFactoryBean" factory-method="newInstance" lazy-init="true">
+>>>>>>> 9a23723de0eac87773e4ba0adc56ee6ecbc22f3e
 		<constructor-arg index="0" value="2013" />
 		<constructor-arg index="1" value="chenming" />
 		<constructor-arg index="2" value="24" />

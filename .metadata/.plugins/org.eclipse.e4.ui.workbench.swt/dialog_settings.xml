@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="ShowViewDialog">
 		<item value="345" key="DIALOG_WIDTH"/>
+<<<<<<< HEAD
 		<item value="1|微软雅黑|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|微软雅黑" key="DIALOG_FONT_NAME"/>
 		<item value="org.eclipse.wst.server.ui.ServersView" key="ShowViewDialog.STORE_SELECTED_VIEW_ID"/>
 		<item value="451" key="DIALOG_HEIGHT"/>
@@ -9,6 +10,15 @@
 		<item value="72" key="DIALOG_Y_ORIGIN"/>
 		<list key="ShowViewDialog.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="Server"/>
+=======
+		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
+		<item value="org.eclipse.pde.ui.ImageBrowserView" key="ShowViewDialog.STORE_SELECTED_VIEW_ID"/>
+		<item value="452" key="DIALOG_HEIGHT"/>
+		<item value="796" key="DIALOG_X_ORIGIN"/>
+		<item value="227" key="DIALOG_Y_ORIGIN"/>
+		<list key="ShowViewDialog.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="Plug-in Development"/>
+>>>>>>> 9a23723de0eac87773e4ba0adc56ee6ecbc22f3e
 		</list>
 	</section>
 </section>

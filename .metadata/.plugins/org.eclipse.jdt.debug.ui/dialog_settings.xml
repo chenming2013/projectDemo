@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item value="91" key="org.eclipse.jdt.debug.ui.jre_preference_page_context.columnWidth2"/>
+<<<<<<< HEAD
 	<item value="2" key="org.eclipse.jdt.debug.ui.jre_preference_page_context.sortColumn"/>
 	<item value="179" key="org.eclipse.jdt.debug.ui.jre_preference_page_context.columnWidth1"/>
 	<item value="F:\Java\jdk\jdk1.8.0_144" key="LAST_PATH_SETTING"/>
@@ -23,5 +24,17 @@
 			<item value="391" key="DIALOG_X_ORIGIN"/>
 			<item value="39" key="DIALOG_Y_ORIGIN"/>
 		</section>
+=======
+	<item value="1" key="org.eclipse.jdt.debug.ui.jre_preference_page_context.sortColumn"/>
+	<item value="275" key="org.eclipse.jdt.debug.ui.jre_preference_page_context.columnWidth1"/>
+	<item value="218" key="org.eclipse.jdt.debug.ui.jre_preference_page_context.columnWidth0"/>
+	<section name="conditionHistory">
+	</section>
+	<section name="org.eclipse.jdt.internal.debug.ui.ExpressionInformationControlCreator$ExpressionInformationControl">
+		<item value="625" key="SashWeightTree"/>
+		<item value="374" key="SashWeightDetails"/>
+		<item value="614" key="WIDTH"/>
+		<item value="218" key="HEIGHT"/>
+>>>>>>> 9a23723de0eac87773e4ba0adc56ee6ecbc22f3e
 	</section>
 </section>

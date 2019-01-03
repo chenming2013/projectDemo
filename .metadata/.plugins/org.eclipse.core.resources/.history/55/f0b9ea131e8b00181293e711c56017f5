@@ -1,0 +1,17 @@
+package com.newsroad.core.project.edu.modules.train.front.controller.community;
+
+import javax.annotation.Resource;
+
+import com.newsroad.base.web.plugins.springmvc.BaseRequestMapping;
+import com.newsroad.core.project.edu.base.controller.ModuleMemberController;
+
+/**
+ * 收藏 前台控制器
+ * @author 陈明
+ */
+@BaseRequestMapping
+public class FrontEduStoreController extends ModuleMemberController{
+
+	@Resource
+	private EduStoreService storeService;
+}

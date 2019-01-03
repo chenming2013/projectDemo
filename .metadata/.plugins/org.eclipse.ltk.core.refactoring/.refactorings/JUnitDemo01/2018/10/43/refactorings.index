@@ -1,5 +1,41 @@
+<<<<<<< HEAD
 1540469708506	Delete element
 1540469712831	Delete element
 1540471504767	Copy package
 1540472484681	Rename type 'FixtureTest'
 1540472825982	Copy compilation unit
+=======
+1540350024272	Delete elements
+1540366926394	Delete element
+1540367066037	Delete element
+1540367218435	Delete element
+1540367477304	Copy package
+1540367497215	Rename type 'FixtureTest'
+1540367898291	Copy package
+1540367908410	Rename package 'chenming.absolute.absolute_03_exceptin'
+1540367922072	Rename type 'IgnoreTest'
+1540370471121	Copy package
+1540370489543	Rename type 'ExceptionTest'
+1540374404791	Copy package
+1540374416954	Rename type 'TimeoutTest'
+1540375034668	Rename package 'chenming.absolute.absolute_05_runner'
+1540375051105	Rename type 'RunnerTest'
+1540448158681	Copy package
+1540448325978	Rename type 'ParameterizedTest'
+1540454293850	Copy package
+1540454302163	Delete elements
+1540454316632	Rename type 'SuiteTest'
+1540455742734	Copy compilation unit
+1540456168505	Copy compilation unit
+1540456546210	Copy compilation unit
+1540456607504	Rename type 'TheoryTest4'
+1540456623374	Rename type 'TheoryTest3'
+1540456632369	Rename type 'TheoryTest5'
+1540456843292	Copy compilation unit
+1540462595137	Copy package
+1540462603661	Delete elements
+1540462677545	Rename type 'A'
+1540462691840	Rename type 'B'
+1540463770743	Copy compilation unit
+1540548694974	Delete element
+>>>>>>> 9a23723de0eac87773e4ba0adc56ee6ecbc22f3e

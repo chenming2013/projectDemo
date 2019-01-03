@@ -1,2 +1,6 @@
 eclipse.preferences.version=1
+<<<<<<< HEAD
 org.eclipse.rse.preferences.order.connections=Lenovo-PC.Local
+=======
+org.eclipse.rse.preferences.order.connections=DESKTOP-KET5JLS.Local
+>>>>>>> 9a23723de0eac87773e4ba0adc56ee6ecbc22f3e

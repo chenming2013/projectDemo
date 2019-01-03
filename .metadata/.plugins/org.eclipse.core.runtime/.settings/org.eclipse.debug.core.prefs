@@ -1,2 +1,6 @@
 eclipse.preferences.version=1
+<<<<<<< HEAD
+=======
+org.eclipse.debug.core.PREF_BREAKPOINT_MANAGER_ENABLED_STATE=true
+>>>>>>> 9a23723de0eac87773e4ba0adc56ee6ecbc22f3e
 org.eclipse.debug.core.USE_STEP_FILTERS=true

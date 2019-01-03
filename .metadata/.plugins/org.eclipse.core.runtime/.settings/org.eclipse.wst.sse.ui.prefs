@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 content_assist_number_of_computers=23
 eclipse.preferences.version=1
+=======
+content_assist_number_of_computers=33
+eclipse.preferences.version=1
+hoverModifiers=combinationHover|true|0;problemHover|false|0;documentationHover|false|0;annotationHover|true|Shift;
+>>>>>>> 9a23723de0eac87773e4ba0adc56ee6ecbc22f3e
 useAnnotationsPrefPage=true
 useQuickDiffPrefPage=true

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 1533445628248	Rename type 'Basic_01_ExcelOperateTest'
 1533445653367	Rename type 'Basic_01_ExcelOpenTest'
 1533445674235	Copy compilation unit
@@ -10,3 +11,7 @@
 1533480319682	Rename type 'Basic_04_RowAndCellOperateTest'
 1533656058349	Delete element
 1533659399909	Rename type 'Basic_09_AboutPicture'
+=======
+1533607494765	Rename type 'Basic_07_CellFormatOperate'
+1533687176865	Rename type 'Formual_01_BasicCalculateTest'
+>>>>>>> 9a23723de0eac87773e4ba0adc56ee6ecbc22f3e

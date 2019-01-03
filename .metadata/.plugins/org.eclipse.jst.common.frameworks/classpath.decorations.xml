@@ -1,4 +1,5 @@
 <classpath>
+<<<<<<< HEAD
   <container id="sitemesh-example!org.eclipse.jst.j2ee.internal.web.container">
     <entry id="F:/Eclipse/WorkSpace/sitemesh-example/WebContent/WEB-INF/lib/sitemesh-2.4.2.jar">
       <source-attachment-path>F:/JAR/SiteMesh_JAR/sitemesh-2.2.1-sources.jar</source-attachment-path>
@@ -69,6 +70,43 @@
     </entry>
     <entry id="F:/Eclipse/WorkSpace/struts2-showcase/WebContent/WEB-INF/lib/struts2-core-2.5.10.jar">
       <source-attachment-path>F:/JAR/Struts_JAR/struts-2.5.10/src/core</source-attachment-path>
+=======
+  <container id="testStruts2!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="F:/chenming/APP/WorkSpace/testStruts2/WebContent/WEB-INF/lib/struts2-core-2.3.34.jar">
+      <source-attachment-path>F:/chenming/JAR/Struts2_jar/struts2-core-2.1.2-sources.jar</source-attachment-path>
+    </entry>
+  </container>
+  <container id="springMVCDemo1!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="F:/chenming/APP/Eclipse/jee-oxygen/eclipse/WorkSpace/springMVCDemo1/WebContent/WEB-INF/lib/spring-context-4.3.9.RELEASE.jar">
+      <source-attachment-path>F:/chenming/JAR/Spring_jar/spring-framework-4.3.9.RELEASE/libs/spring-context-4.3.9.RELEASE-sources.jar</source-attachment-path>
+    </entry>
+    <entry id="F:/chenming/APP/Eclipse/jee-oxygen/eclipse/WorkSpace/springMVCDemo1/WebContent/WEB-INF/lib/spring-web-4.3.9.RELEASE.jar">
+      <source-attachment-path>F:/chenming/JAR/Spring_jar/spring-framework-4.3.9.RELEASE/libs/spring-web-4.3.9.RELEASE-sources.jar</source-attachment-path>
+    </entry>
+    <entry id="F:/chenming/APP/Eclipse/jee-oxygen/eclipse/WorkSpace/springMVCDemo1/WebContent/WEB-INF/lib/spring-webmvc-4.3.9.RELEASE.jar">
+      <source-attachment-path>F:/chenming/JAR/Spring_jar/spring-framework-4.3.9.RELEASE/libs/spring-webmvc-4.3.9.RELEASE-sources.jar</source-attachment-path>
+    </entry>
+  </container>
+  <container id="testWeb!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="F:/chenming/APP/WorkSpace/testWeb/WebContent/WEB-INF/lib/jstl.jar">
+      <source-attachment-path>F:/chenming/JAR/JSTL_jar/jstl-1.1.2-sources.jar</source-attachment-path>
+    </entry>
+    <entry id="F:/chenming/APP/WorkSpace/testWeb/WebContent/WEB-INF/lib/standard.jar">
+      <source-attachment-path>F:/chenming/JAR/JSTL_jar/standard-1.1.2-sources.jar</source-attachment-path>
+    </entry>
+  </container>
+  <container id="testPOI!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="F:/chenming/APP/WorkSpace/testPOI/WebContent/WEB-INF/lib/poi-ooxml-3.17.jar">
+      <source-attachment-path>F:/chenming/JAR/POI/poi-src-3.17-20170915.zip</source-attachment-path>
+    </entry>
+    <entry id="F:/chenming/APP/WorkSpace/testPOI/WebContent/WEB-INF/lib/poi-3.17.jar">
+      <source-attachment-path>F:/chenming/JAR/POI/poi-src-3.17-20170915.zip</source-attachment-path>
+    </entry>
+  </container>
+  <container id="sturts2Demo_01!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="F:/chenming/APP/WorkSpace/sturts2Demo_01/WebContent/WEB-INF/lib/struts2-core-2.3.34.jar">
+      <source-attachment-path>F:/chenming/JAR/Struts2_jar/struts2-core-2.3.14.1-sources.jar</source-attachment-path>
+>>>>>>> 9a23723de0eac87773e4ba0adc56ee6ecbc22f3e
     </entry>
   </container>
 </classpath>
