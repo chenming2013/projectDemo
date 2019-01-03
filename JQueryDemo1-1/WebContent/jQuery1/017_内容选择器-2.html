@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery程序</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+	/* 
+		测试内容选择器
+		
+		":has(选择器)"  >>> 返回包含指定选择器的元素(即：如果某一个元素下包含与 span,那么就返回这个元素)		
+		
+	*/
+	/* 
+		下面的js的意思是: 
+			
+			
+	*/
+	$(function(){
+		//如果div下包含有span,那么就返回这个div,并为这个div设置样式
+		$("div:has('span')").attr("class","txt");
+		
+	})
+</script>
+
+</head>
+<body>
+
+	<div>
+		<span>1、helloworld</span>
+		<div>2、helloworld</div>
+	</div>
+	<div></div>
+	<p></p>
+	<span>3、helloworld</span>
+</body>
+</html>

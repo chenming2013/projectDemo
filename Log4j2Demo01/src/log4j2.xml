@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="INFO">
+    <appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%level %logger{36} - %msg%n"/>
+        </Console>
+    </appenders>
+
+    <loggers>
+        <Logger name="chenming" level="FATAL">
+         	<AppenderRef ref="Console"/>
+        </Logger>
+        <Logger name="chenming.Log4j2_2_TypicalTest" level="ERROR">
+        	    <AppenderRef ref="Console"/>
+        </Logger>
+        <root level="DEBUG">
+             <AppenderRef ref="Console"/>
+        </root>
+    </loggers>
+</configuration>

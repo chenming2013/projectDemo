@@ -1,0 +1,31 @@
+{
+  "ecmaVersion": 5,
+  "ide": {
+    "scriptPaths": [
+      {
+        "type": "FOLDER",
+        "path": "WebContent/jQuery1"
+      },
+      {
+        "type": "FOLDER",
+        "path": "WebContent/jQuery2"
+      }
+    ]
+  },
+  "plugins": {
+    "guess-types": {
+      
+    },
+    "outline": {
+      
+    },
+    "angular1": {
+      
+    }
+  },
+  "libs": [
+    "ecma5",
+    "browser",
+    "jquery"
+  ]
+}

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+    
+   	<!--  
+		1、注入常量
+   	-->
+   	<!-- 1. 注入byte型常量 -->
+   	<bean id="btBean" class="basic.basic_03_2_injectionTest.bean.InjectionTestBean">
+   		<property name="bt" value="100"></property>
+   	</bean>
+   	<!-- 2. 注入short型常量 -->
+   	<bean id="stBean" class="basic.basic_03_2_injectionTest.bean.InjectionTestBean">
+   		<property name="st" value="256"></property>
+   	</bean>
+   	<!-- 3. 注入int型常量 -->
+    <bean id="itBean" class="basic.basic_03_2_injectionTest.bean.InjectionTestBean">
+        <property name="it" value="5"/>
+    </bean>
+    <!-- 4. 注入long型常量 -->
+	<bean id="lgBean" class="basic.basic_03_2_injectionTest.bean.InjectionTestBean">
+		<property name="lg" value="432"></property>
+	</bean>    
+    <!-- 5. 注入float型常量 -->
+    <bean id="ftBean" class="basic.basic_03_2_injectionTest.bean.InjectionTestBean">
+		<property name="ft" value="432.34"></property>
+	</bean>    
+    <!-- 6. 注入double型常量 -->
+    <bean id="deBean" class="basic.basic_03_2_injectionTest.bean.InjectionTestBean">
+		<property name="de" value="124.45"></property>
+	</bean>    
+	<!-- 7. 注入char型常量 -->
+	<bean id="crBean" class="basic.basic_03_2_injectionTest.bean.InjectionTestBean">
+		<property name="cr" value="a"></property>
+	</bean>    
+	<!-- 
+		8. 注入boolean型常量
+		   Spring类型转换系统对于boolean类型进行了容错处理,除了可以使用"true/false"标准的Java值进行注入,
+		     还能使用"yes/no"、"on/off"、"1/0"来代表"真/假" 
+	-->
+	<bean id="bnBean_1" class="basic.basic_03_2_injectionTest.bean.InjectionTestBean">
+		<property name="bn" value="true"></property>
+	</bean>    
+	<bean id="bnBean_2" class="basic.basic_03_2_injectionTest.bean.InjectionTestBean">
+		<property name="bn" value="yes"></property>
+	</bean>    
+	<bean id="bnBean_3" class="basic.basic_03_2_injectionTest.bean.InjectionTestBean">
+		<property name="bn" value="on"></property>
+	</bean>    
+	<bean id="bnBean_4" class="basic.basic_03_2_injectionTest.bean.InjectionTestBean">
+		<property name="bn" value="1"></property>
+	</bean>        
+    
+    
+    
+    <!-- 
+    	2、注入Bean ID : 
+    		是一种简单的错误验证方式，将容器中的其它Bean id（只是字符串值，不是引用）传递给<constractor-arg/>或者<property/>
+    -->
+    <bean id="beanID_1" class="java.lang.String">
+        <constructor-arg index="0" value="test1"/>
+    </bean>
+    <bean id="idrefBean1" class="basic.basic_03_2_injectionTest.bean.InjectionTestBean">
+        <property name="id"><idref bean="beanID_1" /></property>
+    </bean>
+    <!-- 
+    	注: 上面的配置相当于下面的配置
+    		<bean id="idrefBean1" class="basic.basic_03_2_injectionTest.bean.InjectionTestBean">
+		        <property name="id" value="beanID_1"></property>
+		    </bean>
+		问: 既然上面的不是注入Bean,而是注入一个String字段,那么为什么要麻烦的使用<idref>呢?这是因为能够进行简单的验证
+		解:	配置了<idref bean="beanId_1" />,如果id="beanId_1"的Bean不存在,那么就会报错,这也就是简单的验证
+		
+		注意: <idRef>注入的只是一个字符串
+     -->
+    
+    
+    
+    
+    <!--  
+    	3、注入引用数据类型
+    -->
+	<!--  
+		3.1 注入List集合(简单List)
+			1)可选的"value-type"属性,表示列表中条目的数据类型.
+				比如value-type="java.lang.String"表示List集合中的值的类型是String类型
+			2)如果Bean中使用了泛型,那么"value-type"属性就可以不要,因为Spring能够根据泛型数据自动检测到List里条目的数据类型
+			3)如果既没有指定"value-type"属性,List也不是泛型的,则List默认是String类型
+			4)merge:可选,用于父子Bean情况是否合并List条目,后面再介绍
+	-->    
+	<bean id="listBean" class="basic.basic_03_2_injectionTest.bean.InjectionTestBean">
+		<property name="list">
+			<list value-type="java.lang.String" merge="default">
+				<value>zhangsan</value>
+				<value>lisi</value>
+				<value>wangwu</value>
+			</list>
+		</property>
+	</bean>
+	<!--  
+		3.1 注入List(复杂List)
+	-->
+	<bean id="listBean2" class="basic.basic_03_2_injectionTest.bean.InjectionTestBean">
+		<property name="list2">
+			<list value-type="java.util.List">
+				<list>
+					<value>1</value>
+					<value>2</value>
+					<value>3</value>
+				</list>
+				<list>
+					<value>4</value>
+					<value>5</value>
+					<value>6</value>
+				</list>
+			</list>
+		</property>
+	</bean>
+	
+	
+	<!--  
+		3.2 注入Set集合(简单Set)
+	-->
+	<bean id="setBean" class="basic.basic_03_2_injectionTest.bean.InjectionTestBean">
+		<property name="set">
+			<set value-type="java.lang.String" merge="default">
+				<value>zhaoliu</value>
+				<value>qianqi</value>
+			</set>
+		</property>
+	</bean>
+	<!--  
+		3.2 注入Set集合(复杂Set)
+	-->
+	<bean id="setBean2" class="basic.basic_03_2_injectionTest.bean.InjectionTestBean">
+		<property name="set2">
+			<set value-type="java.util.Set" merge="default">
+				<set>
+					<value>1</value>
+					<value>2</value>
+				</set>
+				<set>
+					<value>3</value>
+					<value>4</value>
+				</set>
+			</set>
+		</property>
+	</bean>
+   
+    <!--  
+		3.3 注入Collection集合
+	-->
+	<bean id="collectionBean" class="basic.basic_03_2_injectionTest.bean.InjectionTestBean">
+		<property name="collection">
+			<list value-type="java.lang.String" merge="default">
+				<value>zhaoliu</value>
+				<value>qianqi</value>
+			</list>
+		</property>
+	</bean>
+	
+	<!--  
+		3.4 注入数组(一维数组)
+	-->
+	<bean id="arrayBean" class="basic.basic_03_2_injectionTest.bean.InjectionTestBean">
+		<property name="array">
+			<array value-type="java.lang.String" merge="default">
+				<value>zhaoliu</value>
+				<value>qianqi</value>
+			</array>
+		</property>
+	</bean>
+	
+	<!--  
+		3.5 注入数组(二维数组)(2*3)
+	-->
+	<bean id="arrayBean2" class="basic.basic_03_2_injectionTest.bean.InjectionTestBean">
+		<property name="array2">
+			<array>
+				<array>
+					<value>1</value>
+					<value>2</value>
+					<value>3</value>
+				</array>
+				<array>
+					<value>4</value>
+					<value>5</value>
+					<value>6</value>
+				</array>
+			</array>
+		</property>
+	</bean>
+	
+	<!--  
+		3.6 注入Map(简单Map)
+	-->
+	<bean id="mapBean" class="basic.basic_03_2_injectionTest.bean.InjectionTestBean">
+		<property name="map">
+			<map key-type="java.lang.Integer" value-type="java.lang.String">
+				<entry>
+					<key>
+						<value>2</value>
+					</key>
+					<value>xiaoer</value>
+				</entry>
+				<entry>
+					<key>
+						<value>3</value>
+					</key>
+					<value>zhangsan</value>
+				</entry>
+			</map>
+		</property>
+	</bean>
+	<!--  
+		3.6 注入Map(复杂Map)
+	-->
+	<!-- <bean id="mapList1" class="java.util.ArrayList">
+		
+	</bean>
+	<bean id="mapBean2" class="basic.basic_03_2_injectionTest.bean.InjectionTestBean">
+		<property name="map">
+			<map key-type="java.lang.String" value-type="java.util.List">
+				<entry key="1" value-ref="mapList1"></entry>
+			</map>
+		</property>
+	</bean> -->
+	
+   
+	<!--  
+		3.7 注入Properties
+	-->
+	<bean id="propertiesBean" class="basic.basic_03_2_injectionTest.bean.InjectionTestBean">
+		<property name="properties">
+			<props>
+				<prop key="prop1">1</prop>
+				<prop key="prop2">2</prop>
+				<prop key="prop3">3</prop>
+			</props>
+		</property>
+	</bean>
+
+
+	<!--  
+		3.8 内部Bean注入
+	-->
+   <bean id="innerBean" class="basic.basic_03_2_injectionTest.bean.HelloDecorator">
+		<!-- 通过构造器注入 -->
+		<constructor-arg index="0">
+			<!-- 这就是内部Bean,外部不可见 -->
+			<bean class="basic.basic_03_2_injectionTest.bean.HelloImpl">
+				<property name="index" value="1"></property>
+				<property name="message" value="hello inner"></property>
+			</bean>
+		</constructor-arg>
+	</bean>
+   
+   
+</beans>

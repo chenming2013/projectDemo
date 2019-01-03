@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns="http://www.springframework.org/schema/context"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:beans="http://www.springframework.org/schema/beans"
+		xmlns:tool="http://www.springframework.org/schema/tool"
+		targetNamespace="http://www.springframework.org/schema/context"
+		elementFormDefault="qualified"
+		attributeFormDefault="unqualified">
+
+	<xsd:import namespace="http://www.springframework.org/schema/beans" schemaLocation="http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"/>
+	<xsd:import namespace="http://www.springframework.org/schema/tool" schemaLocation="http://www.springframework.org/schema/tool/spring-tool-3.0.xsd"/>
+
+	<xsd:annotation>
+		<xsd:documentation><![CDATA[
+	Defines the configuration elements for the Spring Framework's application
+	context support. Effects the activation of various configuration styles
+	for the containing Spring ApplicationContext.
+		]]></xsd:documentation>
+	</xsd:annotation>
+
+	<xsd:complexType name="propertyPlaceholder">
+		<xsd:attribute name="location" type="xsd:string">
+			<xsd:annotation>
+				<xsd:documentation><![CDATA[
+	The location of the properties file to resolve placeholders against, as a Spring
+	resource location: a URL, a "classpath:" pseudo URL, or a relative file path.
+	Multiple locations may be specified, separated by commas. If neither location nor properties-ref is
+	specified, placeholders will be resolved against system properties.
+				]]></xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="properties-ref" type="xsd:string">
+			<xsd:annotation>
+				<xsd:documentation source="java:java.util.Properties"><![CDATA[
+	The bean name of a Java Properties object that will be used for property substitution.
+	If neither location nor properties-ref is specified, placeholders will be resolved against system properties.
+				]]></xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="file-encoding" type="xsd:string">
+			<xsd:annotation>
+				<xsd:documentation><![CDATA[
+	Specifies the encoding to use for parsing properties files.  Default is none,
+	using the java.util.Properties default encoding.  Only applies to classic
+	properties files, not to XML files.
+				]]></xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="order" type="xsd:integer">
+			<xsd:annotation>
+				<xsd:documentation><![CDATA[
+	Specifies the order for this placeholder configurer.  If more than one is present in a context
+	the order can be important since the first one to be match a placeholder will win.  Often used
+	in conjunction with
+				]]></xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="ignore-resource-not-found" type="xsd:boolean"
+			default="false">
+			<xsd:annotation>
+				<xsd:documentation><![CDATA[
+	Specifies if failure to find the property resource location should be ignored.  Default
+	is "false", meaning that if there is no file in the location specified an exception will
+	be raised at runtime.
+				]]></xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="ignore-unresolvable" type="xsd:boolean"
+			default="false">
+			<xsd:annotation>
+				<xsd:documentation><![CDATA[
+	Specifies if failure to find the property value to replace a key should be ignored.  Default
+	is "false", meaning that this placeholder configurer will raise an exception if it cannot resolve
+	a key.  Set to "true" to allow the configurer to pass on the key to any others in
+	the context that have not yet visited the key in question.
+				]]></xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="local-override" type="xsd:boolean"
+			default="false">
+			<xsd:annotation>
+				<xsd:documentation><![CDATA[
+	Specifies whether local properties override properties from files.  Default
+	is "false": Properties from files override local defaults.
+				]]></xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:element name="property-placeholder">
+		<xsd:annotation>
+			<xsd:documentation><![CDATA[
+	Activates replacement of ${...} placeholders, resolved against the specified properties file or
+	Properties object (if any). Falls back to resolving placeholders against JVM system properties.
+	Alternatively, define a parameterized PropertyPlaceholderConfigurer bean in the context.
+			]]></xsd:documentation>
+			<xsd:appinfo>
+				<tool:annotation>
+					<tool:exports
+						type="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" />
+				</tool:annotation>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="propertyPlaceholder">
+					<xsd:attribute name="system-properties-mode" default="FALLBACK">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:enumeration value="NEVER"/>
+								<xsd:enumeration value="FALLBACK"/>
+								<xsd:enumeration value="OVERRIDE"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:attribute>
+				</xsd:extension>
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="property-override">
+		<xsd:annotation>
+			<xsd:documentation><![CDATA[
+	Activates pushing of override values into bean properties, based on configuration
+	lines of the following format: beanName.property=value
+			]]></xsd:documentation>
+			<xsd:appinfo>
+				<tool:annotation>
+					<tool:exports
+						type="org.springframework.beans.factory.config.PropertyOverrideConfigurer" />
+				</tool:annotation>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="propertyPlaceholder" />
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="annotation-config">
+		<xsd:annotation>
+			<xsd:documentation><![CDATA[
+	Activates various annotations to be detected in bean classes: Spring's @Required and
+	@Autowired, as well as JSR 250's @PostConstruct, @PreDestroy and @Resource (if available),
+	JAX-WS's @WebServiceRef (if available), EJB3's @EJB (if available), and JPA's
+	@PersistenceContext and @PersistenceUnit (if available). Alternatively, you may
+	choose to activate the individual BeanPostProcessors for those annotations.
+
+	Note: This tag does not activate processing of Spring's @Transactional or EJB3's
+	@TransactionAttribute annotation. Consider the use of the <tx:annotation-driven>
+	tag for that purpose.
+			]]></xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+
+	<xsd:element name="component-scan">
+		<xsd:annotation>
+			<xsd:documentation><![CDATA[
+	Scans the classpath for annotated components that will be auto-registered as 
+	Spring beans. By default, the Spring-provided @Component, @Repository, 
+	@Service, and @Controller stereotypes will be detected.
+
+	Note: This tag implies the effects of the 'annotation-config' tag, activating @Required,
+	@Autowired, @PostConstruct, @PreDestroy, @Resource, @PersistenceContext and @PersistenceUnit
+	annotations in the component classes, which is usually desired for autodetected components
+	(without external configuration). Turn off the 'annotation-config' attribute to deactivate
+	this default behavior, for example in order to use custom BeanPostProcessor definitions
+	for handling those annotations.
+
+	Note: You may use placeholders in package paths, but only resolved against system
+	properties (analogous to resource paths). A component scan results in new bean definition
+	being registered; Spring's PropertyPlaceholderConfigurer will apply to those bean
+	definitions just like to regular bean definitions, but it won't apply to the component
+	sca

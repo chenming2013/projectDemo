@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery程序</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+	/* 
+		测试索引选择器
+		
+		":first"  >>> 取得返回的所有元素的 第一个 元素,可以用first()函数代替
+		
+		
+	*/
+	/* 
+		下面的js的意思是: 
+			当页面加载的时候,查找出所有的 div 元素,并为返回的 第一个 div元素添加上class属性,而class属性值为txt 
+	*/
+	$(function(){
+	/**/
+		$("div:first").attr("class","txt");
+	
+		//下面的写法和上面一样	
+	 /* 	$("div").first().attr("class","txt");  */
+	
+	})
+</script>
+
+</head>
+<body>
+
+	<div><h1>1、www.mldn.cn</h1></div>
+	<div><p>2、www.mldn.cn</p></div>
+	<div><span>3、www.mldn.cn</span></div>
+	<table>
+		<tr>
+			<td><h1>1、hello</h1></td>
+			<td><p>2、hello</p></td>
+			<td><span>3、hello</span></td>
+		</tr>
+	</table>
+
+</body>
+</html>

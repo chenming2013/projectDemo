@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 5 elements from project &apos;FreemarkerDemo01&apos;&#x0D;&#x0A;- Original project: &apos;FreemarkerDemo01&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     FreemarkerDemo01/src/basic_001_specialVariable&#x0D;&#x0A;     FreemarkerDemo01/src/basic_002_helloworld&#x0D;&#x0A;     FreemarkerDemo01/src/basic_003_nullValue&#x0D;&#x0A;     FreemarkerDemo01/src/basic_004_instruction&#x0D;&#x0A;     FreemarkerDemo01/src/basic_005_builtinFunction" description="Delete elements" element1="/src&lt;basic_005_builtinFunction" element2="/src&lt;basic_004_instruction" element3="/src&lt;basic_003_nullValue" element4="/src&lt;basic_002_helloworld" element5="/src&lt;basic_001_specialVariable" elements="5" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1543126323941" subPackages="false" version="1.0"/>
+</session>

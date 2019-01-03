@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	
+<!-- 该文件用来配置entity对象和数据库表的映射关系 -->
+<!-- package指明要映射到数据库中的类在哪个包下 -->
+<hibernate-mapping package="com.chenming.test4.domain">
+	<class name="com.chenming.test4.domain.Course3" table="t_course3" lazy="false">
+		<id name="cid" column="c_id" type="int">
+			<generator class="native"></generator>
+		</id>
+		
+		<!-- 对entity中其它属性进行映射 -->
+		<property name="name" type="string" column="name"></property>
+		
+		<set name="students" table="student3_course3">
+	    	<!-- 本实体类在连接表中的外键名称，过程我们上面分析的很清楚了，为什么需要这个呢？让hibernate知道连接表中有一个外键名为s_id的指向本实体类 -->
+	        <key column="c_id"></key>
+	        <!-- 多对多映射关系，映射类和其映射类在连接表中的外键名称 这个的意思跟上面的一样，也是声明让hibernate知道，这样一来，hibernate就知道如何查询了-->
+	        <many-to-many column="s_id" class="com.chenming.test4.domain.Student3"></many-to-many>
+	    </set>
+	</class>
+</hibernate-mapping>

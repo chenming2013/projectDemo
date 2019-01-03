@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery程序</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+	/* 
+		测试事件冒泡
+		
+		
+	*/
+	/* 
+		下面的js的意思是: 
+			
+			
+	*/
+	$(function(){
+
+		/*
+			注：为了方便看到效果,我们加了样式
+
+			下面的本意本来是：分别为input、div、body元素加上点击事件,
+				但是我们发现点击body区域,对话框弹出一次;点击div区域,对话框弹出弹出两次;点击input区域,对话框弹出3次
+				这就是事件冒泡
+			
+		*/
+		$("input,div,body").on("click",function(){
+			alert("再点我就吃了你!");
+		})
+		
+	})
+</script>
+<style type="text/css" rel="stylesheet">
+	body{
+		border:2px solid red;
+		margin:0px;
+		padding:20px;
+	}	
+	div{
+		border:2px dashed blue;
+	}
+</style>
+</head>
+<body>
+	<div>
+		<input id="mybutton" type="button" value="点我" />	
+	</div>
+</body>
+</html>

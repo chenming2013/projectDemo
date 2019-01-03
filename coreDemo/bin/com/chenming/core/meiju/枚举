@@ -1,0 +1,43 @@
+枚举： 所谓枚举就是预先创建多个枚举类对象，供外部使用。
+	1、先观察多例设计模式与Enum的联系。
+	      多例设计模式：
+	      1、构造方法私有化，而后在内部提供有若干个实例对象，并且通过static方法返回。
+	                    范例：定义一个表示颜色基色的多例设计模式。【EnumDemo1.java】
+	                                以前只要是想定义枚举都会采用EnumDemo1.java的代码形式完成，也就是说多例设计模式就是为了解决枚举问题。
+	                    范例：定义枚举【EnumDemo2.java】
+	                                通过EnumDemo1.java与EnumDemo2.java的比较，可以知道枚举可以简化的替代多例设计模式。
+	                                
+	2、用enum定义的枚举就相当于是一个类继承了Enum。
+	      比如说EnumDemo1.java中用enum定义的Colo枚举类，那么就相当于Color extends Enum；也就是说Color枚举类继承了Enum
+	      来看一看Enum类：
+	      public abstract class Enum<E extends Enum<E>>
+	      extends Object
+	      implements Comparable<E>, Serializable       
+	      可以看出Enum是一个抽象类，Enum中定义了一些方法，这里只看其中几个重要的方法：
+	      (1)取得枚举常量的序数：public final int ordinal()
+	      (2)取得此枚举常量的名称：public final String name()
+	      (3)将枚举对象以对象数组的形式返回：public Object[] final values()
+	      
+	    【注意：枚举无法显式的继承Enum，也就是在定义枚举类的时候不能用关键字extends继承Enum；当一个类被声明成enum时，在编译阶段后默认继承java.lang.Enum类，而不是普通的继承Object类。
+	                    如果我们显式的使用extends来继承Enum，那么就编译不过去。
+	         enmu修饰的类，在编译后会被自动加上final声明，也就是说枚举类不能被继承。
+	    】    
+	
+	3、注意：
+		1、在枚举类中有构造器，但构造器只是在构造枚举对象的时候被调用。也就是说其他类中不能new一个枚举类的对象，枚举类的所有对象都是在调用之前已经new好了的。
+		
+	    
+	4、向枚举类之中添加属性、方法
+	      要求：
+	      1、枚举之中定义的构造方法不能使用public声明；  
+	      2、枚举类中的常量都是枚举类的对象，枚举对象必须放在首行，随后才可以定义属性、构造、普通方法。
+	      3、枚举对象都是默认被public static final修饰的，也就是常量，所以要大写。【注意：枚举对象虽然是被public static final修饰，但是我们却不能写出来】
+	      【观察：EnumDemo3.java】
+	      
+	5、枚举实现接口
+	     【观察：EnumDemo4.java】
+	      枚举里面最变态的一种做法是可以在每一个对象后面使用匿名内部类的形式实现抽象方法。【观察：EnumDemo5.java】
+	        
+   
+
+注意：Enumeration是一个接口，用来遍历用的，与Iterator接口功能类似。而 Enum 则是一个枚举类。Enumeration与Enum没有任何关系。

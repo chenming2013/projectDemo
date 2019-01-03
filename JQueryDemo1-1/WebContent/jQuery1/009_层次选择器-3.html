@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery程序</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+	/* 
+		测试层次选择器
+		
+		"元素+元素"  或者  使用next()方法     【找到与指定元素平级的下一个直接相邻元素，可以使用next()方法代替】
+		
+		注意: 
+			1. 是下一个元素
+			2. 是直接相邻元素
+			3. 返回的是单个元素
+	*/
+	/* 
+		下面的js的意思是: 
+			当页面加载的时候,查找与 div 元素平级的 下一个 直接p 元素,并且为这个p元素添加上class属性,而class属性值为txt 
+	*/
+	$(function(){
+	/*
+		$("div+p").attr("class","txt");
+	*/
+		//下面的写法和上面一样	
+	 	$("div").next("p").attr("class","txt"); 
+	
+	})
+</script>
+
+</head>
+<body>
+	
+	<div>
+		<h1>1、测试元素选择器</h1>
+		<p>2、测试元素选择器</p>
+	</div>
+	<div>
+		<h1>
+			<div>3、测试元素选择器</div>
+		</h1>
+		<span>4、测试元素选择器</span>       <br/>
+		<div>
+			<span>5、测试元素选择器</span>
+		</div>
+		<p>6、测试元素选择器</p>
+		<p>7、测试元素选择器</p>
+	</div>
+	<div>
+		<p>8、测试元素选择器</p>
+		<p>9、测试元素选择器</p>
+	</div>
+	<p>10、测试元素选择器</p>
+	<p>11、测试元素选择器</p>
+</body>
+</html>

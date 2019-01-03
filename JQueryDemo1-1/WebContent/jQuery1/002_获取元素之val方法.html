@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery程序</title>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+	/*
+		jQuery 元素选择
+		
+		val(): 专门针对表单的value属性值进行操作
+			1. 能够取得表单从value属性值
+			2. 能够为为表单设置内容
+	*/
+	
+	<!-- 测试 val() 方法的 获取表单元素的value值 -->
+	function fun(){
+	
+		var msgValue = $(msg).val();
+		console.log(">>>>>>> msg: "+msgValue);
+		
+	}
+		
+		
+	<!-- 测试 val() 方法的 为表单元素设置内容 -->
+	function fun2(){
+		$(msg2).val("这是设置的内容")
+	}
+
+</script>
+
+</head>
+<body>
+	
+	<h2>测试 val() 方法的 获取表单元素的value值</h2>
+	请输入消息: <input type="text" name="msg" id="msg" />
+	<input type="button" value="选择" onclick="fun()">
+	
+	<br/><br/>
+	
+	
+	<h2>测试 val() 方法的 为表单元素设置内容</h2>
+	<input type="text" name="msg2" id="msg2" />
+	<input type="button" value="设置内容" onclick="fun2()" />
+</body>
+</html>

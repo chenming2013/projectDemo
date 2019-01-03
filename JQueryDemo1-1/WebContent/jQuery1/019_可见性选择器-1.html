@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery程序</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+	/* 
+		测试可见性选择器
+		
+		":hidden"  >>> 取得所有的隐藏元素		
+		
+	*/
+	/* 
+		下面的js的意思是: 
+			
+			
+	*/
+	$(function(){
+		//为div下所有可见性元素(包括文本元素)添加上样式
+		$("div:visible").attr("class","txt");
+		
+	})
+</script>
+
+</head>
+<body>
+
+	<div>1、helloworld</div>
+	<div>
+		2、helloworld
+		<div>3、helloworld</div>
+		<div style="display:none">4、helloworld</div>
+	</div>
+	<div style="display:none">5、helloworld</div>
+</body>
+</html>

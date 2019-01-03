@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<sitemesh>  
+    <!--register页面的装饰页面为没有菜单栏 的registerDecorator.jsp -->  
+   <mapping>  
+          <path>/register.jsp</path>  
+        <decorator>/decorator/registerDecorator.jsp</decorator>  
+   </mapping>  
+   
+   <!--带有菜单栏的装饰页面  -->  
+   <mapping decorator="/decorator/decorator.jsp"/>  
+   
+   <!--登录页面不被装饰。没有配置为true的页面，表示使用装饰页面,例如index.jsp -->  
+   <mapping path="/logon.jsp" exclue="true"/>  
+</sitemesh>  

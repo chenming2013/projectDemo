@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SiteMesh2Demo01/WebContent/data/hour.jsp&apos; to &apos;hours.jsp&apos;" description="Rename resource &apos;hour.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/data/hour.jsp" name="hours.jsp" stamp="1540903198529" updateReferences="true"/>
+</session>

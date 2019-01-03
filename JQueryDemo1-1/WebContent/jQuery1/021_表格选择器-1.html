@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery程序</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+	/* 
+		测试表格选择器
+		
+		":nth-child(eq|even|odd|index)"  >>> 选择指定列中所有元素、可以使用列的索引、偶数、奇数【注意: 索引是从1开始的,而之前的索引选择器是从0开始的】		
+		
+	*/
+	/* 
+		下面的js的意思是: 
+			
+			
+	*/
+	$(function(){
+		//为div下所有可见性元素(包括文本元素)添加上样式
+		$("td:nth-child(1)").attr("class","txt");
+		
+	})
+</script>
+
+</head>
+<body>
+
+	<table border="red 2px solid">
+		<tr>
+			<td>1-1、hello</td>
+			<td>1-2、hello</td>
+			<td>1-3、hello</td>
+		</tr>
+		<tr>
+			<td>2-1、world</td>
+			<td>2-2、world</td>
+			<td>2-3、world</td>
+		</tr>
+		<tr>
+			<td>3-1、chenming</td>
+			<td>3-2、chenming</td>
+			<td>3-3、chenming</td>
+		</tr>
+	</table>
+	
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery程序</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+	/* 
+		测试属性选择器
+		
+		"[属性]"  >>> 取得包含有指定属性的元素		
+		
+	*/
+	/* 
+		下面的js的意思是: 
+			
+			
+	*/
+	$(function(){
+		//为div下所有可见性元素(包括文本元素)添加上样式
+		$("[abc]").attr("class","txt");
+		
+	})
+</script>
+
+</head>
+<body>
+
+	<table border="red 2px solid">
+		<tr>
+			<td abc="chenming">1-1、hello</td>
+			<td>1-2、hello</td>
+			<td>1-3、hello</td>
+		</tr>
+		<tr>
+			<td abc="chenming">2-1、world</td>
+			<td>2-2、world</td>
+			<td>2-3、world</td>
+		</tr>
+		<tr>
+			<td abc="chenming">3-1、chenming</td>
+			<td>3-2、chenming</td>
+			<td>3-3、chenming</td>
+		</tr>
+	</table>
+	
+</body>
+</html>

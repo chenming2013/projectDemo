@@ -1,0 +1,70 @@
+集合：
+	类集就是一组java实现的数据结构，或者更简单一点，所谓的类集指的就是对象数组应用。
+	集合中可以存放所有类型的元素，但是大多数情况下，一个集合中只存放同一类型的元素，所以就用到泛型了。
+	
+	Iterator接口只能单向遍历，而ListIterator接口能够双向遍历。 
+	
+	1、Collection接口:Collection是整个类集中单值保存的最大父接口。   单值保存：每一次可以向集合里面存放一个对象。
+	   ---> 1、List接口：List集合中的元素允许重复，各元素的顺序就是对象插入的顺序。允许存放重复null
+	        ---> ArrayList（数组列表）:
+	        	 1、基本使用：底层操作的就是数组，对数组进行添加元素、移除元素、扩容等操作。
+	        	 2、ArrayList集合是有序存放元素的，能够存放重复元素，包括null(能够存放多个null)。
+	        	 3、ArrayList经常与Vector类进行比较，因为Vector类底层也是数组。
+	        	 	1). Vector和ArrayList在使用上非常相似,都可用来表示一组数量可变的对象应用的集合,并且可以随机地访问其中的元素。  
+	        	 		Vector的方法都是同步的(Synchronized),是线程安全的(thread-safe)，而ArrayList的方法不是，由于线程的同步必然要影响性能，
+	        	 		因此,ArrayList的性能比Vector好。 
+	        	 	2). 当Vector或ArrayList中的元素超过它的初始大小时,Vector会将它的容量翻倍,而ArrayList只增加50%的大小，
+	        	 		这样,ArrayList就有利于节约内存空间
+	        	 4、当我们调用无参构造方法来构造一个ArrayList对象的时候，它会在内部分配一个初始容量大小为10的Object[]数组。
+	        	    当添加的数据容量超过数组大小（10）的时候，会产生一个新的数组，新数组的大小是原数组大小的1.5倍，接着把原数组中的数据拷贝到新数组中。
+	        	    【详细阐述：http://zhidao.baidu.com/link?url=pVFfmv_ZLoZxjwSMyN1T9yKIgaihtZmm5QjMSxAUV4IGGVFTKOrNqwG1s8NSvPNdaEEZXCt4Sv9TjuaHqHd8MJfXsfPfoEWHY4i34J_0a5e】
+	        ---> LinkedList（双向链接列表）:
+	             1、LinkedList允许存放重复的元素，并且允许存放重复的null。
+	             2、LinkedList是双向链表，可以查找前一个元素，也可以查找后一个元素。
+	   ---> 2、Set接口：Set集合中元素是无序存放的，且不允许存放重复元素。
+	        ---> HashSet:【HashSet的底层就是HashMap】
+	             1、HashSet允许存放null，不允许存放重复元素（也就是说不允许存放多个null），且元素的存放是无序的。
+	             2、【注意：】容纳的对象必须根据自己的唯一标识来重写equals()方法和hashCode()方法。
+	             3、【注意：】对象一旦放入HashSet容器中，那么对象的唯一标识属性的值不能再修改，否则会导致对象移除不了。
+	                                     【观察：HashSetDemo2.java】
+	             4、如果用到HashSet，那么一定要重写hashCode()方法与equals()方法。
+	        ---> TreeSet:【TreeSet底层用的就是TreeMap】【TreeSet常常用来排序，此时就要自己定义排序的比较规则】
+	             1、TreeSet不能存放null，且存放的元素是有序的,也不能存放重复元素。
+	             2、TreeSet中存放的对象是有序的，所以必须要能排序，排序方法自己来定义，所以就要implements Comparable接口，重写接口中的的compareTo()方法
+	                                    而我们有两种排序的比较器。
+	               1、java.lang.Comparable接口： TreeSet使用无参构造方法，那么容器内的对象必须实现Comparable接口               
+	               2、java.util.Comparator接口： TreeSet 
+	                                   【观察：TreeSetDemo2.java、TreeSetDemo3.java、TreeSetDemo4.java】
+	        
+	2、Map接口: （Map又叫做映射）(又叫数组链表)
+	   ---> HashMap: 【HashMap常常用来计数（原理：key相同，后面Entry对象的value会覆盖前面对象的value】（又叫做散列映射）
+	   		1、可以存放null，当向HashMap集合中添加的元素的key相同，那么就会覆盖之前的value。
+			       那么，key如何才算相同呢？----> 这就要重写equals()方法与hashCode()方法，看相同key的具体定义。
+		    2、HashMap的数据结构：数组加链表的结构
+		                分析源代码：
+		       (1)、HashMap包含了一个Entry（key,value,next,hash)的内部类【只有next说明是一个单向链表。】
+		       (2)、key、value放入HashMap的时候都会被包装成Entry的对象。
+		       (3)、HashMap成员里就有Entry的数组，该数组的大小默认是16，永远是2的次方数，如果自己给出的不是2的次方数，会自动转换成大于并最接近自己给出的2的次方数。
+		       (4)、put(key,value)其实就是转换成Entry对象，并放入数组中。
+		       (5)、put()方法的实现。
+		            1.int hash = hash（key.hashCode()）: 首先调用key的hashCode方法得到一个整数——哈希码（hash值）。
+		            2.把hash值作为参数传到hash函数中来计算——散列运算，得到一个整型的散列值，然后根据散列值以及数组的长度传入indexOf方法中确定数组的位置。hash&（table.length-1）就等价于 hash%（table.length）【length是2的次方数才成立】
+		            3.如果数组的这个位置没有元素，直接包装Entry的实例，将这个实例指向数组的这个位置；
+		                                 如果计算出的数组的这个位置已经存在元素了，就要分两种情况判断：
+		              --->1、key相同：则将后面一个Entry实例覆盖前面的Entry实例，然后要遍历整个链表。
+		              --->2、key不同：那么就不覆盖，而是插入到链表的头部。【注意：是头部，即在第一个插入这个位置的元素的前面，而不是连接到这个元素的后面】  
+		                           【注意一：】 如果计算出来的数组位置相同，这就是冲突率，我们要减少冲入率，因为一旦放入链表中，以后总是要遍历链表，效率差，要尽量把元素直接放入数组，而非链表。根据实际情况重写hashCode和 equals方法。
+		                           【注意二：】底层书数组，应尽量减少扩容，所以HashMap放入元素的时候应该估算数组的大小，避免扩容操作。
+		                           HashMap有一个加载因子默认是0.75。比如：数组默认大小是16，那么16X0.75=12，那么当数组中存储的元素达到12个的时候，数组就会进行自动扩容2倍。
+		       (6)、get()方法的实现：
+		                           通过key查找元素的算法和put是一样的，所以一旦key放入map，就不应该修改与hashCode与equals相关的属性值了。
+	   ---> TreeMap:（又叫做树映射）
+	        1、TreeMap通过红黑树实现Map接口
+	        2、TreeMap不像散列映射（HashMap），TreeMap保证他的元素按关键字升序。
+	        3、TreeMap<key，value>中的key必须要能够根据某种规则排序，而排序的规则通过两种比较器（1、Comparable；2、Comparator）
+	        
+	        
+	  
+	3、Collections类：类集工具 ，定义了若干用于类集（List、Set）和映射（Map）的算法，这些算法被定义成静态方法。（Collections有些类似于Arrays，Arrays专门用来操作数组）
+		1、
+	        

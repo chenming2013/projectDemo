@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	
+<!-- 该文件用来配置entity对象和数据库表的映射关系 -->
+<!-- package指明要映射到数据库中的类在哪个包下 -->
+<hibernate-mapping package="com.chenming.compositeMapping.test1.domain">
+	<class name="com.chenming.compositeMapping.test1.domain.People4" table="t_people4" lazy="false">
+		<!-- 复合主键使用composite-id标签 -->
+		<composite-id>
+			<!-- key-property标签表示哪一些属性对应复合主键 -->
+			<key-property name="id" column="id" type="string"></key-property>
+			<key-property name="name" column="name" type="string"></key-property>
+		</composite-id>
+
+		<!-- 对entity中其它属性进行映射 -->
+		<property name="age" column="age" type="string"></property>
+	</class>
+</hibernate-mapping>

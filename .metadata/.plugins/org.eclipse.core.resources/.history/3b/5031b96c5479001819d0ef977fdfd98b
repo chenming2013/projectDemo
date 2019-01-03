@@ -1,0 +1,28 @@
+package com.chenming.test2.util;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+/**
+ * Hibernate的工具类,创建SessionFactory以及Session
+ * @author Lenovo
+ *
+ */
+public class HibernateUtil
+{
+
+	private static SessionFactory sessionFacory;
+	
+	static 
+	{
+		Configuration configuration = new Configuration().configure();
+		configuration.buildSessionFactory(serviceRegistry)
+	}
+	
+	public static SessionFactory getSessionFactory() 
+	{
+		return sessionFacory;
+	}
+	
+	
+}

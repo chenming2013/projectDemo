@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	
+<!-- 该文件用来配置entity对象和数据库表的映射关系 -->
+<!-- package指明要映射到数据库中的类在哪个包下 -->
+<hibernate-mapping package="com.chenming.test5.multipleOnetoOnePK.domain">
+	<class name="com.chenming.test5.multipleOnetoOnePK.domain.IdCard2" table="t_idcrad2" lazy="false">
+		<id name="id" column="id" type="int">
+			<!-- genarator元素用于指定主键生成策略: hilo、native、increment、sequence -->
+			<generator class="native"></generator>
+		</id>
+		
+		<!-- 对entity中其它属性进行映射 -->
+		<property name="cardNo" type="string" column="card_no"></property>
+		
+		<!-- 这里只需要写这些就够了,因为one-to-one默认使用的就是用主键跟关联类的主键进行比较,本来就是主键关联,通过主键跟主键关联就能达到目的,所以不需要写column这个属性 -->
+		<one-to-one name="person2"></one-to-one>
+	</class>
+</hibernate-mapping>

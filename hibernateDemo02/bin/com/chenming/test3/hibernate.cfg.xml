@@ -1,0 +1,32 @@
+<!--
+  ~ Hibernate, Relational Persistence for Idiomatic Java
+  ~
+  ~ License: GNU Lesser General Public License (LGPL), version 2.1 or later.
+  ~ See the lgpl.txt file in the root directory or <http://www.gnu.org/licenses/lgpl-2.1.html>.
+  -->
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<!-- 配置数据库连接驱动,这里是MYSQL数据库 -->
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		
+		<!-- 配置数据库连接URL -->
+		<property name="hibernate.connection.url">jdbc:mysql:///hibernateDemo02</property>
+		
+		<!-- 配置指定数据库用户名 -->
+		<property name="hibernate.connection.username">chenming</property>
+		
+		<!-- 配置指定数据库密码 -->
+		<property name="hibernate.connection.password">root</property>
+		
+		<!-- 配置数据库方言 -->
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		
+		<!-- 配置映射文件 -->
+		<mapping resource="com/chenming/test3/domain/Class2.hbm.xml" />
+		<mapping resource="com/chenming/test3/domain/Student2.hbm.xml" />
+	</session-factory>
+</hibernate-configuration>

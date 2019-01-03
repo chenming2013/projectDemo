@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"     
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"           
+    xmlns:context="http://www.springframework.org/schema/context"   
+    xmlns:aop="http://www.springframework.org/schema/aop"       
+    xmlns:tx="http://www.springframework.org/schema/tx"         
+    xmlns:util="http://www.springframework.org/schema/util"         
+    xmlns:p="http://www.springframework.org/schema/p"               
+    xsi:schemaLocation="http://www.springframework.org/schema/beans                             
+                        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd        
+                        http://www.springframework.org/schema/context                           
+                        http://www.springframework.org/schema/context/spring-context-4.0.xsd    
+                        http://www.springframework.org/schema/aop                               
+                        http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+                        http://www.springframework.org/schema/tx                            
+                        http://www.springframework.org/schema/tx/spring-tx-4.0.xsd                      
+                        http://www.springframework.org/schema/util                          
+                        http://www.springframework.org/schema/util/spring-util-4.0.xsd">
+   
+   	<!-- 使用无参构造器 -->
+   	<bean id="bean1" class="basic.basic_02_3_instanceBean.bean.HelloImpl">
+   	</bean>		
+   	<!-- 使用一个参数的构造器 -->
+   	<bean id="bean2" class="basic.basic_02_3_instanceBean.bean.HelloImpl">
+   		<constructor-arg index="0" value="2013"></constructor-arg>
+   	</bean>
+	<!-- 使用三个参数的构造器 -->
+	<bean id="bean3" class="basic.basic_02_3_instanceBean.bean.HelloImpl">
+		<constructor-arg index="0" value="2013"></constructor-arg>
+		<constructor-arg index="1" value="chenming"></constructor-arg>
+		<constructor-arg index="2" value="24"></constructor-arg>
+	</bean>
+
+	
+	<!-- 使用静态工厂方法 -->
+	<bean id="bean4" class="basic.basic_02_3_instanceBean.bean.HelloStaticFactory" factory-method="newInstance">
+		<constructor-arg index="0" value="2013" type="int" />
+		<constructor-arg index="1" value="chenming" type="java.lang.String" />
+		<constructor-arg index="2" value="24" type="int" />
+	</bean>
+
+
+	<!-- 使用实例工厂方法 -->
+	<bean id="instanceFactoryBean" class="basic.basic_02_3_instanceBean.bean.HelloInstanceFactory"></bean>
+	<bean id="bean5" factory-bean="instanceFactoryBean" factory-method="newInstance">
+		<constructor-arg index="0" value="2013" />
+		<constructor-arg index="1" value="chenming" />
+		<constructor-arg index="2" value="24" />
+	</bean>
+</beans>

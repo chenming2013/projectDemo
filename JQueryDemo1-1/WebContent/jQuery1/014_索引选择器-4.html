@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery程序</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+	/* 
+		测试索引选择器
+		
+		":even"  >>> 取得指定所有元素索引为偶数的元素,索引值从0开始
+		":odd"   >>> 取得指定所有元素索引为奇数的元素,索引值从0开始
+		
+		
+	*/
+	/* 
+		下面的js的意思是: 
+			
+	*/
+	$(function(){
+	/**/
+		$("tr:even").attr("class","txt");
+		$("tr td:odd").attr("class","temp");
+	})
+</script>
+
+</head>
+<body>
+
+	<table border="red 2px solid">
+		<tr>
+			<td>1-1、hello</td>
+			<td>1-2、hello</td>
+			<td>1-3、hello</td>
+		</tr>
+		<tr>
+			<td>2-1、world</td>
+			<td>2-2、world</td>
+			<td>2-3、world</td>
+		</tr>
+		<tr>
+			<td>3-1、chenming</td>
+			<td>3-2、chenming</td>
+			<td>3-3、chenming</td>
+		</tr>
+	</table>
+	
+</body>
+</html>

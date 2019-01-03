@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery程序</title>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+	/*
+		jQuery 元素选择
+		
+		html(): 能够解析处理HTML元素
+			1. 能够取得文本内容
+			2. 能够设置文本内容
+	*/
+	
+	<!-- 测试 html() 方法获取内容 -->
+	function fun(){
+	
+		var msgValue = $(msg).html();
+		console.log(">>>>>>> msg: "+msgValue);
+	}
+		
+		
+	<!-- 测试 html() 方法设置内容 -->
+	function fun2(){
+		var msgValue = $(msg2).val();
+		$(showMsg2).html(msgValue);
+	}
+
+</script>
+
+</head>
+<body>
+	
+	<h2>测试 html() 方法获取内容</h2>
+	<span id="msg"><h1 style="color:red">这是文本内容</h1></span>
+	<input type="button" value="控制台输出" onclick="fun()">     <br/>
+	
+	<br/><br/>
+	
+	
+	<h2>测试 html() 方法 设置文本内容</h2>
+	输入文本: <input type="text" name="msg2" id="msg2" />
+	<input type="button" value="输出" onclick="fun2()" />  <br/>
+	在这里输出内容: <span id="showMsg2"></span>
+</body>
+</html>

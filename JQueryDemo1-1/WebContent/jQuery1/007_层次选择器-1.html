@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery程序</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+	/* 
+		测试层次选择器
+		
+		"祖先 后代"  或者  使用find()方法  【查找祖先元素的所有后代】
+		
+		
+	*/
+	/* 下面的js的意思是: 当页面加载的时候,为 div 下的所有 p 元素添加上class属性,而class属性值为txt */
+	$(function(){
+	/*
+		$("div").attr("class","txt");
+	*/
+		//下面的写法和上面一样	
+		$("div").find("p").attr("class","txt");
+	
+	})
+</script>
+
+</head>
+<body>
+	
+	<div>
+		<h1>1、测试元素选择器</h1>
+		<p>2、测试元素选择器</p>
+	</div>
+	<div>
+		<h1>
+			<div>3、测试元素选择器</div>
+		</h1>
+		<span>4、测试元素选择器</span>       <br/>
+		<div>
+			<span>5、测试元素选择器</span>
+		</div>
+	</div>
+	<div>
+		<p>6、测试元素选择器</p>
+	</div>
+	<p>7、测试元素选择器</p>
+</body>
+</html>

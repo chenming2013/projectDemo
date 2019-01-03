@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery程序</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+	/* 
+		测试基础事件绑定
+		
+		
+	*/
+	/* 
+		下面的js的意思是: 
+			
+			
+	*/
+	$(function(){
+
+		$(mybutton).on("click",function(){
+			alert("再点我就吃了你!");
+		})
+		
+	})
+</script>
+
+</head>
+<body>
+	
+	<input id="mybutton" type="button" value="点我" />
+	
+</body>
+</html>

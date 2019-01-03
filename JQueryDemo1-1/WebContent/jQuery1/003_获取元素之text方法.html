@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery程序</title>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+	/*
+		jQuery 元素选择
+		
+		text(): 操作文本,text()方法不会处理html元素,会将html元素原封不动的输出
+			1. 能够取得文本内容
+			2. 能够设置文本内容
+	*/
+	
+	<!-- 测试text() 方法 获取文本内容 -->
+	function fun(){
+	
+		var msgValue = $(msg).text();
+		console.log(">>>>>>> msg: "+msgValue);
+		
+	}
+		
+		
+	<!-- 测试 text() 方法设置文本内容 -->
+	function fun2(){
+		var msgValue = $(msg2).val();
+		$(showMsg2).text(msgValue);
+	}
+
+</script>
+
+</head>
+<body>
+	
+	<h2>测试 text() 方法的 获取文本内容</h2>
+	<p id="msg">这是文本内容</p>
+	<input type="button" value="输出" onclick="fun()">     <br/>
+	
+	<br/><br/>
+	
+	
+	<h2>测试 text() 方法 设置文本内容</h2>
+	输入文本: <input type="text" name="msg2" id="msg2" />
+	<input type="button" value="输出" onclick="fun2()" />  <br/>
+	在这里输出内容: <span id="showMsg2"></span>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <system systemId="http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd" uri="file:///F:/JAR/Spring_JAR/spring-framework-4.3.4.RELEASE/schema/mvc/spring-mvc-4.3.xsd"/>
+  <system systemId="http://www.springframework.org/schema/context/spring-context-4.3.xsd" uri="file:///F:/JAR/Spring_JAR/spring-framework-4.3.4.RELEASE/schema/context/spring-context-4.3.xsd"/>
+  <system systemId="http://www.springframework.org/schema/tx/spring-tx-4.3.xsd" uri="file:///F:/JAR/Spring_JAR/spring-framework-4.3.4.RELEASE/schema/tx/spring-tx-4.3.xsd"/>
+  <system systemId="http://www.springframework.org/schema/beans/spring-beans-4.3.xsd " uri="file:///F:/JAR/Spring_JAR/spring-framework-4.3.4.RELEASE/schema/beans/spring-beans-4.3.xsd"/>
+  <uri name="http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd" uri="file:///F:/JAR/Hibernate_JAR/hibernate-release-4.2.21.Final/project/hibernate-core/src/main/resources/org/hibernate/hibernate-configuration-3.0.dtd"/>
+  <uri name="http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" uri="file:///F:/JAR/Hibernate_JAR/hibernate-release-4.2.21.Final/project/hibernate-core/src/main/resources/org/hibernate/hibernate-mapping-3.0.dtd"/>
+</catalog>

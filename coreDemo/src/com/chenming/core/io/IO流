@@ -1,0 +1,217 @@
+IO流：
+	InPutStream、OutPutStream：字节输入、输出流
+	Reader、Writeer：字符输入、输出流
+	
+	一、File
+		(1)介绍：
+			1.一个File类的对象，表示磁盘上的文件或目录。
+			2.File类提供了与平台无关的方法来对磁盘上的文件或者目录进行操作。
+			3.File类直接处理文件或文件系统。比如删除文件，获取文件长度大小等信息。
+			4.File类没有提供方法从文件读取或向文件存储信息。即：File类不能对文件或目录的内容进行操作。
+		(2)File类及使用：
+			1.File定义了获取File对象标准属性的方法
+			2.部分File类常用方法
+				public String getName()  //获取文件或目录名称
+				public String getParent()  //获取父目录的路径字符串,注意这里的父目录是指左右直接或间接的父目录
+				public File getParentFile() //获取父目录路径的File对象
+				public String getAbsolutePath() //获取文件或目录的绝对路径
+				public boolean exists()  //判断文件或目录是否存在
+				public Fie[] listFiles() //获得目录里面的所有文件和目录
+				public boolean isDirectory() //判断是否是一个目录
+				public boolean isFile()  //判断是否是一个文件
+				public long length()   //获取文件的长度大小(字节大小)
+				public boolean delete()  //删除文件或目录。如果此路径名表示一个目录，则该目录必须为空才能删除
+				public boolean mkdir()   //创建文件夹，只能创建一级文件夹
+				public boolean mkdirs()  //创建指定路径上存在或不存在的所有文件夹 
+				
+				
+	二、流
+		(1)流的概念：
+		      流是一个很形象的概念，当程序需要读取数据的时候，就会开启一个通向数据源的流，这个数据源可以是文件、内存，或是网络连接。
+		      类似的，当程序需要写入数据的时候，就会开启一个通向目的地的流。这时候，你就可以想象数据好像在其中“流”动一样。流的作用是为了传输数据。
+		(2)流的分类：
+			1.流按其流向分为 “输入流” 和 “输出流”
+			2.流按数据传输单位分为 “字节流” 和 “字符流”
+				“字节流” 用来读写8位二进制的字节
+				“字符流” 用来读写16位二进制的字符
+			3.流按功能分为 “节点流” 和 “处理流” (按这种划分，除了节点流之外的流都是处理流)
+				“节点流” 从一个特定的数据源读写数据。即节点流是直接操作文件，网络等的流。例如：FileInputStream、FileOutputStream。
+				“处理流” 是对一个已存在的流的链接和封装，通过对数据进行处理为程序提供功能强大、灵活的读写功能。
+		(3)简单的例子:
+			比如说从某个文件中读取数据把这个文件当做一个大桶，现在用个管道直接连接在这个大桶上进行抽水,此时这跟管道就是节点流;
+			当感觉这个管道不够抽水用的了，在其外面套上一个大的抽水管道，此时这个大的管道就相当于处理流.
+				
+				
+	三、字节流
+		1.字节流类用于向字节流读写8位二进制的字节。一般的，字节流主要用于读写诸于图像或声音等的二进制文件。
+		2.字节流类以InputStream和OutputStream为顶层类，它们都是抽象类
+		3.InputStream是定义了字节输入流的抽象类
+		4.InPutStream中定义的方法
+			(1)public abstract int read() throws IOException     
+			//从输入流中读取数据的下一个字节，返回 0 到 255 范围内的 int 字节值
+			//注意：这里返回的int值表示的读取的那个字节所表示的字节值，即：八位二进制的值。(高位补0)
+			(2)public int read(byte[] b) throws IOException
+			//从输入流中读取一定数量的字节，并将其存储在缓冲区数组 b 中。以整数形式返回实际读取的字节数
+			//也就是说每次从输入流中读入指定的字节，返回的就是实际读入的字节数。
+			//注意：这里返回的int值表示的是读取的字节的实际个数
+			(3)public int read(byte[] b,int off,int len) throws IOException
+			//将输入流中最多 len 个数据字节读入 byte 数组。尝试读取 len 个字节，但读取的字节也可能小于该值。以整数形式返回实际读取的字节数。
+			(4)public long skip(long n) throws IOException
+			(5)public int available() throws IOException
+			(6)public void close() throws IOException
+		5.OutPutStream是定义了字节输出流的抽象类，该类所有方法返回void值，在出错情况下抛IOException，
+		6.OutPutStream中定义的方法
+			(1)public abstract void write(int b) throws IOException
+			(2)public void write(byte[] b) throws IOException
+			(3)public void write(byte[] b,int off,int len) throws IOException
+			(4)public void flush() throws IOException
+			(5)public void close() throws IOException
+		7.FileInPutStream：从文件系统中的某个文件中获得输入字节
+			(1)常用构造方法：
+				1.FileInputStream(String filepath)
+				2.FileInputStream(File fileobj)
+		8.FileOutputStream:向文件中写入字节
+			(1)常用构造方法：
+				1.FileOutputStream(String filepath)
+				2.FileOutputStream(File fileobj)
+				3.FileOutputStream(String filepath,boolean append)
+		
+	四、在上面使用了文件操作流实现了针对于文件数据的输入与输出操作，但是如果说现在在某一应用中需要进行IO操作，可是又不想产生文件，就可以利用内存来实现输入与输出的操作。
+		针对于内存流，Java.io包中提供了两组操作：
+		1.字节内存流:ByteArrayInputStream、ByteArrayOutputStream
+		  (1)ByteArrayInputStream是把字节数组当成源的输入流。两个构造方法，每一个都需要一个字节数组提供数据源。
+		  	 1、ByteArrayInputStream(byte[] array)
+		  	 2、ByteArrayInputStream(byte array[],int start,int numBytes)
+		  (2)ByteArrayOutputStream是把字节数组当做目标的输出流。两个构造方法：
+		   	 1、ByteArrayOutputStream():创建一个新的byte数组输出流
+		   	 2、ByteArrayOutputStream(int numBytes):创建一个新的byte数组输出流，具有指定大小缓冲区（字节为单位）
+		2.字符内存流:CharArrayReader、CharArrayWriter
+		本次以字节内存流操作为主
+		比较文件流操作与内存流操作的区别：
+		|——以文件操作为例：
+			输入：程序<---FileInputStream<---文件
+			输出：程序--->OutputStream------>文件
+		|——以内存操作为例：
+			输入：程序<---ByteArrayInputStream<----内存
+			输出：程序--->ByteArrayOutputStream--->内存
+		   
+		   
+	四、过滤流：
+		1.过滤流（filtered stream）仅仅是为底层透明的提供扩展功能的输入流（输出流）的包装，这些流通常由一个普通类方法（即，过滤流的一个父类）访问。
+		2.过滤字节输入流FilterInputStream和过滤字节输出流FilterOutPutStream。
+		    构造方法：
+		    FilterInPutStream(InputStream is)
+		    FilterOutputStream(OutputStream os)
+		3.这些类提供的方法和InputStream及OutputStream类的方法相同
+		4.常用的过滤流有BufferedInputStream、BufferedOutputStream、DataInputStream、DataOutputStream
+		
+		
+	五、装饰模式：
+		1.装饰模式概念：
+			装饰模式以对客户透明的方式动态的给一个对象附加上更多的责任。换言之，客户端并不会觉得对象在装饰前和装饰后有什么不同。
+			装饰模式可以在不创建更多子类的情况下，将对象的功能加以扩展。
+		2.装饰模式中的角色有：
+			1.抽象构件角色（Component）：给出一个抽象接口，以规范准备接收附加责任的对象。 【类似InputStream、OutputStream】
+			2.具体构建角色(ConcreteComponent)：定义一个将要接收附加责任的类。                                 【类似FileInputStream、FileOutputStream】
+			3.装饰角色(Decorator)：持有一个构件对象的实例，并定义一个与抽象构件接口一致的接口    【类似FilterInputStream，即：过滤流】
+			4.具体装饰角色(ConcreteDecorator)：负责给构件对象“贴上”附加的责任。   【类似 BufferedInputStream、BufferedOutputStream、DataInPutStream、DataOutputStream】
+			
+			
+	六、字符流    【字符流的底层还是字节流】
+		1.字节流提供处理任何类型输入/输出操作的足够功能，但是不能直接操作Unicode字符，因而需要字符流。
+		2.字符流层次结构的顶层就是Reader、Writer抽象类
+		3.Reader是定义Java字符输入模式的抽象类
+		4.Writer是定义Java字符输出模式的抽象类
+		5.FileReader类表示可以读取文件内容的Reader类的子类
+		    构造方法：
+		    FileReader(String filePath)
+		    FileReader(File fileObj)
+		6.FileWriter类表示可以写文件内容的Writer类的子类
+		    构造方法：
+		    FileWriter(String filePath)
+		    FileWriter(String filePath,boolean append)
+		    FileWriter(File fileObj)
+		7.BufferedReader(字符缓冲区输入流)通过缓冲输入提高性能
+		    两个构造方法：
+		    BufferedReader(Reader inputStream);
+		    BufferedReader(Reader inputStream,int bufSize);
+		8.BufferedWriter(字符缓冲区输出流)通过缓冲输出提高性能
+		    两个构造方法：
+		    BufferedWriter(Writer OutputStream);
+		    BufferedWriter(Writer OutputStream,int bufSize);
+		9.BufferedInputStream(字节缓冲区输入流)
+	   10.BufferedOutputStream(字节缓冲区输出流)
+		 
+	七、其它流
+		1.ObjectInputStream/ObjectOutputStream
+			(1)ObjectInputStream和ObjectOutputStream分别与FileInputStream和FileOutputStream一起使用时，可以为应用程序提供对对象的持久储存(以前对象都是在内存中，程序执行完毕，对象就被清理。现在通过对象流可以将对象存储在数据源中。)。
+			(2)我们把对象以某种特定的编码格式写入称之为“序列化”。把写入的编码格式内容还原成对象称之为“反序列化”。被序列化的对象必须实现Serializable接口。对象流不能序列化static和transient修饰的对象。
+			(3)对象序列化机制：
+			      对象序列化机制允许把Java中对象转换成平台无关的二进制流，从而允许把这种二进制流持久的保存在磁盘上，或通过网络将这种二进制流传输到另一个网络节点。
+			      当其它程序获取了这种二进制流，就可以恢复成原来的Java对象，这是反序列化过程。
+			(4)序列化的好处在于可将任何实现了Serializable接口的对象转化为字节数据，使其在保存和传输时可被还原。
+			(5)序列化是RMI(Remote Method invoke--远程方法调用)过程的参数和返回值都必须实现的机制，而RMI是JavaEE的基础。因此序列化机制是JavaEE平台的基础。
+			(6)如果需要让某个对象支持序列化机制，则必须让其类是可序列化的，为了让某个类是可序列化的，该类必须实现下面两个接口之一。
+			    |—— Serializable接口
+			    |—— Externalizable接口
+			(7)凡是实现Serializable接口的类都有一个表示序列化版本标识符的静态变量：
+				private static final long seriaVersionUID;
+				seriaVersionUID用来表明类的不同版本间的兼容性。
+				如果类没有显示定义这个静态常量，它的值是Java运行时环境根据类的内部细节自动生成的。若类的源代码作了修改，seriaVersionUID可能发生变化，故建议，显示声明。
+			(8)显示定义seriaVersionUID的用途：
+			    1.希望类的不同版本对序列化兼容，因此需确保类的不同版本具有相同的seriaVersionUID。
+			    2.不希望类的不同版本对序列化兼容，因此须确保类的不同版本具有不同的seriaVersionUID。
+		2.InputStreamReader/OutputStreamWriter
+			1.转换流是指将字节流与字符流之间的转换
+			2.转换流的出现方便了文件的读写，它在字符流与字节流之间架起了一座桥梁，使原本毫无关联的两种流操作能够进行转化，提高了程序的灵活性
+			3.字节流中的数据都是字符时，转换成字符流操作更高效
+			4.如果使用非默认编码保存文件或者读取文件时，需要用到转换流，因为字节流的重载构造方法中有指定编码格式的参数，而FileReader、FileWriter是默认编码的文本文件。
+		3.常见的编码表：
+			ASCII:美国标准信息交换码，用一个字节的7位表示，总共有128个字符
+			ISO8859-1：拉丁码表，欧洲码，用一个字节的8位表示
+			GB2312：中国的中文编码表
+			GBK：中国的中文编码表升级，融合了更多的中文文字符号
+			Unicode：国际标准码，融合了多种文字，所有文字都用两个字节来表示，Java语言使用的就是Unicode
+			UTF-8：最多用三个字节来表示一个字符
+		4.RandomAccessFile随即访问文件
+			1.支持对随机访问文件的读取和写入
+			2.随即访问文件的行为类似存储在文件系统中的一个大型byte[]数组，存在指向该隐含数组的光标或索引，称为文件指针。
+			3.输入操作从文件指针开始读取字节，随着对字节的读取而前移此文件指针。
+			4.如果随即访问文件以读取/写入模式创建，则输出操作也可用，输出操作从文件指针开始写入字节，随着对自己的写入而前移此文件指针。
+			5.写入隐含数组末尾之后的输出操作导致该数组扩展。
+			6.改文件指针可以通过getFilePointer方法读取，通过seek方法设置。
+			
+			
+	七、打印流
+		为了解决输出数据时的功能不足，所以在Java.io包里又提供了一套专门的用于输出数据的类：PrintStream(字节打印流)、PrintWriter(字符打印流)
+			
+			
+			
+			
+		问题1：
+		byte[] buf = new byte[1024]; 
+		int len = 0;
+		while((len=fis.read(buf))!=-1)
+		{
+			fos.write(buf,o,len);
+		}
+		//这个len指的是读取的每一个字节的长度，还是读取的字节的个数？
+		解答：
+			1.read()方法返回的是读取的每一个字节的字节值，API上说的是0~255之间的字节值
+			2.read(byte[] buf)方法返回的是读取的字节个数。
+		
+		问题2:
+		//API上说read()返回的是0~255范围内的int字节值，但是byte的取值范围不是-128~127吗？128之后的怎么得到的？
+		
+		
+		
+		问题3：一个汉字占两个字节，API上说返回的字节值是0~255，那是不是说将一个汉字的两个字节拆分，分别求出他的字节值，然后将两个字节值相加？
+		
+		
+		
+		知识点：(经过测试)
+			1.一个中文字符占两个字节（包括中文标点），一个英文字符占一个字节（包括英文标点），如：一个中文逗号占两位，一个英文逗号占一位
+			2.换行符占两个字节。
+			3.一个Tab键占一个字符（不要看Tab键占位多，但是只占一个字节。）
+			4.一个空格键占一个字节。
+			

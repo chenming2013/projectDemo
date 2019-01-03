@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+    
+    <bean id="bean1" class="basic.basic_04_4_injectResource.bean.ResourceBean">
+    	<property name="resource" value="basic/basic_04_4_injectResource/testClassPathResource_1.properties"></property>
+    </bean>         
+    <bean id="bean2" class="basic.basic_04_4_injectResource.bean.ResourceBean">
+    	<property name="resource" value="classpath:basic/basic_04_4_injectResource/testClassPathResource_1.properties"></property>
+    </bean> 
+    <bean id="bean3" class="basic.basic_04_4_injectResource.bean.ResourceBean">
+    	<property name="resource" value="file:F:\tempDirectory\SpringTest\1.txt"></property>
+    </bean>
+    
+</beans>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery程序</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+	/* 
+		测试基本选择器之 ID选择器
+		
+		ID选择器: 根据指定ID取得指定元素,相当于 document.getElementById(); 
+		
+		ID选择器有两种写法: $(ID) 或者 $("#ID")
+	*/
+	/* 下面的js的意思是: 当页面加载的时候,为id为showMsg的元素添加上一个class属性,而class属性值为txt */
+	$(function(){
+		/* $(showMsg).attr("class","txt"); */
+		$("#showMsg").attr("class","txt");  
+	})
+</script>
+
+</head>
+<body>
+	
+	<div id="showMsg"><h1>测试ID选择器</h1></div>
+	
+</body>
+</html>

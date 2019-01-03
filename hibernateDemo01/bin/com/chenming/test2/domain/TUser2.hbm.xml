@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	
+<!-- 该文件用来配置实体对象和数据库表之间的映射关系 -->
+<!-- package属性指明要映射到数据库总的类在哪个包下 -->
+<hibernate-mapping package="com.chenming.test2.domain">
+	<!--  
+		name: 要映射的类的类名,即 TUser2
+		table: 对应的数据库中的表名,即hibernateDemo01/t_user2
+		lazy: 懒加载
+		
+		name、table两个属性指定后,就建立起了类和表之间的关系
+	-->
+	<class name="com.chenming.test2.domain.TUser2" table="t_user2" lazy="true">
+		<!-- 类和表之间建立起了联系后,就需要为类的属性与表的字段建立联系 -->
+		<!-- id元素用于指定主键属性 -->
+		<!-- name:实体类的唯一标识;column:指定的表中的列;type:类中id属性的类型 -->
+		<id name="id" column="id" type="int">
+			<!-- genarator元素用于指定主键生成策略:hilo、native、sequence、increment -->
+			<generator class="increment"></generator>
+		</id>
+		<!-- 映射其他属性和字段 -->
+		<property name="name" column="name" type="java.lang.String"></property>
+		<property name="birthday" column="birthday" type="java.util.Date"></property>
+		<property name="age" column="age" type="int"></property>
+	</class>
+</hibernate-mapping>

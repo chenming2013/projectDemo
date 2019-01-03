@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1505218508419_1" label="SpringMVCStudy" name="SpringMVCStudy">
+<item elementID="=springMVCDemo1" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=springMVCDemo2" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=springMVCDemo3" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=springMVCDemo4" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1506085411458_3" label="JPAStudy" name="JPAStudy">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/JPADemo1" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/JPADemo2" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/JPADemo3" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/JPADemo4" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1506428624780_4" label="ShiroStudy" name="ShiroStudy">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/shiroDemo1-1" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/shiroDemo1-2" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1506517745056_5" label="JQueryStudy" name="JQueryStudy">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/JQueryDemo1-1" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1507017062301_6" label="AjaxStudy" name="AjaxStudy">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/ajaxDemo1-1" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/ajaxDemo1-2" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/ajaxDemo1-3" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/ajaxDemo2-1" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/ajaxDemo2-2" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1511794308624_7" label="RealProject" name="RealProject">
+<item elementID="=KugouProject" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/com.newsilkroad.client-yyzj" type="4"/>
+<item elementID="=dangdang" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=csdnStudy" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1512310063742_8" label="JavaMailStudy" name="JavaMailStudy">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/javaMailDemo1" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1513088925811_9" label="PaymentStudy" name="PaymentStudy">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/paymentDemo1" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/paymentDemo2" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1513252546931_10" label="JavaCoreStudy" name="JavaCoreStudy">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/coreDemo" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1524490381133_11" label="struts2" name="struts2">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/struts2-showcase" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1524663715260_14" label="source_parse_struts2" name="source_parse_struts2">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/struts2-core" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/struts2-showcase" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1524663748901_15" label="source_parse_jdk" name="source_parse_jdk">
+<item elementID="=JDK8_source" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1525185616486_15" label="apache" name="apache">
+<item elementID="=POIDemo01" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1528206763626_15" label="HibernateStudy" name="HibernateStudy">
+<item elementID="=hibernateDemo01" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=hibernateDemo02" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=hibernateDemo03" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1533734898647_16" label="SpringStudy" name="SpringStudy">
+<item elementID="=SpringDemo01" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1534263302098_17" label="LoggerStudy" name="LoggerStudy">
+<item elementID="=JULDemo01" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Log4j2Demo01" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1540469459530_18" label="JUnitStudy" name="JUnitStudy">
+<item elementID="=JUnitDemo01" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=JUnitDemo02" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1540900264184_19" label="SiteMeshStudy" name="SiteMeshStudy">
+<item elementID="=SiteMesh2Demo01" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=SiteMesh3Demo01" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=sitemesh-example" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1543126195761_20" label="FreemarkerStudy" name="FreemarkerStudy">
+<item elementID="=FreemarkerDemo01" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1543922610783_21" label="JavaXMLStudy" name="JavaXMLStudy">
+<item elementID="=JavaStudyDemo01" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1503825084153_0" label="Window Working Set" name="Aggregate for window 1503825084153"/>
+<mruList name="PaymentStudy"/>
+<mruList name="SpringMVCStudy"/>
+</workingSetManager>

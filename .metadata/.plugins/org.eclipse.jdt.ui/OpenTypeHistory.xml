@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=hibernateDemo01/lib\/hibernate-core-4.2.21.Final.jar&lt;org.hibernate.cfg(Configuration.class[Configuration" modifiers="33" timestamp="1529504742868"/>
+<typeInfo handle="=hibernateDemo01/lib\/hibernate-core-4.2.21.Final.jar&lt;org.hibernate(SessionFactory.class[SessionFactory" modifiers="1537" timestamp="1529504742868"/>
+<typeInfo handle="=hibernateDemo01/lib\/hibernate-core-4.2.21.Final.jar&lt;org.hibernate.usertype(UserType.class[UserType" modifiers="1537" timestamp="1529504742868"/>
+<typeInfo handle="=KugouProject/F:\/Java\/jdk\/jdk1.8.0_144\/jdk-debug.jar&lt;java.sql(Types.class[Types" modifiers="33" timestamp="1514711273655"/>
+<typeInfo handle="=POIDemo01/lib\/poi-ooxml-schemas-3.17.jar&lt;org.openxmlformats.schemas.spreadsheetml.x2006.main.impl(CTWorkbookImpl.class[CTWorkbookImpl" modifiers="33" timestamp="1531238383680"/>
+<typeInfo handle="=hibernateDemo01/lib\/hibernate-core-4.2.21.Final.jar&lt;org.hibernate.loader.custom.sql(SQLCustomQuery$ParserContext.class[ParserContext" modifiers="10" timestamp="1529504742868"/>
+<typeInfo handle="=springMVCDemo2/F:\/Eclipse\/WorkSpace\/springMVCDemo2\/WebContent\/WEB-INF\/lib\/spring-beans-4.3.4.RELEASE.jar&lt;org.springframework.beans.factory(BeanFactory.class[BeanFactory" modifiers="1537" timestamp="1505231971167"/>
+<typeInfo handle="=SpringDemo01/lib\/spring-beans-4.3.4.RELEASE.jar&lt;org.springframework.beans.factory(BeanFactory.class[BeanFactory" modifiers="1537" timestamp="1533735574016"/>
+<typeInfo handle="=springMVCDemo2/F:\/Eclipse\/WorkSpace\/springMVCDemo2\/WebContent\/WEB-INF\/lib\/spring-core-4.3.4.RELEASE.jar&lt;org.springframework.core.io(ClassPathResource.class[ClassPathResource" modifiers="33" timestamp="1505231971268"/>
+<typeInfo handle="=springMVCDemo2/F:\/Eclipse\/WorkSpace\/springMVCDemo2\/WebContent\/WEB-INF\/lib\/spring-context-4.3.4.RELEASE.jar&lt;org.springframework.context(ApplicationContext.class[ApplicationContext" modifiers="1537" timestamp="1505231971231"/>
+<typeInfo handle="=SpringDemo01/lib\/spring-core-4.3.4.RELEASE.jar&lt;org.springframework.core.io(Resource.class[Resource" modifiers="1537" timestamp="1533735574094"/>
+</typeInfoHistroy>

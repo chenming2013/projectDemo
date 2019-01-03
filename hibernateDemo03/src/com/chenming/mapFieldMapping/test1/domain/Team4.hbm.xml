@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	
+<!-- 该文件用来配置entity对象和数据库表的映射关系 -->
+<!-- package指明要映射到数据库中的类在哪个包下 -->
+<hibernate-mapping package="com.chenming.mapFieldMapping.test1.domain">
+	<class name="com.chenming.mapFieldMapping.test1.domain.Team4" table="t_team4" lazy="false">
+
+		<id name="id" column="id" type="string">
+			<generator class="uuid"></generator>
+		</id>
+	
+		<property name="teamName" column="team_name" type="string"></property>
+		
+		<map name="students" table="student4" cascade="all">
+			<key column="team_id"></key>
+			
+			<!-- 指定的是Map中的key值 -->
+			<index column="card_id" type="string"></index>
+			<!-- 指定的是Map中的value值 -->
+			<one-to-many class="com.chenming.mapFieldMapping.test1.domain.Student4" />
+		</map>
+		
+	</class>
+</hibernate-mapping>

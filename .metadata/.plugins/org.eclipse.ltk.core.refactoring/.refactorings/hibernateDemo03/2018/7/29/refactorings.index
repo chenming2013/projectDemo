@@ -1,0 +1,63 @@
+1531650312368	Rename package 'com.chenming'
+1531650342806	Copy package
+1531650374650	Rename package 'com.chenming.test2'
+1531650406780	Copy package
+1531650430984	Copy package
+1531650453050	Copy package
+1531650459240	Delete element
+1531650513795	Rename package 'com.chenming.test1.domain'
+1531650559324	Rename package 'com.chenming.test1.service'
+1531650575342	Rename package 'com.chenming.test1.util'
+1531650583790	Delete element
+1531650654038	Rename package 'com.chenming.test3'
+1531650979637	Rename package 'com.chenming.test3.domain'
+1531651000142	Rename package 'com.chenming.test3.service'
+1531651018801	Rename package 'com.chenming.test3.util'
+1531651163521	Copy compilation unit
+1531651260571	Copy package
+1531651295434	Copy package
+1531651312521	Copy package
+1531651324686	Copy package
+1531651336858	Delete elements
+1531651660995	Rename resource 'People.hbm.xml'
+1531832209157	Delete element
+1531832258181	Rename package 'com.chenming.composite'
+1531832277572	Copy package
+1531832295209	Copy package
+1531832307209	Copy package
+1531832314456	Copy file
+1531832355090	Rename type 'People'
+1531832366301	Rename resource 'People.hbm.xml'
+1531832484208	Delete element
+1531832487484	Delete element
+1531837615679	Copy package
+1531837646899	Copy package
+1531837671869	Copy package
+1531837676890	Copy file
+1531837743322	Rename type 'People4'
+1531837756612	Rename resource 'People4.hbm.xml'
+1531838020112	Copy file
+1531839030874	Delete element
+1531839438011	Copy file
+1531839503371	Delete element
+1531839535546	Copy file
+1532007946216	Delete element
+1532007970304	Copy package
+1532007986159	Copy package
+1532008001666	Copy package
+1532008065389	Rename resource 'People4.hbm.xml'
+1532008082037	Rename type 'People4'
+1532008089100	Rename type 'Student'
+1532008099295	Copy compilation unit
+1532008109941	Copy file
+1532008827564	Copy file
+1532013375438	Copy package
+1532013471689	Copy package
+1532013529945	Copy package
+1532013641084	Rename type 'Student4'
+1532013652601	Rename type 'Team4'
+1532013660442	Rename resource 'Student4.hbm.xml'
+1532013667137	Delete element
+1532013880872	Copy file
+1532014429116	Delete element
+1532014456250	Delete element

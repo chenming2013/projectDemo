@@ -1,0 +1,33 @@
+package com.chenming.springmvc.entity;
+
+public class Address
+{
+	private String province;
+	private String city;
+
+	
+	/* Setter And Getter */
+	public String getProvince()
+	{
+		return province;
+	}
+	public void setProvince(String province)
+	{
+		this.province = province;
+	}
+	public String getCity()
+	{
+		return city;
+	}
+	public void setCity(String city)
+	{
+		this.city = city;
+	}
+	
+	@Override
+	public String toString()
+	{
+		return "Address [province=" + province + ", city=" + city + "]";
+	}
+	
+}

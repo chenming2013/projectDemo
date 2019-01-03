@@ -1,0 +1,41 @@
+1540213940706	Copy package
+1540213953254	Delete element
+1540213980776	Rename package 'basic.basic_03_2_injectionTest.bena'
+1540213985324	Copy compilation units
+1540214587874	Delete element
+1540214610689	Rename type 'HelloImpl'
+1540305254300	Copy compilation units
+1540306342347	Rename type 'HelloApiDecorator'
+1540480183742	Delete elements
+1540480194921	Delete element
+1540480202037	Delete elements
+1540480229795	Delete elements
+1540480240457	Delete elements
+1540480352234	Delete elements
+1540480359132	Delete elements
+1540480367382	Delete element
+1540480371988	Delete element
+1540480401325	Move compilation unit
+1540480405090	Move compilation unit
+1540480410376	Move compilation unit
+1540480454841	Rename package 'basic.basic_07_cricleDependency_1'
+1540480478260	Rename package 'basic.basic_07_cricleDependency_1'
+1540481057570	Rename resource 'hello_1.xml'
+1540481393467	Rename package 'basic.basic_07_cricleDependency_2'
+1540481415638	Rename package 'basic.basic_03_2_cricleDependency_2'
+1540481442388	Move compilation unit
+1540481445768	Move compilation unit
+1540481449100	Move compilation unit
+1540481491170	Rename package 'basic.basic_07_cricleDependency_2'
+1540481520076	Rename resource 'hello_1.xml'
+1540482314656	Rename package 'basic.basic_07_cricleDependency_3'
+1540482326519	Rename package 'basic.basic_07_cricleDependency_3'
+1540482341290	Rename resource 'hello_1.xml'
+1540482395030	Move compilation unit
+1540482398353	Move compilation unit
+1540482402102	Move compilation unit
+1540559276734	Rename package 'basic.basic_08_dependsOn_1'
+1540559294846	Rename package 'basic.basic_08_dependsOn_1'
+1540559313134	Move compilation unit
+1540559317504	Move compilation unit
+1540559338322	Rename resource 'hello_1.xml'

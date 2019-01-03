@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"     
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"           
+    xmlns:context="http://www.springframework.org/schema/context"   
+    xmlns:aop="http://www.springframework.org/schema/aop"       
+    xmlns:tx="http://www.springframework.org/schema/tx"         
+    xmlns:util="http://www.springframework.org/schema/util"         
+    xmlns:p="http://www.springframework.org/schema/p"               
+    xsi:schemaLocation="http://www.springframework.org/schema/beans                             
+                        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd        
+                        http://www.springframework.org/schema/context                           
+                        http://www.springframework.org/schema/context/spring-context-4.0.xsd    
+                        http://www.springframework.org/schema/aop                               
+                        http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+                        http://www.springframework.org/schema/tx                            
+                        http://www.springframework.org/schema/tx/spring-tx-4.0.xsd                      
+                        http://www.springframework.org/schema/util                          
+                        http://www.springframework.org/schema/util/spring-util-4.0.xsd">
+   
+
+	<!-- 设置多个name,并且没有Id,而且Id和name不相同 -->
+	<bean name="hello5_1;alias1,alias2;alias3 alias4" class="basic.basic_02_2_nameOfBean.bean.HelloImpl"></bean>
+
+
+	<!-- 设置多个name,但是有Id,而且Id和name不相同 -->
+	<bean id="hello5_2" name="alias5;alias6 alias7" class="basic.basic_02_2_nameOfBean.bean.HelloImpl"></bean>
+	<!-- 设置多个name,但是有Id,但是Id和name不相同 -->
+	<bean id="hello5_3" name="hello5_3;alias8 alias9" class="basic.basic_02_2_nameOfBean.bean.HelloImpl"></bean>
+	
+</beans>

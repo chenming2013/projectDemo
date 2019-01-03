@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery程序</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+	/* 
+		测试索引选择器
+		
+		":not(元素)"  >>> 排除指定索引之外的所有元素
+		
+		
+	*/
+	/* 
+		下面的js的意思是: 
+			当页面加载的时候,查找出 div 下的所有非 span 元素,并为返回的元素添加上class属性,而class属性值为txt 
+	*/
+	$(function(){
+	/**/
+		$("div *:not(span)").attr("class","txt");
+	
+	
+	})
+</script>
+
+</head>
+<body>
+
+	<div><h1>1-1、www.mldn.cn</h1></div>
+	<h1>1-2、www.mldn.cn</h1>
+	<div><p>2-1、www.mldn.cn</p></div>
+	<p>2-2、www.mldn.cn</p>
+	<div><span>3-1、www.mldn.cn</span></div>
+	<span>3-2、www.mldn.cn</span>
+</body>
+</html>

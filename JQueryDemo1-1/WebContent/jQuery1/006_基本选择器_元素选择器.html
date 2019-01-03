@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery程序</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+	/* 
+		测试基本选择器之 元素选择器
+		
+		元素选择器: 根据元素(标签)名称直接选择,相当于 document.getElementsByTagName(); 
+		
+		
+	*/
+	/* 下面的js的意思是: 当页面加载的时候,为div和p元素添加上class属性,而class属性值为txt */
+	$(function(){
+	/*
+		$("div").attr("class","txt");	
+		$("p").attr("class","txt");	
+	*/
+		//上面的两行代码可以合并成下面一行
+		$("div,p").attr("class","txt");
+	})
+</script>
+
+</head>
+<body>
+	
+	<div><h1>div >>> 测试元素选择器</h1></div>
+	<div><h1>div >>> 测试元素选择器</h1></div>	
+	<span>span >>> 测试元素选择器</span>       <br/>
+	<span>span >>> 测试元素选择器</span>
+	<p>p >>> 测试元素选择器</p>
+	<p>p >>> 测试元素选择器</p>
+</body>
+</html>

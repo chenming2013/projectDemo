@@ -1,0 +1,1 @@
+hiberanteDemo01这个项目是用来测试Hibernate的一些基础配置,以及基础的入门案例

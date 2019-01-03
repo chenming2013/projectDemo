@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	
+<!-- 该文件用来配置entity对象和数据库表的映射关系 -->
+<!-- package指明要映射到数据库中的类在哪个包下 -->
+<hibernate-mapping package="com.chenming.test3.domain">
+	<!-- 
+		name: 要映射的类的全类名,即Student2 
+		table: 对应数据库中的表,即hibernateDemo02/t_student2表
+		lazy: 懒加载
+		name、table两个参数指定后,就搭建好了类和表之间的关系
+	-->
+	<class name="com.chenming.test3.domain.Student2" table="t_student2" lazy="true">
+		<!-- 类和表之间建立起了联系之后,就需要为类的属性与表的字段建立建立 -->
+		<!-- id元素用于指定主键属性 -->
+		<!--  
+			name: entity类的唯一标识;column:指定的表中的列;type指定的是Group类中id属性的类型
+		-->
+		<id name="id" column="id" type="int">
+			<!-- genarator元素用于指定主键生成策略: hilo、native、increment、sequence -->
+			<generator class="native"></generator>
+		</id>
+		
+		<!-- 对entity中其它属性进行映射 -->
+		<property name="name" type="string" column="name"></property>
+		
+		<!-- 映射一对多关联关系 -->
+		<many-to-one name="class2" column="class2_id" ></many-to-one>
+	</class>
+</hibernate-mapping>

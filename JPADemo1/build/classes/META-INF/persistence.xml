@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<!--  
+		name: 用来定义持久化单元的名字,必填
+		transaction-type: 指定 JPA 的事务处理策略.
+		RESOURCE_LOCAL: 默认值,数据库级别的事务,只能针对一种数据库,不支持分布式事务. 
+						如果需要支持分布式事务,使用 JTA: transaction-type="JTA"
+	-->
+	<persistence-unit name="JPADemo1" transaction-type="RESOURCE_LOCAL">
+		
+		<!--  
+			配置使用什么 ORM 产品来作为JPA的实现
+			1. 实际上配置的是 javax.persistence.spi.PersistenceProvider 接口的实现类
+			2. 若 JPA 项目中只有一个 JPA 的实现产品,则也可以不配置该节点
+		-->
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		
+		
+		<!-- 添加持久化类 -->
+		<class>com.chenming.test1.Customer</class>
+		<class>com.chenming.test2.Person</class>
+		<class>com.chenming.test3.Order</class>
+		
+		
+		<properties>	
+			<!--  
+				配置数据库的基本信息			
+			-->
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql:///jpa"/>
+			<property name="javax.persistence.jdbc.user" value="root"/>
+			<property name="javax.persistence.jdbc.password" value="chenming"/>
+		
+			
+			<!--  
+				配置 JPA 实现产品的基本属性:
+				JPA的实现产品有许多,常见的有Hibernate、OpenJPA、TopLink
+				这里使用Hibernate
+			-->
+			<!-- 生成数据表的策略 -->
+			<property name="hibernate.hbm2ddl.auto" value="update"/>
+			<!-- 在控制台显示SQL -->
+			<property name="hibernate.show_sql" value="true"/>
+			<!-- 将控制台输出的SQL格式化 -->
+			<property name="hibernate.format_sql" value="true"/>
+		</properties>
+	</persistence-unit>
+</persistence>

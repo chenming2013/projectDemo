@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>测试books.xml</title>
+<script type="text/javascript">
+	window.onload = function(){
+		var xmlDoc = document.implementation.createDocument("","",null);
+		xmlDoc.async = false;
+		xmlDoc.load("../xml/cdcatalog_with_ex2.xml");
+	}
+</script>
+</head>
+<body>
+	<div id="div1">解析books.xml</div>
+	<br/><br/>
+	
+	
+	<a href="../xml/cdcatalog_with_ex2.xml">访问catalog.xml</a>
+	<br/><br/>
+</body>
+</html>

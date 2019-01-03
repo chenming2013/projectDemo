@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	
+<!-- 该文件用来配置entity对象和数据库表的映射关系 -->
+<!-- package指明要映射到数据库中的类在哪个包下 -->
+<hibernate-mapping package="com.chenming.querySort.test1.domain">
+	<class name="com.chenming.querySort.test1.domain.Student4" table="t_student4" lazy="true">
+		<id name="id" column="id">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<property name="name" column="name"></property>
+		<property name="description" column="description"></property>
+		
+		<many-to-one name="team4" column="team4_id"></many-to-one>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,30 @@
+1536667846881	Rename package 'com.chenming.spring.basic'
+1536667868594	Rename package 'com.chenming.spring.basic'
+1536667937518	Move compilation unit
+1536667942384	Move compilation unit
+1536669684917	Copy package
+1536669735632	Copy compilation unit
+1536669744774	Delete element
+1536669788159	Copy compilation unit
+1536669951305	Copy compilation units
+1536669962349	Rename type 'HelloApi'
+1536669994345	Rename type 'HelloApiImpl'
+1536670034203	Rename type 'HelloWorldTest'
+1536670441889	Copy file
+1536670452887	Rename resource 'helloApi.xml'
+1536673802165	Rename package 'basic.basic_02_nameOfBean'
+1536673818745	Rename package 'basic.basic_02_nameOfBean'
+1536673880888	Move compilation unit
+1536673884696	Move compilation unit
+1536673890688	Copy compilation unit
+1536678762231	Rename package 'basic.basic_03_nameOfBean'
+1536678845447	Rename package 'basic.basic_03_nameOfBean'
+1536679168819	Copy file
+1536679481453	Rename package 'basic.basic_02_instanceBean.bena'
+1536679487088	Copy compilation units
+1536679621351	Rename package 'basic.basic_02_instanceBean'
+1536679634535	Rename package 'basic.basic_02_getIOCContainer'
+1536679645422	Rename package 'basic.basic_02_nameOfBean'
+1536679664053	Rename package 'basic.basic_02_getIOCContainer'
+1536679675572	Rename package 'basic.basic_02_instanceBean'
+1536679686561	Rename package 'basic.basic_02_nameOfBean'

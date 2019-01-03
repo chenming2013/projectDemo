@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"     
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"           
+    xmlns:context="http://www.springframework.org/schema/context"   
+    xmlns:aop="http://www.springframework.org/schema/aop"       
+    xmlns:tx="http://www.springframework.org/schema/tx"         
+    xmlns:util="http://www.springframework.org/schema/util"         
+    xmlns:p="http://www.springframework.org/schema/p"               
+    xsi:schemaLocation="http://www.springframework.org/schema/beans                             
+                        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd        
+                        http://www.springframework.org/schema/context                           
+                        http://www.springframework.org/schema/context/spring-context-4.0.xsd    
+                        http://www.springframework.org/schema/aop                               
+                        http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+                        http://www.springframework.org/schema/tx                            
+                        http://www.springframework.org/schema/tx/spring-tx-4.0.xsd                      
+                        http://www.springframework.org/schema/util                          
+                        http://www.springframework.org/schema/util/spring-util-4.0.xsd">
+	
+	<!--  
+		dependentBean初始化之前要先初始化ResourceBean,
+		dependentBean销毁之后才能销毁ResourceBean
+	-->
+	<bean id="resourceBean" init-method="init" destroy-method="destroy" 
+		class="basic.basic_03_4_dependsOn.bean.ResourceBean">
+		
+		<property name="file" value="F:\tempDirectory\SpringTest\basic_03_4_dependsOn_test.txt"></property>
+	</bean>
+	
+	<bean id="dependentBean" init-method="init" destroy-method="destroy" depends-on="resourceBean"
+		class="basic.basic_03_4_dependsOn.bean.DependentBean">
+		
+		<property name="resourceBean" ref="resourceBean"></property>
+	</bean>
+	
+</beans>

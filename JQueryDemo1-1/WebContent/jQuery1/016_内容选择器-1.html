@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery程序</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+	/* 
+		测试内容选择器
+		
+		":contains(内容)"  >>> 返回包含有文本内容的所有元素		
+		
+	*/
+	/* 
+		下面的js的意思是: 
+			
+			
+	*/
+	$(function(){
+		//取得所有内容中包含有 'h'的元素,并为其加上class属性
+		/* $("tr:contains('h')").attr("class","txt"); */
+		$("td:contains('h')").attr("class","txt");
+		/*
+			注意: 上面两个的效果是不一样的
+		*/
+		
+	})
+</script>
+
+</head>
+<body>
+
+	<table border="red 2px solid">
+		<tr>
+			<td>1-1、java</td>
+			<td>1-2、jsp</td>
+			<td>1-3、servlet</td>
+		</tr>
+		<tr>
+			<td>2-1、css</td>
+			<td>2-2、html</td>
+			<td>2-3、javascript</td>
+		</tr>
+		<tr>
+			<td>3-1、jQuery</td>
+			<td>3-2、Extjs</td>
+			<td>3-3、Seajs</td>
+		</tr>
+	</table>
+	
+</body>
+</html>

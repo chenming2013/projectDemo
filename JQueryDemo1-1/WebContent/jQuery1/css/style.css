@@ -1,0 +1,11 @@
+.txt{
+	background-color:red;
+	font-weight:bold;
+	border:blue solid 4px;
+}
+
+.temp{
+	background-color:blue;
+	font-weight:bold;
+	border:gray solid 4px;
+}
