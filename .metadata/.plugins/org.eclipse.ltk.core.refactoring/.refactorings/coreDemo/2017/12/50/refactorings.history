@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;com.chenming.core.variable.VariableTest01&apos; to &apos;ClassVariableTest01&apos;&#x0D;&#x0A;- Original project: &apos;coreDemo&apos;&#x0D;&#x0A;- Original element: &apos;com.chenming.core.variable.VariableTest01&apos;&#x0D;&#x0A;- Renamed element: &apos;com.chenming.core.variable.ClassVariableTest01&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;VariableTest01&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.chenming.core.variable{VariableTest01.java[VariableTest01" matchStrategy="1" name="ClassVariableTest01" qualified="false" references="true" similarDeclarations="false" stamp="1513255738635" textual="false" version="1.0"/>
-</session>

@@ -1,9 +1,0 @@
-eclipse.preferences.version=1
-org.eclipse.team.ui.first_time=false
-org.eclipse.team.ui.sychronizing_default_participant=org.tigris.subversion.subclipse.participant
-<<<<<<< HEAD
-org.eclipse.team.ui.sychronizing_default_participant_sec_id=1512658714441
-=======
-org.eclipse.team.ui.sychronizing_default_participant_sec_id=1532135849998
->>>>>>> 9a23723de0eac87773e4ba0adc56ee6ecbc22f3e
-org.eclipse.team.ui.sychronizing_default_perspective_to_show=always

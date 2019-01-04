@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy 2 elements to &apos;lib&apos;&#x0D;&#x0A;- Original project: &apos;JUnitDemo01&apos;&#x0D;&#x0A;- Destination element: &apos;lib&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     hamcrest-all-1.3.jar&#x0D;&#x0A;     junit-4.12.jar" description="Copy files" element1="lib/hamcrest-all-1.3.jar" element2="lib/junit-4.12.jar" files="2" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1543817871028" target="/JavaXMLDemo01/lib" units="0" version="1.0"/>
-</session>

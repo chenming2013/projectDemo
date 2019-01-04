@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename Java project &apos;Java项目开发整合_第8章  明日电子商城&apos; to &apos;08-lwz&apos;&#x0D;&#x0A;- Original element: &apos;Java项目开发整合_第8章  明日电子商城&apos;&#x0D;&#x0A;- Renamed element: &apos;Java项目开发整合_第8章  明日电子商城&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;Java项目开发整合_第8章  明日电子商城&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=Java项目开发整合_第8章  明日电子商城" name="08-lwz" references="true" stamp="1519645890813" version="1.0"/>
-</session>

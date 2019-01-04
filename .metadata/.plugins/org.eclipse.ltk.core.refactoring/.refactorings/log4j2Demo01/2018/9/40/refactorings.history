@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;chenming.Log4j2_1_Helloworld&apos; to &apos;Log4j2_1_HelloworldTest&apos;&#x0D;&#x0A;- Original project: &apos;log4j2Demo01&apos;&#x0D;&#x0A;- Original element: &apos;chenming.Log4j2_1_Helloworld&apos;&#x0D;&#x0A;- Renamed element: &apos;chenming.Log4j2_1_HelloworldTest&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Log4j2_1_Helloworld&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;chenming{Log4j2_1_Helloworld.java[Log4j2_1_Helloworld" matchStrategy="1" name="Log4j2_1_HelloworldTest" qualified="false" references="true" similarDeclarations="false" stamp="1538295119612" textual="false" version="1.0"/>
-</session>

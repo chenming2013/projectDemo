@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;com.chenming.test.TestJPQKL&apos; to &apos;TestJPQL&apos;&#x0D;&#x0A;- Original project: &apos;JPADemo4&apos;&#x0D;&#x0A;- Original element: &apos;com.chenming.test.TestJPQKL&apos;&#x0D;&#x0A;- Renamed element: &apos;com.chenming.test.TestJPQL&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;TestJPQKL&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.chenming.test{TestJPQKL.java[TestJPQKL" matchStrategy="1" name="TestJPQL" qualified="false" references="true" similarDeclarations="false" stamp="1506341270311" textual="false" version="1.0"/>
-</session>

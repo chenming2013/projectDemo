@@ -1,9 +1,0 @@
-package basic.test;
-
-public class A {
-
-	private B b;
-	
-	private C c;
-	
-}

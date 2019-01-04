@@ -1,7 +1,0 @@
-package basic.basic_06_0_aop_proxy.bean;
-
-public class Hello implements IHello{
-
-	
-	
-}

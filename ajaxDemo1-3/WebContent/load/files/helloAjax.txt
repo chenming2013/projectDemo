@@ -1,1 +1,0 @@
-这是Ajax的HelloWorld,测试Ajax ^_^

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<profiles>
-<profile id="jQuery3.2.1" name="jQuery3.2.1">use namespace jQuery;
-include 'F:\\JAR\\JQuery_JAR\\jquery-1.5.1.js';
-</profile>
-</profiles>

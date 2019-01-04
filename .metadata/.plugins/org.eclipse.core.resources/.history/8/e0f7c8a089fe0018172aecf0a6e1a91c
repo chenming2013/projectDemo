@@ -1,5 +1,0 @@
-package basic.basic_06_0_aop_proxyOfSpring.bean;
-
-public class DynamicProxyHello {
-
-}
